@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "KoreanCheck";
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/zh-cn.woff2") format('woff2-variations');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Prontandard';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/prontandard.woff2") format('woff2-variations');
+}
