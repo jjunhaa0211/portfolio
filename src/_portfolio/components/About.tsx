@@ -4,14 +4,33 @@ import { DefaultTag } from "../../components/Tag";
 import TimeFrame from "../../components/TimeFrame";
 import { GBody } from "../../components/layout/globalLayouts";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { motions } from "../framer/motions";
+import useIrl from "../hooks/useIrl";
 
 const About = () => {
+    const irl = useIrl();
+
     return <GBody>
         <Txt typography={"H0"}>About</Txt>
         <ProfileDiv>
             <GIcon icon={"Profile"} width={"160px"} height={"160px"}/>
-            <ProfileInner>
-                <Txt typography={"H2"}>문성화</Txt>
+            <ProfileInner
+                x={15} y={0}
+                initial={{
+                    opacity: 0,
+                    translateX: "20px"
+                }}
+                whileInView={{
+                    opacity: 1,
+                    translateX: "0px"
+                }}
+                transition={{
+                    delay: 0.2,
+                    duration: 1,
+                    ease: [0.22, 1, 0.36, 1]
+                }}>
+                <Txt typography={"H2"}>{irl.name}</Txt>
                 <Txt typography={"H4"}>Game Client Developer</Txt>
                 <Txt>"당신에게 가치있는 사람이 되는 것이 목표입니다."</Txt>
             </ProfileInner>
@@ -59,7 +78,7 @@ const About = () => {
             <TimeFrame date={"2023.08.12~"} text={"프로젝트: Genshin-Calculator"} highlight={"Orange"} out/>
             <TimeFrame date={"2023.09.07~2023.12.03"} text={"프로젝트 실무: 전염병으로부터 살아남기"} highlight={"Orange"}/>
             <TimeFrame date={"2023.10.28"} text={"TOPCIT 20회 정기평가 - 638점"} out/>
-            <Right><Txt typography={"P1"}>프로젝트 이름에 <Txt color={"Green0"}>*</Txt>는 가칭</Txt></Right>
+            {/*<Right><Txt typography={"P1"}>프로젝트 이름에 <Txt color={"Green0"}>*</Txt>는 가칭</Txt></Right>*/}
         </TimeIdx>
     </GBody>;
 };
@@ -103,7 +122,7 @@ const ProfileDescription = styled.div`
   gap: 15px;
 `
 
-const ProfileInner = styled.div`
+const ProfileInner = styled(motions.fadeDiv)`
   display: flex;
   padding: 24px 0;
   flex-direction: column;
