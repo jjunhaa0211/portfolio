@@ -20,6 +20,16 @@ export const GLinkImage = ({ width, height, css, url, onClick, clickable, ...pro
                 cursor: onClick || clickable ? "pointer" : "default",
                 ...css
             }}
+            onContextMenu={v => v.preventDefault()}
+            onDragStart={v => v.preventDefault()}
+            onDrag={v => v.preventDefault()}
+            onDragEnd={v => v.preventDefault()}
+            onDragStartCapture={v => v.preventDefault()}
+            onDragCapture={v => v.preventDefault()}
+            onDragEndCapture={v => v.preventDefault()}
+            onContextMenuCapture={v => v.preventDefault()}
+            onKeyDown={v => v.preventDefault()}
+            onKeyDownCapture={v => v.preventDefault()}
             onClick={onClick}
             alt={""}
             src={url}
