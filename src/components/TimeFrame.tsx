@@ -3,11 +3,12 @@ import { GIcon } from "./GIcon";
 import { Txt } from "./Txt";
 import { keyOfColors } from "../styles/color";
 import { useMediaQuery } from "react-responsive";
+import { motions } from "../_portfolio/framer/motions";
 
 const TimeFrame = (props: { date: string, text: string, highlight?: keyOfColors, out?: boolean }) => {
     const media = useMediaQuery({ query: "(max-width: 768px)" });
 
-    return <Box>
+    return <Box y={15}>
         <Left>
             {!props.out && <>
                 <Txt typography={media ? "P0" : "P1"} right>{props.date}</Txt>
@@ -52,7 +53,7 @@ const Right = styled.div`
   }
 `
 
-const Box = styled.div`
+const Box = styled(motions.fadeDiv)`
   width: 100%;
   display: flex;
   justify-content: center;
