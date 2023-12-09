@@ -10,7 +10,15 @@ const ProjectPage = () => {
     return <>
         <Box>
             <Txt onClick={() => toMain(nav)} clickable>&lt; 돌아가기</Txt>
+            <br/>
             <Outlet/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Txt onClick={() => toMain(nav)} clickable>&lt; 돌아가기</Txt>
         </Box>
     </>
 }
