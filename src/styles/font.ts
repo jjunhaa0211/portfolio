@@ -2,32 +2,37 @@ export const FontStyles = {
     H0: {
         fontFamily: "Pretendard",
         fontWeight: 800,
-        fontSize: "56px"
+        fontSize: "42px"
     },
     H0Weak: {
         fontFamily: "Pretendard",
         fontWeight: 400,
-        fontSize: "56px"
+        fontSize: "42px"
     },
     H1: {
         fontFamily: "Pretendard",
         fontWeight: 800,
-        fontSize: "44px"
+        fontSize: "38px"
     },
     H2: {
         fontFamily: "Pretendard",
         fontWeight: 800,
-        fontSize: "38px"
+        fontSize: "34px"
     },
     H3: {
         fontFamily: "Pretendard",
-        fontWeight: 700,
+        fontWeight: 800,
         fontSize: "30px"
     },
     H4: {
         fontFamily: "Pretendard",
         fontWeight: 700,
-        fontSize: "25px"
+        fontSize: "26px"
+    },
+    H5: {
+        fontFamily: "Pretendard",
+        fontWeight: 700,
+        fontSize: "22px"
     },
     P00: {
         fontFamily: "Pretendard",
