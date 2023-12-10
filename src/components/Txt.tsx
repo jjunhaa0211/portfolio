@@ -47,6 +47,7 @@ export const Txt = (
         textAlign: justify ? 'justify' : center ? 'center' : right ? 'right' : left ? 'left' : 'unset',
         cursor: clickable ? "pointer" : "default",
         margin: margin ?? "0",
+        wordBreak: "break-word",
         ...FontStyles[typography],
         ...style,
     };

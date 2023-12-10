@@ -12,14 +12,14 @@ const TimeFrame = (props: { date: string, text: string, highlight?: keyOfColors,
         <Left>
             {!props.out && <>
                 <Txt typography={media ? "P0" : "P1"} right>{props.date}</Txt>
-                <Txt typography={media ? "P1" : "P3"} color={props.highlight ? props.highlight : "White0"} right>{props.text}</Txt>
+                <Txt typography={media ? "P0" : "P3"} color={props.highlight ? props.highlight : "White0"} right>{props.text}</Txt>
             </>}
         </Left>
         <GIcon icon={"Indexer"} width={"24px"} height={"60px"}/>
         <Right>
             {props.out && <>
                 <Txt typography={media ? "P0" : "P1"}>{props.date}</Txt>
-                <Txt typography={media ? "P1" : "P3"} color={props.highlight ? props.highlight : "White0"}>{props.text}</Txt>
+                <Txt typography={media ? "P0" : "P3"} color={props.highlight ? props.highlight : "White0"}>{props.text}</Txt>
             </>}
         </Right>
     </Box>;
@@ -35,7 +35,7 @@ const Left = styled.div`
   flex: 1 0 0;
 
   @media (max-width: 768px) {
-    padding: 0 5px;
+    padding: 0;
   }
 `
 

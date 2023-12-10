@@ -18,8 +18,7 @@ const Header = () => {
     useEffect(() => {
         localStorage.setItem("prev", localStorage.getItem("cur") ?? "");
         localStorage.setItem("cur", location.pathname);
-        console.log("head");
-    }, [])
+    }, [location.pathname]);
 
     return <>
         <Box
@@ -53,7 +52,7 @@ const Header = () => {
 }
 
 const Background = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: linear-gradient(180deg, #000 0%, #160023 35.42%, #070417 60.42%, #000C1F 83.74%, #000 100%);
 `
