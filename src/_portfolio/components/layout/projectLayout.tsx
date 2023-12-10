@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useAnimation } from "framer-motion";
 import { motions } from "../../framer/motions";
 import { useMediaQuery } from "react-responsive";
+import { keyOfIcons } from "../../../styles/icons";
+import { GIcon } from "../../../components/GIcon";
+import { Colors } from "../../../styles/color";
 
 export const Top = styled.div`
   margin-top: 30px;
@@ -21,6 +24,10 @@ export const H2 = ({ ...props }) => <Txt margin={"22px 0 0 0"} typography={"H2"}
 export const H3 = ({ ...props }) => <Txt margin={"22px 0 0 0"} typography={"H3"} {...props}/>
 export const H4 = ({ ...props }) => <Txt margin={"14px 0 0 0"} typography={"H4"} {...props}/>
 export const P = ({ ...props }) => <Txt typography={"P2"} $lineheight={"1.5"} {...props}/>
+export const A = styled.a`
+  color: dodgerblue !important;
+`
+
 export const Img = ({ url, width, height, children, align, border, ...props }: {
     url: string,
     width?: string,
@@ -60,7 +67,7 @@ export const Img = ({ url, width, height, children, align, border, ...props }: {
                 {children}
             </Image>
         </ImgDiv>
-        <DisplayDiv $display={show}>
+        <DisplayDiv $display={show} $position={"fixed"}>
             <Background
                 animate={anim}
                 duration={0.5}
@@ -97,6 +104,48 @@ export const Img = ({ url, width, height, children, align, border, ...props }: {
     </>
 }
 
+export const URLItem = ({ icon, url, children }: { icon: keyOfIcons, url?: string, children: any }) => {
+    const media = useMediaQuery({ query: "(min-width: 768px)" });
+    return <URLDiv>
+        <GIcon icon={icon} width={"24px"} height={"24px"} border={"6px"}/>
+        {url ?
+            (media ? <>
+                {children}<Txt> : </Txt><Txt><A href={url} target={"_blank"}>{url}</A></Txt>
+            </> : <URLDev>
+                {children}
+                <Txt><A href={url}>{url}</A></Txt>
+            </URLDev>)
+            : (media ? <>
+                {children}<Txt> : </Txt><Txt color={"Orange"}>Private Repository</Txt>
+            </> : <URLDev>
+                {children}
+                <Txt color={"Orange"}>Private Repository</Txt>
+            </URLDev>)}
+    </URLDiv>;
+}
+
+const URLDev = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const URLDiv = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`
+
+export const URLBox = styled.div`
+  margin: 12px 0;
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+  width: calc(100% - 40px);
+  border-radius: 12px;
+  border: 1px ${Colors.White5} solid;
+  flex-direction: column;
+`
+
 export const Tags = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -108,8 +157,8 @@ export const Lefter = styled.div`
   width: 100%;
 `
 
-export const DisplayDiv = styled.div<{ $display: boolean }>`
-  position: fixed;
+export const DisplayDiv = styled.div<{ $display: boolean, $position?: string }>`
+  position: ${props => props.$position ?? "unset"};
   display: ${props => props.$display ? "block" : "none"};
   left: 0;
   top: 0;
