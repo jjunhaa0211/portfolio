@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { useAnimation } from "framer-motion";
 import { motions } from "../../framer/motions";
+import { useMediaQuery } from "react-responsive";
 
 export const Top = styled.div`
   margin-top: 30px;
@@ -29,6 +30,7 @@ export const Img = ({ url, width, height, children, align, border, ...props }: {
 } & {
     [_: string]: any
 }) => {
+    const media = useMediaQuery({ query: "(min-width: 768px)" });
     const anim = useAnimation()
     const [show, setShow] = useState<boolean>(false);
 
@@ -72,8 +74,8 @@ export const Img = ({ url, width, height, children, align, border, ...props }: {
                 }}
             >
                 <Image
-                    width={"70%"}
-                    height={"70%"}
+                    width={media ? "70%" : "90%"}
+                    height={media ? "70%" : "80%"}
                     $border={border}
                     onContextMenu={v => v.preventDefault()}
                     onDragStart={v => v.preventDefault()}
@@ -107,17 +109,19 @@ export const Lefter = styled.div`
 `
 
 export const DisplayDiv = styled.div<{ $display: boolean }>`
-  display: ${props => props.$display ? "block" : "none"};
-`
-
-export const Background = styled(motions.keyDiv)`
   position: fixed;
+  display: ${props => props.$display ? "block" : "none"};
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10;
+  z-index: 50;
+`
+
+export const Background = styled(motions.keyDiv)`
   backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
