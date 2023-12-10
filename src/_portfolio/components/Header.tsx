@@ -46,9 +46,17 @@ const Header = () => {
                 <Txt typography={"P1"}>Contact</Txt>
             </>}
         </Box>
-        <Outlet/>
+        <Background>
+            <Outlet/>
+        </Background>
     </>
 }
+
+const Background = styled.div`
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000 0%, #160023 35.42%, #070417 60.42%, #000C1F 83.74%, #000 100%);
+`
 
 const HeaderInner = styled.div`
   display: flex;
