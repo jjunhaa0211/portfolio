@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Txt } from "./Txt";
 import { keyOfColors } from "../styles/color";
+import { useMediaQuery } from "react-responsive";
 
 export interface TagProps {
     name: string,
@@ -9,8 +10,10 @@ export interface TagProps {
 }
 
 const Tag = (props: TagProps) => {
+    const media = useMediaQuery({ query: "(min-width: 768px)" });
+
     return <Box color={props.backgroundColor}>
-        <Txt typography={"P1"} color={props.textColor}>{props.name}</Txt>
+        <Txt typography={media ? "P1" : "P0"} color={props.textColor}>{props.name}</Txt>
     </Box>;
 };
 
@@ -32,13 +35,25 @@ export const DefaultTag = {
 
 export type keyOfDefaultTag = keyof typeof DefaultTag;
 
+export const TagBox = styled.div<{ $align?: string }>`
+  width: 100%;
+  display: flex;
+  justify-content: ${props => props.$align ?? "flex-start"};
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+`
+
 const Box = styled.div<{ color: string }>`
   display: flex;
   padding: 3px 12px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   border-radius: 43px;
   background: ${props => props.color};
+
+  @media (max-width: 768px) {
+    padding: 2px 8px;
+  }
 `
 export default Tag;

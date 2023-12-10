@@ -1,20 +1,22 @@
 import { Txt } from "../../components/Txt";
 import { GIcon } from "../../components/GIcon";
-import { DefaultTag } from "../../components/Tag";
+import { DefaultTag, TagBox } from "../../components/Tag";
 import TimeFrame from "./TimeFrame";
 import { GBody } from "../../components/layout/globalLayouts";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { motions } from "../framer/motions";
 import useIrl from "../hooks/useIrl";
+import { useMediaQuery } from "react-responsive";
 
 const About = () => {
+    const media = useMediaQuery({ query: "(min-width: 768px)" });
     const irl = useIrl();
 
     return <GBody>
         <Txt typography={"H0"}>About</Txt>
         <ProfileDiv>
-            <GIcon icon={"Profile"} width={"160px"} height={"160px"}/>
+            <GIcon icon={"Profile"} width={media ? "160px" : "80px"} height={media ? "160px" : "80px"}/>
             <ProfileInner
                 x={15} y={0}
                 initial={{
@@ -30,31 +32,31 @@ const About = () => {
                     duration: 1,
                     ease: [0.22, 1, 0.36, 1]
                 }}>
-                <Txt typography={"H2"}>{irl.name}</Txt>
-                <Txt typography={"H4"}>Game Client Developer</Txt>
-                <Txt>"당신에게 가치있는 사람이 되는 것이 목표입니다."</Txt>
+                <Txt typography={media ? "H2" : "H3"}>{irl.name}</Txt>
+                <Txt typography={media ? "H4" : "P2"}>Game Client Developer</Txt>
+                <Txt typography={media ? "P1" : "P0"}>"당신에게 가치있는 사람이 되는 것이 목표입니다."</Txt>
             </ProfileInner>
         </ProfileDiv>
         <ProfileDescription>
-            <Txt center>여러 분야의 개발을 할 수 있지만, 그 중에서도 게임 개발을 가장 좋아합니다.</Txt>
-            <Txt center>내가 할 수 있는 것과 도전 하고 싶은 것을 모두 시도해보며 다양한 분야와 같이 소통이 가능한 개발자입니다.</Txt>
+            <Txt typography={media ? "P1" : "P0"} center>여러 분야의 개발을 할 수 있지만, 그 중에서도 게임 개발을 가장 좋아합니다.</Txt>
+            <Txt typography={media ? "P1" : "P0"} center>내가 할 수 있는 것과 도전 하고 싶은 것을 모두 시도해보며 다양한 분야와 같이 소통이 가능한 개발자입니다.</Txt>
         </ProfileDescription>
         <TagDiv>
-            <TagInnerDiv>
+            <TagBox $align={"center"}>
                 {DefaultTag.unity}
                 {DefaultTag.springBoot}
                 {/*{DefaultTag.android}*/}
                 {DefaultTag.react}
                 {DefaultTag.spigot}
-            </TagInnerDiv>
-            <TagInnerDiv>
+            </TagBox>
+            <TagBox $align={"center"}>
                 {DefaultTag.csharp}
                 {DefaultTag.java}
                 {DefaultTag.kotlin}
                 {DefaultTag.html}
                 {DefaultTag.javaScript}
                 {DefaultTag.typeScript}
-            </TagInnerDiv>
+            </TagBox>
         </TagDiv>
         <TimeIdx>
             <Txt>교내 활동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;교외 활동</Txt>
@@ -97,14 +99,6 @@ const TimeIdx = styled.div`
   align-self: stretch;
 `
 
-const TagInnerDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-`
-
 const TagDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -130,6 +124,10 @@ const ProfileInner = styled(motions.fadeDiv)`
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
 `
 
 const ProfileDiv = styled.div`
@@ -137,6 +135,10 @@ const ProfileDiv = styled.div`
   justify-content: center;
   align-items: center;
   gap: 60px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 `
 
 export default About;
