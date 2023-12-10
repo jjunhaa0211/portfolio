@@ -30,6 +30,8 @@ export const DefaultTag = {
     sqlite: <Tag key={"SQLite"} name={"SQLite"} backgroundColor={"#5799fd"} textColor={"White0"}/>,
 }
 
+export type keyOfDefaultTag = keyof typeof DefaultTag;
+
 const Box = styled.div<{ color: string }>`
   display: flex;
   padding: 3px 12px;

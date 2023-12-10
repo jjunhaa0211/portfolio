@@ -1,16 +1,16 @@
-import { Colors, keyOfColors } from "../styles/color";
-import Tag, { TagProps } from "./Tag";
+import { Colors, keyOfColors } from "../../styles/color";
+import Tag, { keyOfDefaultTag, TagProps } from "../../components/Tag";
 import styled from "styled-components";
-import { keyOfIcons } from "../styles/icons";
-import { GIcon } from "./GIcon";
-import { Txt } from "./Txt";
+import { keyOfIcons } from "../../styles/icons";
+import { GIcon } from "../../components/GIcon";
+import { Txt } from "../../components/Txt";
 import { useMediaQuery } from "react-responsive";
-import { motions } from "../_portfolio/framer/motions";
+import { motions } from "../framer/motions";
 import { useState } from "react";
 import { animate, useAnimate, useAnimation } from "framer-motion";
-import { Background, DisplayDiv } from "../_portfolio/components/layout/projectLayout";
+import { Background, DisplayDiv } from "./layout/projectLayout";
 
-const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: JSX.Element[], description: string }) => {
+const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: keyOfDefaultTag[], description: string }) => {
     const media = useMediaQuery({ query: "(min-width: 768px)" });
     const anim = useAnimation()
     const [show, setShow] = useState<boolean>(false);
@@ -77,6 +77,10 @@ const TopBox = styled(motions.keyDiv)`
   * {
     cursor: pointer !important;
   }
+
+  @media (max-width: 768px) {
+    width: 430px;
+  }
 `
 
 const SubTitle = styled(motions.keyDiv)<{ $down: boolean }>`
@@ -89,6 +93,11 @@ const SubTitle = styled(motions.keyDiv)<{ $down: boolean }>`
   align-items: center;
   flex-direction: column;
   justify-content: ${props => props.$down ? "flex-end" : "flex-start"};
+
+  @media (max-width: 768px) {
+    width: 400px;
+    padding: 0 15px;
+  }
 `
 
 const TagBox = styled.div`
@@ -136,7 +145,8 @@ const Box = styled(motions.fadeDiv)<{ $show: boolean }>`
   //}
 
   @media (max-width: 768px) {
-    width: 450px;
+    width: 400px;
+    padding: 0 15px;
   }
 `
 
