@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { GIcon } from "./GIcon";
-import { Txt } from "./Txt";
-import { keyOfColors } from "../styles/color";
+import { GIcon } from "../../components/GIcon";
+import { Txt } from "../../components/Txt";
+import { keyOfColors } from "../../styles/color";
 import { useMediaQuery } from "react-responsive";
-import { motions } from "../_portfolio/framer/motions";
+import { motions } from "../framer/motions";
 
 const TimeFrame = (props: { date: string, text: string, highlight?: keyOfColors, out?: boolean }) => {
     const media = useMediaQuery({ query: "(max-width: 768px)" });

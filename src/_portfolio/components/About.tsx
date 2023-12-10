@@ -1,7 +1,7 @@
 import { Txt } from "../../components/Txt";
 import { GIcon } from "../../components/GIcon";
 import { DefaultTag } from "../../components/Tag";
-import TimeFrame from "../../components/TimeFrame";
+import TimeFrame from "./TimeFrame";
 import { GBody } from "../../components/layout/globalLayouts";
 import styled from "styled-components";
 import { motion } from "framer-motion";
