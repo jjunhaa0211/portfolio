@@ -4,12 +4,13 @@ interface Props extends HTMLAttributes<HTMLImageElement> {
     height?: string,
     width?: string,
     css?: CSSProperties,
+    border?: string,
     onClick?: (event: React.MouseEvent<HTMLImageElement>) => void,
     clickable?: boolean,
     url: string;
 }
 
-export const GLinkImage = ({ width, height, css, url, onClick, clickable, ...props }: Props) => {
+export const GLinkImage = ({ width, height, css, url, border, onClick, clickable, ...props }: Props) => {
     return (
         <img
             style={{
@@ -17,6 +18,9 @@ export const GLinkImage = ({ width, height, css, url, onClick, clickable, ...pro
                 padding: 0,
                 width: width,
                 height: height,
+                minWidth: width,
+                minHeight: height,
+                borderRadius: border,
                 cursor: onClick || clickable ? "pointer" : "default",
                 ...css
             }}
