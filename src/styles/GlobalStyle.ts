@@ -6,10 +6,14 @@ export const Global = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: none;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
+    //user-select: none;
+    //-moz-user-select: none;
+    //-ms-user-select: none;
+    //-webkit-user-select: none;
+  }
+
+  iframe {
+    max-width: calc(100vw - 100px);
   }
 
   a {

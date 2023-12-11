@@ -10,6 +10,7 @@ export const Icons = {
     Github: "github.webp",
     Web: "web.webp",
     Cafe: "5ce4b74d3a44d.webp",
+    Mooner510: "mooner510.webp",
 }
 
 export type keyOfIcons = keyof typeof Icons;

@@ -7,19 +7,19 @@ const RicePaper = () => {
     return <>
         <Top>
             <GIcon icon={"RicePaper"} width={"100px"}/>
-            <Txt typography={"H0"}>RicePaper <Txt typography={"P1"}>22.04.29~22.05.30</Txt></Txt>
+            <Txt typography={"H0"}>RicePaper <Txt typography={"P1"}>2022.04.29~2022.05.30</Txt></Txt>
         </Top>
         <Tags>{[DefaultTag.java, DefaultTag.html, DefaultTag.javaScript]}</Tags>
 
         <URLBox>
+            <URLItem icon={"Web"} url={"https://mooner510.github.io/RicePaper"}>
+                <Txt>Web</Txt>
+            </URLItem>
             <URLItem icon={"Github"} url={"https://github.com/Mooner510/RicePaper"}>
                 <Txt>Github (Web)</Txt>
             </URLItem>
             <URLItem icon={"Github"} url={"https://github.com/Mooner510/RicePaperBot"}>
                 <Txt>Github (Bot Client)</Txt>
-            </URLItem>
-            <URLItem icon={"Web"} url={"https://mooner510.github.io/RicePaper"}>
-                <Txt>웹사이트</Txt>
             </URLItem>
         </URLBox>
 
