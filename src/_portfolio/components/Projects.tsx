@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
     return <>
         <GBody>
-            <Txt typography={"H0"}>Project</Txt>
+            <a id={"project"}><Txt typography={"H0"}>Project</Txt></a>
             <ProjectBox>
                 <Project
                     link={"/project/skyblock"}

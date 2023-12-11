@@ -2,7 +2,7 @@ import { Txt } from "../../components/Txt";
 import styled from "styled-components";
 import { motions } from "../framer/motions";
 import { useMediaQuery } from "react-responsive";
-import { NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
+import { Link, NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { getSitemap } from "../../routes/sitemap";
@@ -59,10 +59,14 @@ const Header = () => {
                      clickable nobreak>Mooner510</Txt>
             </HeaderInner>
             {media && <>
-                <Txt typography={"P1"} nobreak>Home</Txt>
-                <Txt typography={"P1"} nobreak>About</Txt>
-                <Txt typography={"P1"} nobreak>Project</Txt>
-                <Txt typography={"P1"} nobreak>Contact</Txt>
+                <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                     clickable nobreak>Home</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     clickable nobreak>About</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     clickable nobreak>Project</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     nobreak clickable>Contact</Txt>
             </>}
         </Box>
         <Background>

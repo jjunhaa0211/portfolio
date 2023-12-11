@@ -38,7 +38,7 @@ const BeatTable = () => {
         }} videoId={"o1Ij7mpcq7c"} opts={{ playerVars: { modestbranding: 1, rel: 0 } }}/>
 
         <H3>최종 결과물</H3>
-        <P>음악: MIMI - ハナタバ</P>
+        <P>음악: MIMI - ハナタバ</P>w
         <YouTube style={media ? {} : {
             display: "flex",
             width: "100%",

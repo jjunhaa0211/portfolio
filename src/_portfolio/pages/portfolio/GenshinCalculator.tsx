@@ -9,7 +9,7 @@ const GenshinCalculator = () => {
     return <>
         <Top>
             <GIcon icon={"Paimon"} width={"100px"}/>
-            <Txt typography={"H0"}>Genshin Calculator <Txt typography={"P1"}>2022.04.29~2022.05.30</Txt></Txt>
+            <Txt typography={"H0"}>Genshin Calculator <Txt typography={"P1"}>2023.08.12~</Txt></Txt>
         </Top>
         <Tags>{["unity", "csharp"].map(v => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
