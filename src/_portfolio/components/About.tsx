@@ -14,9 +14,9 @@ const About = () => {
     const irl = useIrl();
 
     return <GBody>
-        <Txt typography={"H0"}>About</Txt>
+        <a id={"about"}><Txt typography={"H0"} id={"about"}>About</Txt></a>
         <ProfileDiv>
-            <GIcon icon={"Profile"} width={media ? "160px" : "80px"} height={media ? "160px" : "80px"}/>
+            <GIcon icon={"Mooner510"} width={media ? "160px" : "80px"} height={media ? "160px" : "80px"} border={"12px"}/>
             <ProfileInner
                 x={15} y={0}
                 initial={{

@@ -104,23 +104,29 @@ export const Img = ({ url, width, height, children, align, border, ...props }: {
     </>
 }
 
-export const URLItem = ({ icon, url, children }: { icon: keyOfIcons, url?: string, children: any }) => {
+export const URLItem = ({ icon, url, text, children }: {
+    icon: keyOfIcons,
+    url?: string,
+    text?: string,
+    children?: any
+}) => {
     const media = useMediaQuery({ query: "(min-width: 768px)" });
     return <URLDiv>
         <GIcon icon={icon} width={"24px"} height={"24px"} border={"6px"}/>
         {url ?
             (media ? <>
-                {children}<Txt> : </Txt><Txt><A href={url} target={"_blank"}>{url}</A></Txt>
+                {children}<Txt> : </Txt><Txt><A href={url} target={"_blank"}>{url.replace("mailto:", "")}</A></Txt>
             </> : <URLDev>
-                {children}
-                <Txt><A href={url}>{url}</A></Txt>
+                {children}<Txt><A href={url}>{url.replace("mailto:", "")}</A></Txt>
             </URLDev>)
-            : (media ? <>
-                {children}<Txt> : </Txt><Txt color={"Orange"}>Private Repository</Txt>
-            </> : <URLDev>
-                {children}
-                <Txt color={"Orange"}>Private Repository</Txt>
-            </URLDev>)}
+            : !text && (media ? <>
+            {children}<Txt> : </Txt><Txt color={"Orange"}>Private Repository</Txt>
+        </> : <URLDev>
+            {children}<Txt color={"Orange"}>Private Repository</Txt>
+        </URLDev>)}
+        {text && (media ? <>{children}<Txt> : </Txt><Txt>{text}</Txt></> : <URLDev>
+            {children}<Txt>{text}</Txt>
+        </URLDev>)}
     </URLDiv>;
 }
 
@@ -135,12 +141,12 @@ const URLDiv = styled.div`
   align-items: center;
 `
 
-export const URLBox = styled.div`
+export const URLBox = styled.div<{ $width?: string }>`
   margin: 12px 0;
   padding: 16px 20px;
   display: flex;
   gap: 20px;
-  width: calc(100% - 40px);
+  width: ${props => props.$width ?? "calc(100% - 40px)"};
   border-radius: 12px;
   border: 1px ${Colors.White5} solid;
   flex-direction: column;

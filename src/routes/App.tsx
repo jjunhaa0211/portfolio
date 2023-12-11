@@ -9,6 +9,8 @@ import SkyblockRemake from "../_portfolio/pages/portfolio/SkyblockRemake";
 import RicePaper from "../_portfolio/pages/portfolio/RicePaper";
 import Lite24 from "../_portfolio/pages/portfolio/Lite24";
 import BeatTable from "../_portfolio/pages/portfolio/BeatTable";
+import GenshinCalculator from "../_portfolio/pages/portfolio/GenshinCalculator";
+import SurvivalFromTheEpidemic from "../_portfolio/pages/portfolio/SurvivalFromTheEpidemic";
 
 export const APP_VERSION = "v0.1-231216";
 
@@ -22,8 +24,8 @@ function App() {
                     <Route path={"/project/rice-paper"} element={<RicePaper/>}/>
                     <Route path={"/project/lite24"} element={<Lite24/>}/>
                     <Route path={"/project/beat-table"} element={<BeatTable/>}/>
-                    <Route path={"/project/genshin-calculator"} element={<RicePaper/>}/>
-                    <Route path={"/project/survival-from-the-epidemic"} element={<RicePaper/>}/>
+                    <Route path={"/project/genshin-calculator"} element={<GenshinCalculator/>}/>
+                    <Route path={"/project/survival-from-the-epidemic"} element={<SurvivalFromTheEpidemic/>}/>
                 </Route>
                 <Route path='/*' element={<Main/>}/>
             </Route>

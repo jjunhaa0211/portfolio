@@ -2,8 +2,10 @@ import { Txt } from "../../components/Txt";
 import styled from "styled-components";
 import { motions } from "../framer/motions";
 import { useMediaQuery } from "react-responsive";
-import { NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
+import { Link, NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { getSitemap } from "../../routes/sitemap";
 
 export const toMain = (nav: NavigateFunction) => {
     const priv = localStorage.getItem("prev")
@@ -15,12 +17,30 @@ const Header = () => {
     const media = useMediaQuery({ query: "(min-width: 768px)" });
     const nav = useNavigate();
 
+    // const title = document.querySelector("head > title");
+    // const fav = document.querySelector("head > link");
+    // if (title && fav) {
+    //     title.innerHTML = t('title');
+    //     fav.setAttribute("href", _icon(_types[props.type].icon));
+    // }
+
     useEffect(() => {
         localStorage.setItem("prev", localStorage.getItem("cur") ?? "");
         localStorage.setItem("cur", location.pathname);
     }, [location.pathname]);
 
     return <>
+        <Helmet>
+            <title>{getSitemap(location.pathname).title}</title>
+            <link rel="icon" href={getSitemap(location.pathname).image}/>
+            <meta name="title" content={getSitemap(location.pathname).title}/>
+            <meta name="description" content={getSitemap(location.pathname).description}/>
+            <meta property="og:title" content={getSitemap(location.pathname).title}/>
+            <meta property="og:title" content={getSitemap(location.pathname).title}/>
+            <meta property="og:image" content={getSitemap(location.pathname).image}/>
+            <meta property="og:url" content={getSitemap(location.pathname).url}/>
+            <meta property="og:description" content={getSitemap(location.pathname).description}/>
+        </Helmet>
         <Box
             initial={{
                 translateY: "-50px"
@@ -36,13 +56,17 @@ const Header = () => {
             <HeaderInner>
                 <Txt typography={"H4"}
                      onClick={() => toMain(nav)}
-                     clickable>Mooner510</Txt>
+                     clickable nobreak>Mooner510</Txt>
             </HeaderInner>
             {media && <>
-                <Txt typography={"P1"}>Home</Txt>
-                <Txt typography={"P1"}>About</Txt>
-                <Txt typography={"P1"}>Project</Txt>
-                <Txt typography={"P1"}>Contact</Txt>
+                <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                     clickable nobreak>Home</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     clickable nobreak>About</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     clickable nobreak>Project</Txt>
+                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                     nobreak clickable>Contact</Txt>
             </>}
         </Box>
         <Background>

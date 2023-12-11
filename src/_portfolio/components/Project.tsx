@@ -19,6 +19,7 @@ const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: ke
     return <TopBox show={{ backgroundColor: "#00000066" }} hide={{ backgroundColor: "#00000000" }} animate={anim}>
         <Box
             y={35}
+            delay={0}
             onClick={() => {
                 console.log(props.link)
                 nav(props.link)
@@ -43,6 +44,7 @@ const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: ke
         </Box>
         {media && <DisplayDiv $display={show}>
             <Background
+                delay={0}
                 animate={anim}
                 show={{ opacity: 1 }}
                 hide={{ opacity: 0 }}
@@ -55,6 +57,7 @@ const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: ke
                 }}
             />
             <SubTitle
+                delay={0}
                 $down={false}
                 animate={anim}
                 show={{ opacity: 1, translateY: "0px" }}
@@ -63,6 +66,7 @@ const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: ke
                 <Txt typography={"P1"} center>(클릭하여 자세히 보기)</Txt>
             </SubTitle>
             <SubTitle
+                delay={0}
                 $down={true}
                 animate={anim}
                 show={{ opacity: 1, translateY: "0px" }}

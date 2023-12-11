@@ -7,7 +7,7 @@ const SkyblockRemake = () => {
     return <>
         <Top>
             <GIcon icon={"SBR"} width={"100px"}/>
-            <Txt typography={"H0"}>SkyblockRemake <Txt typography={"P1"}>22.03.07~</Txt></Txt>
+            <Txt typography={"H0"}>SkyblockRemake <Txt typography={"P1"}>2022.03.07~</Txt></Txt>
         </Top>
         <Tags>{[DefaultTag.spigot, DefaultTag.java, DefaultTag.sql, DefaultTag.sqlite]}</Tags>
 
