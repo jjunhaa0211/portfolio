@@ -36,7 +36,6 @@ const Header = () => {
             <meta name="title" content={getSitemap(location.pathname).title}/>
             <meta name="description" content={getSitemap(location.pathname).description}/>
             <meta property="og:title" content={getSitemap(location.pathname).title}/>
-            <meta property="og:title" content={getSitemap(location.pathname).title}/>
             <meta property="og:image" content={getSitemap(location.pathname).image}/>
             <meta property="og:url" content={getSitemap(location.pathname).url}/>
             <meta property="og:description" content={getSitemap(location.pathname).description}/>
