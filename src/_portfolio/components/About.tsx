@@ -63,15 +63,15 @@ const About = () => {
             <TimeFrame date={"2022.04.04"} text={"게임 개발 동아리 Team.QSS 입부"}/>
             <TimeFrame date={"2022.03.07~"} text={"프로젝트: SkyblockRemake (SBR)"} highlight={"Orange"} out/>
             <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: RicePaper"} highlight={"Orange"}/>
-            <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: Lite24"} highlight={"Orange"} out/>
-            <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: BeatTable"} highlight={"Orange"}/>
+            <TimeFrame date={"2022.08.08~2023.02.19"} text={"프로젝트: Lite24"} highlight={"Orange"} out/>
+            <TimeFrame date={"2022.10.26~2022.12.09"} text={"프로젝트: BeatTable"} highlight={"Orange"}/>
             <TimeFrame date={"2022.12.07~2022.12.09"} text={"대한민국 소프트웨어대전, 소프트웨이브 2022 Team.QSS 부스 운영"} highlight={"Green0"}/>
             <TimeFrame date={"2022.12.09"} text={"정보처리기능사 자격증 취득"} out/>
             <TimeFrame date={"2023.01.29~2023.02.28"} text={"대전광역시노숙인종합지원센터 내부망 구축"} out/>
             {/*<TimeFrame date={"2022.02.03~2022.02.07"} text={"프로젝트: Minigame-Master*"} highlight={"Orange"}/>*/}
             <TimeFrame date={"2023.03.01~"} text={"게임 개발 동아리 Team.QSS 부장"}/>
             <TimeFrame date={"2023.04.03~2023.04.06"} text={"2023년 지방기능경기대회 - 게임 개발 (금상)"} highlight={"Green0"} out/>
-            <TimeFrame date={"2023.05.13"} text={"2023 PlayX4 참여"} out/>
+            <TimeFrame date={"2023.05.13"} text={"2023 PlayX4 관람"} out/>
             <TimeFrame date={"2023.05.20"} text={"TOPCIT 19회 정기평가 - 473점"} out/>
             <TimeFrame date={"2023.05.26"} text={"컴퓨터그래픽스운용기능사 자격증 취득"} out/>
             <TimeFrame date={"2023.07.06"} text={"2023년 교내 해커톤 대회: Mars (게임) (전체 3위)"} highlight={"Green0"}/>

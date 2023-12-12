@@ -79,6 +79,9 @@ const Background = styled.div`
   width: 100vw;
   height: 100%;
   background: linear-gradient(180deg, #000 0%, #160023 35.42%, #070417 60.42%, #000C1F 83.74%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const HeaderInner = styled.div`

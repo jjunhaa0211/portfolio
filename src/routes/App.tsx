@@ -12,7 +12,7 @@ import BeatTable from "../_portfolio/pages/portfolio/BeatTable";
 import GenshinCalculator from "../_portfolio/pages/portfolio/GenshinCalculator";
 import SurvivalFromTheEpidemic from "../_portfolio/pages/portfolio/SurvivalFromTheEpidemic";
 
-export const APP_VERSION = "v0.1-231216";
+export const APP_VERSION = "2023-12-12 09:55 (KST)";
 
 function App() {
     return (

@@ -11,7 +11,7 @@ const BeatTable = () => {
     return <>
         <Top>
             <GIcon icon={"BeatTable"} width={"100px"}/>
-            <Txt typography={"H0"}>BeatTable <Txt typography={"P1"}>2022.04.29~2022.05.30</Txt></Txt>
+            <Txt typography={"H0"}>BeatTable <Txt typography={"P1"}>2022.10.26~2022.12.09</Txt></Txt>
         </Top>
         <Tags>{["unity", "csharp"].map(v => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
