@@ -85,10 +85,6 @@ const MainTitle = () => {
     </>;
 };
 
-const TextBox = styled.div`
-  display: flex;
-`
-
 const Body = styled(motion.div)`
   display: flex;
   height: 500px;
