@@ -1,8 +1,5 @@
 import { Txt } from "../../components/Txt";
 import { GBody } from "../../components/layout/globalLayouts";
-import styled from "styled-components";
-import { motions } from "../framer/motions";
-import useIrl from "../hooks/useIrl";
 import { useMediaQuery } from "react-responsive";
 import { URLBox, URLItem } from "./layout/projectLayout";
 
