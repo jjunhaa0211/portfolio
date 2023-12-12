@@ -29,16 +29,21 @@ const Header = () => {
         localStorage.setItem("cur", location.pathname);
     }, [location.pathname]);
 
+    const siteMap = getSitemap(location.pathname);
+
     return <>
         <Helmet>
-            <title>{getSitemap(location.pathname).title}</title>
-            <link rel="icon" href={getSitemap(location.pathname).image}/>
-            <meta name="title" content={getSitemap(location.pathname).title}/>
-            <meta name="description" content={getSitemap(location.pathname).description}/>
-            <meta property="og:title" content={getSitemap(location.pathname).title}/>
-            <meta property="og:image" content={getSitemap(location.pathname).image}/>
-            <meta property="og:url" content={getSitemap(location.pathname).url}/>
-            <meta property="og:description" content={getSitemap(location.pathname).description}/>
+            <title>{siteMap.title}</title>
+            <link rel="icon" href={siteMap.image}/>
+            <meta name="title" content={siteMap.title}/>
+            <meta name="description" content={siteMap.description}/>
+            <meta property="og:title" content={siteMap.title}/>
+            <meta property="og:image" content={siteMap.image}/>
+            <meta property="og:url" content={siteMap.url}/>
+            <meta property="og:description" content={siteMap.description}/>
+            <meta property="twitter:title" content={siteMap.title}/>
+            <meta property="twitter:image" content={siteMap.image}/>
+            <meta name="twitter:description" content={siteMap.description}/>
         </Helmet>
         <Box
             initial={{
