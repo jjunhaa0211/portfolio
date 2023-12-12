@@ -11,15 +11,7 @@ type Props = {
 }
 
 export class motions {
-    static fadeDiv = (props: {
-        x?: number,
-        y?: number,
-        once?: boolean,
-        delay?: number,
-        duration?: number,
-    } & {
-        [p: string]: any
-    }) => <motion.div
+    static fadeDiv = (props: Props) => <motion.div
         initial={{
             opacity: 0,
             translateX: `${props.x ?? 0}px`,

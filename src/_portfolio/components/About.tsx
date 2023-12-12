@@ -84,12 +84,6 @@ const About = () => {
     </GBody>;
 };
 
-const Right = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-`
-
 const TimeIdx = styled.div`
   display: flex;
   flex-direction: column;

@@ -25,9 +25,9 @@ const GenshinCalculator = () => {
 
         <H3>📄 개발 내용</H3>
         <P>- 무기 비경 계산기: 무기를 돌파하기 위해 몇 번 비경(던전)을 돌아야 하는지, 얼마나 많은 레진(던전 이용료)이 필요한지 계산</P>
-        <Img url={"/genshin-calculator-beta.vercel.app_forgery.webp"} width={"40%"}/>
+        <Img url={"genshin/genshin-calculator-beta.vercel.app_forgery.webp"} width={"60%"}/>
         <P>- 특성 비경 계산기: 캐릭터의 특성을 강화하기 위해 몇 번 비경(던전)을 돌아야 하는지, 얼마나 많은 레진(던전 이용료)이 필요한지 계산</P>
-        <Img url={"/genshin-calculator-beta.vercel.app_mastery.webp"} width={"40%"}/>
+        <Img url={"genshin/genshin-calculator-beta.vercel.app_mastery.webp"} width={"60%"}/>
         <P>- 캐릭터 사용률과 누적 뽑은 횟수 비교 그래프</P>
 
         <H3>배포</H3>
