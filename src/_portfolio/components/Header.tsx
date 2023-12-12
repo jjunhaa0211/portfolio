@@ -64,7 +64,7 @@ const Header = () => {
                      clickable $break={"normal"}>About</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
                      clickable $break={"normal"}>Project</Txt>
-                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                <Txt typography={"P1"} onClick={() => document.getElementById("contact")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
                      $break={"normal"} clickable>Contact</Txt>
             </>}
         </Box>
