@@ -21,7 +21,6 @@ const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: ke
             y={35}
             delay={0}
             onClick={() => {
-                console.log(props.link)
                 nav(props.link)
             }}
             onMouseOver={() => {
