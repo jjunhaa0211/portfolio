@@ -19,11 +19,12 @@ const element = <React.StrictMode>
     </BrowserRouter>
 </React.StrictMode>
 
-if (rootElement?.hasChildNodes()) {
-    hydrate(element, rootElement);
-} else {
-    render(element, rootElement);
-}
+// if (rootElement?.hasChildNodes()) {
+//     hydrate(element, rootElement);
+// } else {
+//     render(element, rootElement);
+// }
+render(element, rootElement);
 
 // const root = ReactDOM.createRoot(
 //     rootElement as HTMLElement
