@@ -17,7 +17,7 @@ const Contact = () => {
             <URLItem icon={"Discord"} text={"mooner510"}>
                 <Txt>Discord</Txt>
             </URLItem>
-            <URLItem icon={"Email"} url={"mailto:mooner510@gmail.com"}>
+            <URLItem icon={"Email"} url={"mailto:lmck510@gmail.com"}>
                 <Txt>Email</Txt>
             </URLItem>
         </URLBox>
