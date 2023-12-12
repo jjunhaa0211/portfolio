@@ -20,7 +20,7 @@ type Props = HTMLAttributes<HTMLSpanElement> & MotionProps & {
     left?: boolean;
     justify?: boolean;
     $lineheight?: string;
-    nobreak?: boolean;
+    $break?: "normal" | "break-all" | "keep-all" | "break-word";
 }
 
 export const Txt = (
@@ -39,7 +39,7 @@ export const Txt = (
         justify,
         clickable,
         $lineheight,
-        nobreak,
+        $break,
         ...props
     }: Props) => {
     const innerStyle: CSSProperties = {
@@ -49,7 +49,7 @@ export const Txt = (
         textAlign: justify ? 'justify' : center ? 'center' : right ? 'right' : left ? 'left' : 'unset',
         cursor: clickable ? "pointer" : "default",
         margin: margin ?? "0",
-        wordBreak: nobreak ? "normal" : "break-word",
+        wordBreak: $break ? $break : "break-word",
         ...FontStyles[typography],
         ...style,
     };

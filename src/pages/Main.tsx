@@ -11,7 +11,7 @@ const Main = () => {
         <About/>
         <Projects/>
         <Contact/>
-        <Txt center>Last Update: {APP_VERSION}</Txt>
+        <Txt typography={"P1"} center>Last Update: {APP_VERSION}</Txt>
         <br/>
         <br/>
     </>;

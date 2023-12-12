@@ -56,17 +56,17 @@ const Header = () => {
             <HeaderInner>
                 <Txt typography={"H4"}
                      onClick={() => toMain(nav)}
-                     clickable nobreak>Mooner510</Txt>
+                     clickable $break={"normal"}>Mooner510</Txt>
             </HeaderInner>
             {media && <>
                 <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                     clickable nobreak>Home</Txt>
+                     clickable $break={"normal"}>Home</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     clickable nobreak>About</Txt>
+                     clickable $break={"normal"}>About</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     clickable nobreak>Project</Txt>
+                     clickable $break={"normal"}>Project</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     nobreak clickable>Contact</Txt>
+                     $break={"normal"} clickable>Contact</Txt>
             </>}
         </Box>
         <Background>
@@ -97,7 +97,7 @@ const Box = styled(motions.fadeDiv)`
   width: calc(100vw - 320px);
   height: 50px;
   display: flex;
-  padding: 20px 160px;
+  padding: 20px 200px;
   justify-content: center;
   align-items: flex-end;
   gap: 60px;
