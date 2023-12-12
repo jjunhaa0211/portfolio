@@ -2,8 +2,8 @@ import { Txt } from "../../components/Txt";
 import styled from "styled-components";
 import { motions } from "../framer/motions";
 import { useMediaQuery } from "react-responsive";
-import { Link, NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { NavigateFunction, Outlet, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { getSitemap } from "../../routes/sitemap";
 
@@ -36,7 +36,6 @@ const Header = () => {
             <meta name="title" content={getSitemap(location.pathname).title}/>
             <meta name="description" content={getSitemap(location.pathname).description}/>
             <meta property="og:title" content={getSitemap(location.pathname).title}/>
-            <meta property="og:title" content={getSitemap(location.pathname).title}/>
             <meta property="og:image" content={getSitemap(location.pathname).image}/>
             <meta property="og:url" content={getSitemap(location.pathname).url}/>
             <meta property="og:description" content={getSitemap(location.pathname).description}/>
@@ -56,17 +55,17 @@ const Header = () => {
             <HeaderInner>
                 <Txt typography={"H4"}
                      onClick={() => toMain(nav)}
-                     clickable nobreak>Mooner510</Txt>
+                     clickable $break={"normal"}>Mooner510</Txt>
             </HeaderInner>
             {media && <>
                 <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                     clickable nobreak>Home</Txt>
+                     clickable $break={"normal"}>Home</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     clickable nobreak>About</Txt>
+                     clickable $break={"normal"}>About</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     clickable nobreak>Project</Txt>
+                     clickable $break={"normal"}>Project</Txt>
                 <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
-                     nobreak clickable>Contact</Txt>
+                     $break={"normal"} clickable>Contact</Txt>
             </>}
         </Box>
         <Background>
@@ -97,7 +96,7 @@ const Box = styled(motions.fadeDiv)`
   width: calc(100vw - 320px);
   height: 50px;
   display: flex;
-  padding: 20px 160px;
+  padding: 20px 200px;
   justify-content: center;
   align-items: flex-end;
   gap: 60px;

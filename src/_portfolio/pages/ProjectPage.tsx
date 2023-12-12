@@ -1,8 +1,7 @@
-import { GBody } from "../../components/layout/globalLayouts";
 import { Txt } from "../../components/Txt";
 import { Outlet, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import Header, { toMain } from "../components/Header";
+import { toMain } from "../components/Header";
 
 const ProjectPage = () => {
     const nav = useNavigate();

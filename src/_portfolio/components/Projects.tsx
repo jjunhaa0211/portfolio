@@ -1,9 +1,7 @@
 import { GBody } from "../../components/layout/globalLayouts";
 import { Txt } from "../../components/Txt";
 import Project from "./Project";
-import { DefaultTag } from "../../components/Tag";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
     return <>

@@ -1,5 +1,5 @@
-import { Colors, keyOfColors } from "../../styles/color";
-import Tag, { DefaultTag, keyOfDefaultTag, TagBox, TagProps } from "../../components/Tag";
+import { Colors } from "../../styles/color";
+import { DefaultTag, keyOfDefaultTag, TagBox } from "../../components/Tag";
 import styled from "styled-components";
 import { keyOfIcons } from "../../styles/icons";
 import { GIcon } from "../../components/GIcon";
@@ -7,7 +7,7 @@ import { Txt } from "../../components/Txt";
 import { useMediaQuery } from "react-responsive";
 import { motions } from "../framer/motions";
 import { useState } from "react";
-import { animate, useAnimate, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const Project = (props: { icon: keyOfIcons, name: string, date: string, tags: keyOfDefaultTag[], description: string, link: string }) => {

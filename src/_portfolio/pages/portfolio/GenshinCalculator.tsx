@@ -1,9 +1,7 @@
-import { A, H1, H2, H3, H4, Img, Lefter, P, Tags, Top, URLBox, URLItem } from "../../components/layout/projectLayout";
+import { A, H3, Img, P, Tags, Top, URLBox, URLItem } from "../../components/layout/projectLayout";
 import { GIcon } from "../../../components/GIcon";
 import { Txt } from "../../../components/Txt";
 import { DefaultTag, keyOfDefaultTag } from "../../../components/Tag";
-import YouTube, { YouTubePlayer } from "react-youtube";
-import { useMediaQuery } from "react-responsive";
 
 const GenshinCalculator = () => {
     return <>

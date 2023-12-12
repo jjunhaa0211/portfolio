@@ -1,7 +1,6 @@
 import React, { CSSProperties, HTMLAttributes } from "react";
 import { keyOfIcons } from "../styles/icons";
 import { GLinkImage } from "./GLinkImage";
-import { Simulate } from "react-dom/test-utils";
 import { _icon } from "../utils/utils";
 
 interface Props extends HTMLAttributes<HTMLImageElement> {

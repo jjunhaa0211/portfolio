@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Txt } from "../../components/Txt";
 import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
-import { motions } from "../framer/motions";
 import useIrl from "../hooks/useIrl";
 
 const MainTitle = () => {
+    const media = useMediaQuery({ query: "(min-width: 768px)" })
     const irl = useIrl();
 
     return <>
@@ -22,7 +22,7 @@ const MainTitle = () => {
                 animate={"visible"}
             >
                 <motion.p
-                    style={{ fontSize: "32px" }}
+                    style={{ display: "flex", fontSize: "32px", flexDirection: media ? "row" : "column" }}
                     variants={{
                         hidden: {
                             opacity: 0,
@@ -44,9 +44,15 @@ const MainTitle = () => {
                         }
                     }}
                 >
-                    <Txt typography={"H0Weak"}>당신에게</Txt>&nbsp;
-                    <Txt typography={"H0"} nativeColor={"linear-gradient(91deg, #FF81F2 21.62%, #AD9FFF 62.56%)"}>가치있는 게임</Txt>
-                    <Txt typography={"H0Weak"}>을 만드는</Txt>
+                    <Txt typography={"H0Weak"} $break={"break-all"}>당신에게</Txt>
+                    {media ? "\u00a0" : ""}
+                    <div>
+                        <Txt typography={"H0"} nativeColor={"linear-gradient(91deg, #FF81F2 21.62%, #AD9FFF 62.56%)"} $break={"break-all"}>가치있는
+                            게임</Txt>
+                        <Txt typography={"H0Weak"}>을</Txt>
+                    </div>
+                    {media ? "\u00a0" : ""}
+                    <Txt typography={"H0Weak"} $break={"break-all"}>만드는</Txt>
                 </motion.p>
                 <motion.p
                     variants={{
@@ -92,8 +98,12 @@ const Body = styled(motion.div)`
   align-items: flex-start;
   align-self: stretch;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     padding: 100px 30px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    padding: 120px 60px;
   }
 `
 
