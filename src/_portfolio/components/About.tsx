@@ -63,8 +63,8 @@ const About = () => {
             <TimeFrame date={"2022.04.04"} text={"게임 개발 동아리 Team.QSS 입부"}/>
             <TimeFrame date={"2022.03.07~"} text={"프로젝트: SkyblockRemake (SBR)"} highlight={"Orange"} out/>
             <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: RicePaper"} highlight={"Orange"}/>
-            <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: Lite24"} highlight={"Orange"} out/>
-            <TimeFrame date={"2022.04.29~2022.05.30"} text={"프로젝트: BeatTable"} highlight={"Orange"}/>
+            <TimeFrame date={"2022.08.08~2023.02.19"} text={"프로젝트: Lite24"} highlight={"Orange"} out/>
+            <TimeFrame date={"2022.10.26~2022.12.09"} text={"프로젝트: BeatTable"} highlight={"Orange"}/>
             <TimeFrame date={"2022.12.07~2022.12.09"} text={"대한민국 소프트웨어대전, 소프트웨이브 2022 Team.QSS 부스 운영"} highlight={"Green0"}/>
             <TimeFrame date={"2022.12.09"} text={"정보처리기능사 자격증 취득"} out/>
             <TimeFrame date={"2023.01.29~2023.02.28"} text={"대전광역시노숙인종합지원센터 내부망 구축"} out/>

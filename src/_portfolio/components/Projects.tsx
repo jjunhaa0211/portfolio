@@ -22,12 +22,12 @@ const Projects = () => {
                     description={"학교 급식을 Discord로 손쉽게 보고 급식 시간이 다가오면 푸시 알림까지 해 주는 서비스"}/>
                 <Project
                     link={"/project/lite24"}
-                    icon={"Lite24"} name={"Lite24"} date={"2022.04.29~2022.05.30"}
+                    icon={"Lite24"} name={"Lite24"} date={"2022.08.08~2023.02.19"}
                     tags={["spigot", "java", "sql", "sqlite"]}
                     description={"마인크래프트 서버 Lite24를 직접 운영하고 유지보수한 프로젝트"}/>
                 <Project
                     link={"/project/beat-table"}
-                    icon={"BeatTable"} name={"BeatTable"} date={"2022.04.29~2022.05.30"}
+                    icon={"BeatTable"} name={"BeatTable"} date={"2022.10.26~2022.12.09"}
                     tags={["unity", "csharp"]}
                     description={"테이블 형식의 색다른 리듬게임"}/>
                 {/*<Project icon={"Indexer"} name={"Minigame-Master"} date={"22.02.03~02.07"}*/}

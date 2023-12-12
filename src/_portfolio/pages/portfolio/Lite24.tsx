@@ -7,7 +7,7 @@ const Lite24 = () => {
     return <>
         <Top>
             <GIcon icon={"Lite24"} width={"100px"}/>
-            <Txt typography={"H0"}>Lite24 <Txt typography={"P1"}>2022.04.29~2022.05.30</Txt></Txt>
+            <Txt typography={"H0"}>Lite24 <Txt typography={"P1"}>2022.08.08~2023.02.19</Txt></Txt>
         </Top>
         <Tags>{["spigot", "java", "sql", "sqlite"].map(v => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
