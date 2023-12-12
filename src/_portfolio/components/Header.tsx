@@ -6,14 +6,16 @@ import { NavigateFunction, Outlet, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { getSitemap } from "../../routes/sitemap";
+import useIrl from "../hooks/useIrl";
 
-export const toMain = (nav: NavigateFunction) => {
+export const toMain = (nav: NavigateFunction, key: string) => {
     const priv = localStorage.getItem("prev")
-    if (priv && priv === "/") nav(-1);
-    else nav("/");
+    if (priv && priv === `/${key}`) nav(-1);
+    else nav(`/${key}`);
 }
 
 const Header = () => {
+    const { key } = useIrl();
     const media = useMediaQuery({ query: "(min-width: 768px)" });
     const nav = useNavigate();
 
@@ -59,17 +61,23 @@ const Header = () => {
         >
             <HeaderInner>
                 <Txt typography={"H4"}
-                     onClick={() => toMain(nav)}
+                     onClick={() => toMain(nav, key)}
                      clickable $break={"normal"}>Mooner510</Txt>
             </HeaderInner>
-            {media && <>
+            {location.pathname === `/${key}` && media && <>
                 <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                      clickable $break={"normal"}>Home</Txt>
-                <Txt typography={"P1"} onClick={() => document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                <Txt typography={"P1"} onClick={() => {
+                    document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })
+                }}
                      clickable $break={"normal"}>About</Txt>
-                <Txt typography={"P1"} onClick={() => document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                <Txt typography={"P1"} onClick={() => {
+                    document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })
+                }}
                      clickable $break={"normal"}>Project</Txt>
-                <Txt typography={"P1"} onClick={() => document.getElementById("contact")?.scrollIntoView({ block: "center", behavior: 'smooth' })}
+                <Txt typography={"P1"} onClick={() => {
+                    document.getElementById("contact")?.scrollIntoView({ block: "center", behavior: 'smooth' })
+                }}
                      $break={"normal"} clickable>Contact</Txt>
             </>}
         </Box>

@@ -2,13 +2,15 @@ import { Txt } from "../../components/Txt";
 import { Outlet, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { toMain } from "../components/Header";
+import useIrl from "../hooks/useIrl";
 
 const ProjectPage = () => {
+    const { key } = useIrl();
     const nav = useNavigate();
     window.scrollTo({ top: 0, behavior: 'smooth' })
     return <Big>
         <Box>
-            <Txt onClick={() => toMain(nav)} clickable>&lt; 돌아가기</Txt>
+            <Txt onClick={() => toMain(nav, key)} clickable>&lt; 돌아가기</Txt>
             <br/>
             <Outlet/>
             <br/>
@@ -17,7 +19,7 @@ const ProjectPage = () => {
             <br/>
             <br/>
             <br/>
-            <Txt onClick={() => toMain(nav)} clickable>&lt; 돌아가기</Txt>
+            <Txt onClick={() => toMain(nav, key)} clickable>&lt; 돌아가기</Txt>
         </Box>
     </Big>
 }

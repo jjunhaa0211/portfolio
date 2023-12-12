@@ -25,6 +25,13 @@ function App() {
                     <Route path={"/project/beat-table"} element={<BeatTable/>}/>
                     <Route path={"/project/genshin-calculator"} element={<GenshinCalculator/>}/>
                     <Route path={"/project/survival-from-the-epidemic"} element={<SurvivalFromTheEpidemic/>}/>
+
+                    <Route path={"/project/skyblock/:irl"} element={<SkyblockRemake/>}/>
+                    <Route path={"/project/rice-paper/:irl"} element={<RicePaper/>}/>
+                    <Route path={"/project/lite24/:irl"} element={<Lite24/>}/>
+                    <Route path={"/project/beat-table/:irl"} element={<BeatTable/>}/>
+                    <Route path={"/project/genshin-calculator/:irl"} element={<GenshinCalculator/>}/>
+                    <Route path={"/project/survival-from-the-epidemic/:irl"} element={<SurvivalFromTheEpidemic/>}/>
                 </Route>
                 <Route path='/*' element={<Main/>}/>
             </Route>
