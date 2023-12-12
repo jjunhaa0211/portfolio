@@ -1,4 +1,4 @@
-import { H1, H2, H3, Img, Lefter, P, A, Tags, Top, URLBox, URLItem } from "../../components/layout/projectLayout";
+import { H3, Img, Lefter, P, Tags, Top } from "../../components/layout/projectLayout";
 import { GIcon } from "../../../components/GIcon";
 import { Txt } from "../../../components/Txt";
 import { DefaultTag } from "../../../components/Tag";

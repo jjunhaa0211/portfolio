@@ -2,8 +2,8 @@ import { Txt } from "../../components/Txt";
 import styled from "styled-components";
 import { motions } from "../framer/motions";
 import { useMediaQuery } from "react-responsive";
-import { Link, NavigateFunction, NavLink, Outlet, useNavigate, useNavigation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { NavigateFunction, Outlet, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { getSitemap } from "../../routes/sitemap";
 

@@ -1,5 +1,4 @@
-import { motion, Variant, VariantLabels } from "framer-motion";
-import { CSSProperties } from "react";
+import { motion, Variant } from "framer-motion";
 
 type Props = {
     x?: number,

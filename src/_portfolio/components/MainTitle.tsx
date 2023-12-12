@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Txt } from "../../components/Txt";
 import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
-import { motions } from "../framer/motions";
 import useIrl from "../hooks/useIrl";
 
 const MainTitle = () => {

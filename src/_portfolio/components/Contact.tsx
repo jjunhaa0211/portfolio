@@ -1,10 +1,6 @@
 import { Txt } from "../../components/Txt";
-import { GIcon } from "../../components/GIcon";
-import { DefaultTag, TagBox } from "../../components/Tag";
-import TimeFrame from "./TimeFrame";
 import { GBody } from "../../components/layout/globalLayouts";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { motions } from "../framer/motions";
 import useIrl from "../hooks/useIrl";
 import { useMediaQuery } from "react-responsive";

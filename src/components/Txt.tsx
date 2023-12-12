@@ -2,7 +2,6 @@ import { CSSProperties, HTMLAttributes } from 'react';
 import { FontStyles, keyOfFontStyles } from "../styles/font";
 import { Colors, keyOfColors } from "../styles/color";
 import styled from "styled-components";
-import { Animations } from "../styles/animations";
 import { motion, MotionProps } from "framer-motion";
 
 type Props = HTMLAttributes<HTMLSpanElement> & MotionProps & {

@@ -2,7 +2,6 @@ import React from 'react';
 import '../i18n/config';
 import { Route, Routes } from "react-router-dom";
 import Main from "../pages/Main";
-import styled from "styled-components";
 import Header from "../_portfolio/components/Header";
 import ProjectPage from "../_portfolio/pages/ProjectPage";
 import SkyblockRemake from "../_portfolio/pages/portfolio/SkyblockRemake";
