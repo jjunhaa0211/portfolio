@@ -10,7 +10,7 @@ import { useMediaQuery } from "react-responsive";
 
 const About = () => {
     const media = useMediaQuery({ query: "(min-width: 768px)" });
-    const irl = useIrl();
+    const { irl } = useIrl();
 
     return <GBody>
         <a id={"about"}><Txt typography={"H0"} id={"about"}>About</Txt></a>

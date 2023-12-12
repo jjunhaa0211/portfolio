@@ -6,7 +6,7 @@ import useIrl from "../hooks/useIrl";
 
 const MainTitle = () => {
     const media = useMediaQuery({ query: "(min-width: 768px)" })
-    const irl = useIrl();
+    const { irl } = useIrl();
 
     return <>
         <Box>
