@@ -33,7 +33,7 @@ const useIrl = (): IRLData => {
             if (debug) console.log(p);
             p = window.atob(p);
             if (debug) console.log(p);
-            p = decodeURI(p).replaceAll("%3A", ":").replaceAll("%2C", ",");
+            p = p.replaceAll("%3A", ":").replaceAll("%2C", ",");
             if (debug) console.log(p);
             p = '{"' + p.replaceAll("$", '":"').replaceAll("#", '","') + '}'
             if (debug) console.log("COMPLETE : " + p);
