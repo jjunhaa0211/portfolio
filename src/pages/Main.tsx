@@ -4,8 +4,13 @@ import Projects from "../_portfolio/components/Projects";
 import Contact from "../_portfolio/components/Contact";
 import { Txt } from "../components/Txt";
 import { APP_VERSION } from "../routes/App";
+import { recompile } from "../_portfolio/hooks/useIrl";
 
 const Main = () => {
+    console.log(recompile({
+        name: "문성화",
+        verify: true
+    }))
     return <>
         <MainTitle/>
         <About/>

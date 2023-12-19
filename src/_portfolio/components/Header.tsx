@@ -64,18 +64,18 @@ const Header = () => {
                      onClick={() => toMain(nav, key)}
                      clickable $break={"normal"}>Mooner510</Txt>
             </HeaderInner>
-            {location.pathname === `/${key}` && media && <>
-                <Txt typography={"P1"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            {location.pathname === `/${key}` && <>
+                <Txt typography={media ? "P1" : "P0"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                      clickable $break={"normal"}>Home</Txt>
-                <Txt typography={"P1"} onClick={() => {
+                <Txt typography={media ? "P1" : "P0"} onClick={() => {
                     document.getElementById("about")?.scrollIntoView({ block: "center", behavior: 'smooth' })
                 }}
                      clickable $break={"normal"}>About</Txt>
-                <Txt typography={"P1"} onClick={() => {
+                <Txt typography={media ? "P1" : "P0"} onClick={() => {
                     document.getElementById("project")?.scrollIntoView({ block: "center", behavior: 'smooth' })
                 }}
                      clickable $break={"normal"}>Project</Txt>
-                <Txt typography={"P1"} onClick={() => {
+                <Txt typography={media ? "P1" : "P0"} onClick={() => {
                     document.getElementById("contact")?.scrollIntoView({ block: "center", behavior: 'smooth' })
                 }}
                      $break={"normal"} clickable>Contact</Txt>
@@ -115,9 +115,16 @@ const Box = styled(motions.fadeDiv)`
   gap: 60px;
   backdrop-filter: blur(6px);
 
+  @media (min-width: 768px) and (max-width: 1000px) {
+    width: calc(100vw - 120px);
+    padding: 20px 60px;
+    gap: 50px;
+  }
+
   @media (max-width: 768px) {
-    width: calc(100vw - 160px);
-    padding: 20px 80px;
+    width: calc(100vw - 60px);
+    padding: 20px 30px;
+    gap: 30px;
   }
 `
 
