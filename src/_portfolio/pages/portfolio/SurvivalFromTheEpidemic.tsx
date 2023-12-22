@@ -16,10 +16,7 @@ const SurvivalFromTheEpidemic = () => {
         <Tags>{["unity", "csharp"].map(v => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
         <URLBox>
-            <URLItem icon={"Web"} url={"https://genshin-calculator-beta.vercel.app"}>
-                <Txt>Web</Txt>
-            </URLItem>
-            <URLItem icon={"Github"}>
+            <URLItem icon={"Github"} url={"https://github.com/Survival-From-Epidemic/Survival-From-Epidemic"}>
                 <Txt>Github</Txt>
             </URLItem>
         </URLBox>
