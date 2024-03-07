@@ -11,7 +11,7 @@ import BeatTable from "../_portfolio/pages/portfolio/BeatTable";
 import GenshinCalculator from "../_portfolio/pages/portfolio/GenshinCalculator";
 import SurvivalFromTheEpidemic from "../_portfolio/pages/portfolio/SurvivalFromTheEpidemic";
 
-export const APP_VERSION = "2024-03-07 16:25 (KST)";
+export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
 function App() {
   return (
