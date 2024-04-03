@@ -22,110 +22,190 @@ const Tag = (props: TagProps) => {
 };
 
 export const DefaultTag = {
-  unity: (
+  Swift: (
     <Tag
-      key={"Unity"}
-      name={"Unity"}
-      backgroundColor={"#767676"}
+      key={"Swift"}
+      name={"Swift"}
+      backgroundColor={"#ff4400"}
       textColor={"White0"}
     />
   ),
-  springBoot: (
+  Snpkit: (
     <Tag
-      key={"SpringBoot"}
-      name={"SpringBoot"}
-      backgroundColor={"#77bc1f"}
+      key={"Snpkit"}
+      name={"Snpkit"}
+      backgroundColor={"#ffe419"}
       textColor={"Black0"}
     />
   ),
-  android: (
+  Kingfisher: (
     <Tag
-      key={"Android"}
-      name={"Android"}
-      backgroundColor={"#319d46"}
-      textColor={"White0"}
-    />
-  ),
-  react: (
-    <Tag
-      key={"React"}
-      name={"React.js"}
+      key={"Kingfisher"}
+      name={"Kingfisher"}
       backgroundColor={"#61dafb"}
       textColor={"Black0"}
     />
   ),
-  spigot: (
+  Then: (
     <Tag
-      key={"Spigot"}
-      name={"Spigot"}
+      key={"Then"}
+      name={"Then"}
       backgroundColor={"#b4842c"}
       textColor={"White0"}
     />
   ),
-  csharp: (
+  Lottie: (
     <Tag
-      key={"C#"}
-      name={"C#"}
+      key={"Lottie"}
+      name={"Lottie"}
       backgroundColor={"#0A9910"}
       textColor={"White0"}
     />
   ),
-  java: (
+  IOSSecuritySuite: (
     <Tag
-      key={"Java"}
-      name={"Java"}
+      key={"IOSSecuritySuite"}
+      name={"IOSSecuritySuite"}
       backgroundColor={"#CA7010"}
       textColor={"White0"}
     />
   ),
-  kotlin: (
+  RealmSwift: (
     <Tag
-      key={"Kotlin"}
-      name={"Kotlin"}
+      key={"RealmSwift"}
+      name={"RealmSwift"}
       backgroundColor={"#A930E7"}
       textColor={"White0"}
     />
   ),
-  html: (
+  RxCocoa: (
     <Tag
-      key={"HTML"}
-      name={"HTML/CSS"}
+      key={"RxCocoa"}
+      name={"RxCocoa"}
       backgroundColor={"#E75212"}
       textColor={"White0"}
     />
   ),
-  javaScript: (
+  XCameraKit: (
     <Tag
-      key={"TypeScript"}
-      name={"JavaScript"}
-      backgroundColor={"#F4DC1C"}
-      textColor={"Black0"}
-    />
-  ),
-  typeScript: (
-    <Tag
-      key={"JavaScript"}
-      name={"TypeScript"}
+      key={"XCameraKit"}
+      name={"XCameraKit"}
       backgroundColor={"#55A5FF"}
       textColor={"White0"}
     />
   ),
-  sql: (
+  AVFoundation: (
     <Tag
-      key={"SQL"}
-      name={"SQL"}
+      key={"AVFoundation"}
+      name={"AVFoundation"}
       backgroundColor={"#767676"}
       textColor={"White0"}
     />
   ),
-  sqlite: (
+  RIBs: (
     <Tag
-      key={"SQLite"}
-      name={"SQLite"}
-      backgroundColor={"#5799fd"}
+      key={"RIBs"}
+      name={"RIBs"}
+      backgroundColor={"#fe00aa"}
       textColor={"White0"}
     />
   ),
+  RxFlow: (
+    <Tag
+      key={"RxFlow"}
+      name={"RxFlow"}
+      backgroundColor={"#1b1be5"}
+      textColor={"White0"}
+    />
+  ),
+  PinLayout: (
+    <Tag
+      key={"PinLayout"}
+      name={"PinLayout"}
+      backgroundColor={"#b305c2"}
+      textColor={"White0"}
+    />
+  ),
+  FlexLayout: (
+    <Tag
+      key={"FlexLayout"}
+      name={"FlexLayout"}
+      backgroundColor={"#ff4da0"}
+      textColor={"White0"}
+    />
+  ),
+  Swinject: (
+    <Tag
+      key={"Swinject"}
+      name={"Swinject"}
+      backgroundColor={"#251eee"}
+      textColor={"White0"}
+    />
+  ),
+  Moya: (
+    <Tag
+      key={"Moya"}
+      name={"Moya"}
+      backgroundColor={"#aaa7f8"}
+      textColor={"White0"}
+    />
+  ),
+  RxSwift: (
+    <Tag
+      key={"RxSwift"}
+      name={"RxSwift"}
+      backgroundColor={"#780aed"}
+      textColor={"White0"}
+    />
+  ),
+  RxTest: (
+    <Tag
+      key={"RxTest"}
+      name={"RxTest"}
+      backgroundColor={"#85cfa6"}
+      textColor={"White0"}
+    />
+  ),
+  MVVM: (
+    <Tag
+      key={"MVVM"}
+      name={"MVVM"}
+      backgroundColor={"#53d119"}
+      textColor={"White0"}
+    />
+  ),
+  MVC: (
+    <Tag
+      key={"MVC"}
+      name={"MVC"}
+      backgroundColor={"#431aa8"}
+      textColor={"White0"}
+    />
+  ),
+  MVP: (
+    <Tag
+      key={"MVP"}
+      name={"MVP"}
+      backgroundColor={"#72bb0b"}
+      textColor={"White0"}
+    />
+  ),
+  TCA: (
+    <Tag
+      key={"TCA"}
+      name={"TCA"}
+      backgroundColor={"#a50af2"}
+      textColor={"White0"}
+    />
+  ),
+  Flux: (
+    <Tag
+      key={"Flux"}
+      name={"Flux"}
+      backgroundColor={"#e8cb24"}
+      textColor={"White0"}
+    />
+  )
 };
 
 export type keyOfDefaultTag = keyof typeof DefaultTag;

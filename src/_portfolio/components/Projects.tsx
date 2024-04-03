@@ -15,64 +15,46 @@ const Projects = () => {
         </a>
         <ProjectBox>
           <Project
+            link={`/project/beat-table/${key}`}
+            icon={"마음가짐"}
+            name={"마음가짐"}
+            date={"2022.10.26~2022.12.09"}
+            tags={["Swift", "Snpkit", "Then"]}
+            description={"쌈@뽕한 헬스 앱을 찾는다면 마음가짐"}
+          />
+          <Project
             link={`/project/skyblock/${key}`}
-            icon={"SBR"}
-            name={"SkyblockRemake"}
-            date={"2022.03.07~"}
-            tags={["spigot", "java", "sql", "sqlite"]}
-            description={
-              "마인크래프트 서버중 하나인 Hypixel의 Skyblock이라는 미니게임이 재미있어서 어쩌다 보니 혼자 직접 구현해버린 프로젝트"
-            }
+            icon={"SM"}
+            name={"SecureMarshmallow"}
+            date={"2023.04.07~2023.12.01"}
+            tags={["Swift", "Snpkit", "Then", "IOSSecuritySuite", "RxSwift"]}
+            description={"사용자의 개인정보를 안전하게 : SecureMarshmallow🔓"}
           />
           <Project
             link={`/project/rice-paper/${key}`}
-            icon={"RicePaper"}
-            name={"RicePaper"}
+            icon={"Today"}
+            name={"Today"}
             date={"2022.04.29~2022.05.30"}
-            tags={["java", "html", "javaScript"]}
+            tags={["Swift", "Snpkit", "Then"]}
             description={
-              "학교 급식을 Discord로 손쉽게 보고 급식 시간이 다가오면 푸시 알림까지 해 주는 서비스"
+              "아이패드를 활용하여 손쉽게 인생 네컷 및 폴라로이드 사진을 만들고 꾸미고 보정할 수 있는 서비스"
             }
           />
           <Project
             link={`/project/lite24/${key}`}
-            icon={"Lite24"}
-            name={"Lite24"}
-            date={"2022.08.08~2023.02.19"}
-            tags={["spigot", "java", "sql", "sqlite"]}
-            description={
-              "마인크래프트 서버 Lite24를 직접 운영하고 유지보수한 프로젝트"
-            }
+            icon={"LookMonster"}
+            name={"LookMonster"}
+            date={"2023.08.02~2023.11.07"}
+            tags={["Swift", "Snpkit", "Then"]}
+            description={"🎱 개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 🥋"}
           />
-          <Project
-            link={`/project/beat-table/${key}`}
-            icon={"BeatTable"}
-            name={"BeatTable"}
-            date={"2022.10.26~2022.12.09"}
-            tags={["unity", "csharp"]}
-            description={"테이블 형식의 색다른 리듬게임"}
-          />
-          {/*<Project icon={"Indexer"} name={"Minigame-Master"} date={"22.02.03~02.07"}*/}
-          {/*         tags={[spigot, java]} description={"adf"}/>*/}
-          {/*<Project icon={"Indexer"} name={"Pri"} date={"2022.01.01~2022.03.03"}*/}
-          {/*         tags={[unity]} description={"adf"}/>*/}
           <Project
             link={`/project/genshin-calculator/${key}`}
-            icon={"Paimon"}
-            name={"Genshin Calculator"}
-            date={"2023.08.12~"}
-            tags={["react", "javaScript", "typeScript"]}
-            description={
-              "'원신' 게임의 각종 시스템을 더욱 효율적으로 하기 위해 계산해주는 서비스"
-            }
-          />
-          <Project
-            link={`/project/survival-from-the-epidemic/${key}`}
-            icon={"JunSal"}
-            name={"전염병으로부터 살아남기"}
-            date={"2023.09.07~2023.12.03"}
-            tags={["unity", "csharp"]}
-            description={"학교에 퍼지는 전염병을 방역하여 살아남아야 하는 게임"}
+            icon={"Shalo"}
+            name={"Shalo"}
+            date={"2023.03.28~"}
+            tags={["Swift", "Snpkit", "Then"]}
+            description={"모바일로 손쉽게 영상을 편집하는 툴"}
           />
         </ProjectBox>
       </GBody>
@@ -81,13 +63,21 @@ const Projects = () => {
 };
 
 const ProjectBox = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 40px;
-  align-self: stretch;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  & > div:nth-child(1) {
+    grid-column: 1 / span 2;
+    .kfc {
+      height: 360px;
+      flex-direction: column;
+      align-items: start;
+    }
+    .gun {
+      flex: 0;
+    }
+  }
 `;
 
 export default Projects;

@@ -23,6 +23,7 @@ export const H1 = ({ ...props }) => <Txt margin={"26px 0 0 0"} typography={"H1"}
 export const H2 = ({ ...props }) => <Txt margin={"22px 0 0 0"} typography={"H2"} {...props}/>
 export const H3 = ({ ...props }) => <Txt margin={"22px 0 0 0"} typography={"H3"} {...props}/>
 export const H4 = ({ ...props }) => <Txt margin={"14px 0 0 0"} typography={"H4"} {...props}/>
+export const H5 = ({ ...props }) => <Txt margin={"10px 0 0 0"} typography={"H5"} {...props}/>
 export const P = ({ ...props }) => <Txt typography={"P2"} $lineheight={"1.5"} {...props}/>
 export const A = styled.a`
   color: dodgerblue !important;
