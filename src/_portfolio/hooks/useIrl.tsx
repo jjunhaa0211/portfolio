@@ -53,7 +53,7 @@ const useIrl = (): IRLData => {
     }
     return {
         irl: {
-            name: "Mooner510",
+            name: "Junha",
             verify: false
         },
         key: irlString ?? ""

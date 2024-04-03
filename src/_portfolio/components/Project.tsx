@@ -31,16 +31,10 @@ const Project = (props: {
     >
       <Box
         y={35}
-        delay={0}
         onClick={() => {
           nav(props.link);
         }}
-        onMouseOver={() => {
-          if (!media) return;
-          setShow(true);
-          anim.start("show");
-        }}
-        $show={show}
+        className="kfc"
       >
         <GIcon
           icon={props.icon}
@@ -48,7 +42,7 @@ const Project = (props: {
           height={media ? "120px" : "60px"}
           css={{ borderRadius: "12px" }}
         />
-        <DetailBox>
+        <DetailBox className="gun">
           <TitleBox>
             <Txt typography={media ? "H3" : "H5"}>{props.name}</Txt>
             <Txt typography={media ? "P1" : "P0"}>{props.date}</Txt>
@@ -120,13 +114,17 @@ const DisplayDiv = styled.div<{ $display: boolean }>`
 `;
 
 const TopBox = styled(motions.keyDiv)`
-  width: 570px;
-  height: 220px;
+  width: 100%;
   cursor: pointer;
-  border-radius: 20px;
-
+  border-radius: 24px;
+  transition: 0.3s;
   * {
     cursor: pointer !important;
+  }
+
+  &:hover {
+    transform: scale(1.02) translateY(-8px);
+    box-shadow: 0 8px 24px 0 rgba(152, 180, 220, 0.4);
   }
 
   @media (max-width: 768px) {
@@ -166,29 +164,19 @@ const DetailBox = styled.div`
 `;
 
 const Box = styled(motions.fadeDiv)<{ $show: boolean }>`
-  position: ${(props) => (props.$show ? "absolute" : "unset")};
-  z-index: 50;
   display: flex;
-  width: 500px;
   height: 220px;
   padding: 0 35px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border-radius: 20px;
-  border-right: 3px solid ${Colors.White5};
-  border-left: 3px solid ${Colors.White5};
+  border-radius: 24px;
+  background-color: rgb(20, 20, 20);
   cursor: pointer;
-
-  //* {
-  //  cursor: pointer !important;
-  //}
 
   @media (max-width: 768px) {
     width: calc(100% - 30px);
     height: calc(100% - 30px);
-    //min-width: calc(100% - 30px);
-    //gap: 5px;
     padding: 10px;
   }
 `;

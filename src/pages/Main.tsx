@@ -5,6 +5,7 @@ import Contact from "../_portfolio/components/Contact";
 import { Txt } from "../components/Txt";
 import { APP_VERSION } from "../routes/App";
 import { recompile } from "../_portfolio/hooks/useIrl";
+import Libraries from "../_portfolio/components/Libraries";
 
 const Main = () => {
   // console.log(recompile({
@@ -16,6 +17,7 @@ const Main = () => {
       <MainTitle />
       <About />
       <Projects />
+      <Libraries />
       <Contact />
       <Txt typography={"P1"} center>
         Last Update: {APP_VERSION}

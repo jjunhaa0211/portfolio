@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { motions } from "../framer/motions";
 import useIrl from "../hooks/useIrl";
 import { useMediaQuery } from "react-responsive";
+import { FontStyles } from "../../styles/font";
 
 const About = () => {
   const media = useMediaQuery({ query: "(min-width: 768px)" });
@@ -21,7 +22,7 @@ const About = () => {
       </a>
       <ProfileDiv>
         <GIcon
-          icon={"Mooner510"}
+          icon={"Junha06"}
           width={media ? "160px" : "80px"}
           height={media ? "160px" : "80px"}
           border={"12px"}
@@ -44,135 +45,128 @@ const About = () => {
           }}
         >
           <Txt typography={media ? "H2" : "H3"}>{irl.name}</Txt>
-          <Txt typography={media ? "H4" : "P2"}>Game Client Developer</Txt>
+          <Txt typography={media ? "H4" : "P2"}>iOS Developer</Txt>
           <Txt typography={media ? "P1" : "P0"}>
-            "당신에게 가치있는 사람이 되는 것이 목표입니다."
+            "유연한 아키텍처 설계와 사용자 경험에 관심이 많은 엔지니어입니다."
           </Txt>
         </ProfileInner>
       </ProfileDiv>
-      <ProfileDescription>
+      <ProfileDescription style={{"margin": "60px"}}>
+        <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center>
-          여러 분야의 개발을 할 수 있지만, 그 중에서도 게임 개발을 가장
-          좋아합니다.
+        어려서부터 많은 애플 기기를 사용하면서 사용자 측면에서의 다양한 경험을 쌓았으며
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          내가 할 수 있는 것과 도전 하고 싶은 것을 모두 시도해보며 다양한 분야와
-          같이 소통이 가능한 개발자입니다.
+        다른 사람이 제가 제공한 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤 했습니다.
+        </Txt>
+        <Txt typography={media ? "P1" : "P0"} center>
+        그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은 방향으로 이끈다면 그 행복은 다른 어떤 경험보다도 크게 느껴질 것 같았습니다.
+        </Txt>
+        <Txt typography={media ? "P1" : "P0"} center>
+        iOS 개발을 처음 시작했을 때는 어려움이 있었지만, 코드를 공부하면서 조금씩 성장하고 있으며, 특히 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고 있습니다.
         </Txt>
       </ProfileDescription>
-      <TagDiv>
+      <TagDiv style={{"margin": "30px"}}>
         <TagBox $align={"center"}>
-          {DefaultTag.unity}
-          {DefaultTag.springBoot}
-          {/*{DefaultTag.android}*/}
-          {DefaultTag.react}
-          {DefaultTag.spigot}
+          {DefaultTag.Swift}
+          {DefaultTag.Snpkit}
+          {DefaultTag.FlexLayout}
+          {DefaultTag.PinLayout}
+          {DefaultTag.Lottie}
+          {DefaultTag.Kingfisher}
+          {DefaultTag.Moya}
         </TagBox>
         <TagBox $align={"center"}>
-          {DefaultTag.csharp}
-          {DefaultTag.java}
-          {DefaultTag.kotlin}
-          {DefaultTag.html}
-          {DefaultTag.javaScript}
-          {DefaultTag.typeScript}
+          {DefaultTag.Then}
+          {DefaultTag.RxCocoa}
+          {DefaultTag.RxSwift}
+          {DefaultTag.RealmSwift}
+          {DefaultTag.RxTest}
+          {DefaultTag.Swinject}
+        </TagBox>
+        <TagBox $align={"center"}>
+          {DefaultTag.MVC}
+          {DefaultTag.MVP}
+          {DefaultTag.MVVM}
+          {DefaultTag.RIBs}
+          {DefaultTag.Flux}
+          {DefaultTag.TCA}
         </TagBox>
       </TagDiv>
-      <TimeIdx>
+      <TimeIdx style={{"margin": "80px"}}>
         <Txt>교내 활동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;교외 활동</Txt>
         <TimeFrame
-          date={"2022.04.04"}
-          text={"게임 개발 동아리 Team.QSS 입부"}
-        />
-        <TimeFrame
-          date={"2022.03.07~"}
-          text={"프로젝트: SkyblockRemake (SBR)"}
-          highlight={"Orange"}
-          out
-        />
-        <TimeFrame
-          date={"2022.04.29~2022.05.30"}
-          text={"프로젝트: RicePaper"}
-          highlight={"Orange"}
-        />
-        <TimeFrame
-          date={"2022.08.08~2023.02.19"}
-          text={"프로젝트: Lite24"}
-          highlight={"Orange"}
-          out
-        />
-        <TimeFrame
-          date={"2022.10.26~2022.12.09"}
-          text={"프로젝트: BeatTable"}
-          highlight={"Orange"}
-        />
-        <TimeFrame
-          date={"2022.12.07~2022.12.09"}
-          text={"대한민국 소프트웨어대전, 소프트웨이브 2022 Team.QSS 부스 운영"}
-          highlight={"Green0"}
-        />
-        <TimeFrame
-          date={"2022.12.09"}
+          date={"2021.10.01"}
           text={"정보처리기능사 자격증 취득"}
           out
         />
+        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 마이스터고 입학"} />
+        <TimeFrame date={"2022.06.01"} text={"PerfectContributionsView 라이브러리 개발"} out/>
+        <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} />
+        <TimeFrame date={"2022.07.6~2023.12.01"} text={"iOStudy (교내 스터디)"} />
+        <TimeFrame date={"2022.12.08~2022.12.09"} text={"2022AppJam"} out />
         <TimeFrame
-          date={"2023.01.29~2023.02.28"}
-          text={"대전광역시노숙인종합지원센터 내부망 구축"}
+          date={"2023.02.27~"}
+          text={"공부: ADPattern"}
           out
         />
-        {/*<TimeFrame date={"2022.02.03~2022.02.07"} text={"프로젝트: Minigame-Master*"} highlight={"Orange"}/>*/}
+        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 정보보안과 선택"} />
+        <TimeFrame date={"2023.03.13~"} text={"info-iOS (동아리 스터디)"} />
         <TimeFrame
-          date={"2023.03.01~"}
-          text={"게임 개발 동아리 Team.QSS 부장"}
-        />
-        <TimeFrame
-          date={"2023.04.03~2023.04.06"}
-          text={"2023년 지방기능경기대회 - 게임 개발 (금상)"}
-          highlight={"Green0"}
-          out
-        />
-        <TimeFrame date={"2023.05.13"} text={"2023 PlayX4 관람"} out />
-        <TimeFrame
-          date={"2023.05.20"}
-          text={"TOPCIT 19회 정기평가 - 473점"}
-          out
-        />
-        <TimeFrame
-          date={"2023.05.26"}
-          text={"컴퓨터그래픽스운용기능사 자격증 취득"}
-          out
-        />
-        <TimeFrame
-          date={"2023.07.06"}
-          text={"2023년 교내 해커톤 대회: Mars (게임) (전체 3위)"}
-          highlight={"Green0"}
-        />
-        <TimeFrame
-          date={"2023.07.12"}
-          text={"교내 프로젝트 공모전 '대프콘' BeatTable 부스 운영"}
-        />
-        {/*<TimeFrame date={"2023.07.17~2023.07.23"} text={"프로젝트: PrivateChat*"} highlight={"Orange"} out/>*/}
-        <TimeFrame
-          date={"2023.08.12~"}
-          text={"프로젝트: Genshin-Calculator"}
-          highlight={"Orange"}
-          out
-        />
-        <TimeFrame
-          date={"2023.09.07~2023.12.03"}
-          text={"프로젝트 실무: 전염병으로부터 살아남기"}
+          date={"2023.04.07~2023.12.01"}
+          text={"프로젝트: SecureMarshmallow"}
           highlight={"Orange"}
         />
         <TimeFrame
-          date={"2023.10.28"}
-          text={"TOPCIT 20회 정기평가 - 638점"}
+          date={"2023.04.25"}
+          text={"원티드 iOS 프리온보딩 참여"}
           out
         />
-        {/*<Right><Txt typography={"P1"}>프로젝트 이름에 <Txt color={"Green0"}>*</Txt>는 가칭</Txt></Right>*/}
+        <TimeFrame
+          date={"2023.05.18~2023.07.13"}
+          text={"프로젝트: Today"}
+          highlight={"Orange"}
+        />
+
+        <TimeFrame date={"2022.06.16~2022.11.09"} text={"XCameraKit 라이브러리 개발"} out />
+
+        <TimeFrame
+          date={"2023.08.08~2023.02.19"}
+          text={"프로젝트: LookMonster"}
+          highlight={"Orange"}
+          out
+        />
+        <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤"} />
+        <TimeFrame
+          date={"2023.07.12~2023.07.14"}
+          text={"데프콘 부스 운영"}
+        />       
+        <TimeFrame date={"2023.07.18"} text={"KWDC 컨퍼런스 참여"} out />
+        <TimeFrame
+          date={"2023.10.26~"}
+          text={"프로젝트: 마음가짐"}
+          highlight={"Orange"}
+        />
+        <TimeFrame date={"2023.11.13~"} text={"Tuist-Junha"} out />
+        <TimeFrame date={"2023.12.13~"} text={"Graps"} out />
+        <TimeFrame date={"2024.04.01~"} text={"AVSlider"} out />
+        <TimeFrame
+          date={"2024.03.28~"}
+          text={"프로젝트: Shalo"}
+          highlight={"Orange"}
+        />
       </TimeIdx>
     </GBody>
   );
 };
+
+const FocusTxt = styled.div`
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+`;
 
 const TimeIdx = styled.div`
   display: flex;

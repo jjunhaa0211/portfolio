@@ -21,6 +21,7 @@ export const GLinkImage = ({ width, height, css, url, border, onClick, clickable
                 minWidth: width,
                 minHeight: height,
                 borderRadius: border,
+                objectFit: "cover",
                 cursor: onClick || clickable ? "pointer" : "default",
                 ...css
             }}
