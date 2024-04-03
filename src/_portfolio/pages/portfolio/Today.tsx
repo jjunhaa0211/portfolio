@@ -1,4 +1,4 @@
-import { H3, P, Tags, Top, URLBox, URLItem } from "../../components/layout/projectLayout";
+import { H3, P, Tags, Top, Img, Lefter, URLBox, URLItem } from "../../components/layout/projectLayout";
 import { GIcon } from "../../../components/GIcon";
 import { Txt } from "../../../components/Txt";
 import { DefaultTag } from "../../../components/Tag";
@@ -16,6 +16,10 @@ const Today = () => {
                 <Txt>Github</Txt>
             </URLItem>
         </URLBox>
+
+        <Lefter>
+            <Img url={"banner/todayBanner.webp"} width={"100%"} border={"0"} align={"center"}/>
+        </Lefter>
 
         <H3>📖 요약</H3>
         <P>아이패드를 활용하여 손쉽게 인생 네컷 및 폴라로이드 사진을 만들고 꾸미고 보정할 수 있는 서비스</P>

@@ -131,6 +131,18 @@ export const URLItem = ({ icon, url, text, children }: {
     </URLDiv>;
 }
 
+export const P2 = styled.ol`
+  color: white;
+  margin-left: 22.5px;
+`
+
+export const Block_2 = styled.div`
+  color: #019DE1;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #2B323E;
+`
+
 const URLDev = styled.div`
   display: flex;
   flex-direction: column;

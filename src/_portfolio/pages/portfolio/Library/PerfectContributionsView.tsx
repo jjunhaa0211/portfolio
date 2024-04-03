@@ -17,6 +17,10 @@ const PerfectContributionsView = () => {
             </URLItem>
         </URLBox>
 
+        <Lefter>
+            <Img url={"banner/PCViewBanner.webp"} width={"100%"} border={"0"} align={"center"}/>
+        </Lefter>
+
         <H3>📖 요약</H3>
         <P>개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 sdaf</P>
 

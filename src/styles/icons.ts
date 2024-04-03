@@ -17,7 +17,8 @@ export const Icons = {
     PerfectContributionsView: "PerfectContributionsView.webp",
     XCameraKit: "XCameraKit.webp",
     Graps: "Graps.webp",
-    AVSlider: "AVSlider.webp"
+    AVSlider: "AVSlider.webp",
+    smBanner: "msBanner.webp"
 }
 
 export type keyOfIcons = keyof typeof Icons;

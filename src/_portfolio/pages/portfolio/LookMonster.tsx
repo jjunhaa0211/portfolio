@@ -7,7 +7,7 @@ const LookMonster = () => {
     return <>
         <Top>
             <GIcon icon={"LookMonster"} width={"100px"}/>
-            <Txt typography={"H0"}>Lite24 <Txt typography={"P1"}>2022.08.08~2023.02.19</Txt></Txt>
+            <Txt typography={"H0"}>LookMonster <Txt typography={"P1"}>2022.08.08~2023.02.19</Txt></Txt>
         </Top>
         <Tags>{["spigot", "java", "sql", "sqlite"].map(v => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
@@ -19,6 +19,10 @@ const LookMonster = () => {
                 <Txt>Github (Structure)</Txt>
             </URLItem>
         </URLBox>
+
+        <Lefter>
+            <Img url={"banner/lookMonsterBanner.webp"} width={"100%"} border={"0"} align={"center"}/>
+        </Lefter>
 
         <H3>📖 요약</H3>
         <P>개성을 찾아 스타일을 공유하는 트렌디한 패션 앱</P>

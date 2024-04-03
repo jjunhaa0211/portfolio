@@ -47,25 +47,26 @@ const About = () => {
           <Txt typography={media ? "H2" : "H3"}>{irl.name}</Txt>
           <Txt typography={media ? "H4" : "P2"}>iOS Developer</Txt>
           <Txt typography={media ? "P1" : "P0"}>
-            "다른사람들에게 알려주고 공유하는것을 좋아합니다."
+            "유연한 아키텍처 설계와 사용자 경험에 관심이 많은 엔지니어입니다."
           </Txt>
         </ProfileInner>
       </ProfileDiv>
-      <ProfileDescription style={{"margin": "80px"}}>
+      <ProfileDescription style={{"margin": "60px"}}>
         <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center>
-          고등학교 1학년 때부터 iOS 개발을 시작했습니다.
+        어려서부터 많은 애플 기기를 사용하면서 사용자 측면에서의 다양한 경험을 쌓았으며
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          처음에는 애플 제품을 좋아하고 앱 사용 시간이 많은 평범한
-          학생이었습니다.
+        다른 사람이 제가 제공한 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤 했습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          개발을 하면서 이론을 공부하고 UI를 만들고 구조를 설계하는 과정에서 큰
-          즐거움을 느꼈습니다.
+        그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은 방향으로 이끈다면 그 행복은 다른 어떤 경험보다도 크게 느껴질 것 같았습니다.
+        </Txt>
+        <Txt typography={media ? "P1" : "P0"} center>
+        iOS 개발을 처음 시작했을 때는 어려움이 있었지만, 코드를 공부하면서 조금씩 성장하고 있으며, 특히 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고 있습니다.
         </Txt>
       </ProfileDescription>
-      <TagDiv>
+      <TagDiv style={{"margin": "30px"}}>
         <TagBox $align={"center"}>
           {DefaultTag.Swift}
           {DefaultTag.Snpkit}
@@ -92,13 +93,14 @@ const About = () => {
           {DefaultTag.TCA}
         </TagBox>
       </TagDiv>
-      <TimeIdx>
+      <TimeIdx style={{"margin": "80px"}}>
         <Txt>교내 활동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;교외 활동</Txt>
         <TimeFrame
           date={"2021.10.01"}
           text={"정보처리기능사 자격증 취득"}
           out
         />
+        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 마이스터고 입학"} />
         <TimeFrame date={"2022.06.01"} text={"PerfectContributionsView 라이브러리 개발"} out/>
         <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} />
         <TimeFrame date={"2022.07.6~2023.12.01"} text={"iOStudy (교내 스터디)"} />
@@ -108,6 +110,7 @@ const About = () => {
           text={"공부: ADPattern"}
           out
         />
+        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 정보보안과 선택"} />
         <TimeFrame date={"2023.03.13~"} text={"info-iOS (동아리 스터디)"} />
         <TimeFrame
           date={"2023.04.07~2023.12.01"}
