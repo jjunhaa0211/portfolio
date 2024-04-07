@@ -15,7 +15,7 @@ const Projects = () => {
         </a>
         <ProjectBox>
           <Project
-            link={`/project/beat-table/${key}`}
+            link={`/project/Maeumgajim/${key}`}
             icon={"마음가짐"}
             name={"마음가짐"}
             date={"2022.10.26~2022.12.09"}
@@ -23,7 +23,7 @@ const Projects = () => {
             description={"쌈@뽕한 헬스 앱을 찾는다면 마음가짐"}
           />
           <Project
-            link={`/project/skyblock/${key}`}
+            link={`/project/SecureMarshmallow/${key}`}
             icon={"SM"}
             name={"SecureMarshmallow"}
             date={"2023.04.07~2023.12.01"}
@@ -31,7 +31,7 @@ const Projects = () => {
             description={"사용자의 개인정보를 안전하게 : SecureMarshmallow🔓"}
           />
           <Project
-            link={`/project/rice-paper/${key}`}
+            link={`/project/Today/${key}`}
             icon={"Today"}
             name={"Today"}
             date={"2022.04.29~2022.05.30"}
@@ -41,7 +41,7 @@ const Projects = () => {
             }
           />
           <Project
-            link={`/project/lite24/${key}`}
+            link={`/project/LookMonster/${key}`}
             icon={"LookMonster"}
             name={"LookMonster"}
             date={"2023.08.02~2023.11.07"}
@@ -49,7 +49,7 @@ const Projects = () => {
             description={"🎱 개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 🥋"}
           />
           <Project
-            link={`/project/genshin-calculator/${key}`}
+            link={`/project/Shalo/${key}`}
             icon={"Shalo"}
             name={"Shalo"}
             date={"2023.03.28~"}
