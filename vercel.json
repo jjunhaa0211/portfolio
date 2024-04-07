@@ -2,7 +2,9 @@
   "git": {
     "deploymentEnabled": {
       "master": true,
-      "dev": false
+      "dev": false,
+      "junha2": false,
+      "junha": false
     }
   }
 }

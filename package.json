@@ -19,12 +19,14 @@
     "process": "^0.11.10",
     "puppeteer": "^21.6.0",
     "react": "^18.2.0",
+    "react-code-blocks": "^0.1.6",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.3",
     "react-i18next": "^13.1.2",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
     "react-youtube": "^10.1.0",
     "styled-components": "^6.0.7",
     "typescript": "^4.4.2",
@@ -58,6 +60,7 @@
     "react-hydratable": "react-hydratable/index.js"
   },
   "devDependencies": {
+    "@types/react-syntax-highlighter": "^15.5.11",
     "react-hydratable": "^1.3.0"
   }
 }

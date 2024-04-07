@@ -15,42 +15,42 @@ const sitemap: { [p: string]: SiteData } = {
     "": {
         title: "Portfolio - Junha",
         url: `${process.env.PUBLIC_URL}`,
-        description: "당신에게 가치있는 게임을 만드는 Mooner510입니다.",
+        description: "언제나 품질과 구조를 최우선하는 박준하입니다.",
         image: `${process.env.PUBLIC_URL}/icon/junha06.webp`
     },
-    "/project/skyblock": {
+    "/project/SecureMarshmallow": {
         title: "SecureMarshmallow - Junha",
-        url: `${process.env.PUBLIC_URL}/project/skyblock`,
-        description: "🎱 개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 🥋",
-        image: `${process.env.PUBLIC_URL}/icon/sbr.webp`
+        url: `${process.env.PUBLIC_URL}/project/SecureMarshmallow`,
+        description: "사용자의 개인정보를 안전하게 : SecureMarshmallow🔓",
+        image: `${process.env.PUBLIC_URL}/icon/sm.webp`
     },
-    "/project/lite24": {
-        title: "Lite24 - Mooner510",
-        url: `${process.env.PUBLIC_URL}/project/lite24`,
+    "/project/LookMonster": {
+        title: "LookMonster - Junha",
+        url: `${process.env.PUBLIC_URL}/project/LookMonster`,
         description: "🎱 개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 🥋",
-        image: `${process.env.PUBLIC_URL}/icon/lite24.webp`
+        image: `${process.env.PUBLIC_URL}/icon/monster.webp`
     },
-    "/project/rice-paper": {
+    "/project/Today": {
         title: "Taday - Junha",
-        url: `${process.env.PUBLIC_URL}/project/rice-paper`,
+        url: `${process.env.PUBLIC_URL}/project/Today`,
         description: "아이패드를 활용하여 손쉽게 인생 네컷 및 폴라로이드 사진을 만들고 꾸미고 보정할 수 있는 서비스",
-        image: `${process.env.PUBLIC_URL}/icon/rp.webp`
+        image: `${process.env.PUBLIC_URL}/icon/today.webp`
     },
-    "/project/beat-table": {
-        title: "Maeumgajim - Mooner510",
-        url: `${process.env.PUBLIC_URL}/project/beat-table`,
+    "/project/Maeumgajim": {
+        title: "Maeumgajim - Junha",
+        url: `${process.env.PUBLIC_URL}/project/Maeumgajim`,
         description: "쌈@뽕한 헬스 앱을 찾는다면 마음가짐",
-        image: `${process.env.PUBLIC_URL}/icon/beatTable.webp`
+        image: `${process.env.PUBLIC_URL}/icon/Maeumgajim.webp`
     },
-    "/project/genshin-calculator": {
-        title: "Shalo - Mooner510",
-        url: `${process.env.PUBLIC_URL}/project/genshin-calculator`,
+    "/project/Shalo": {
+        title: "Shalo - Junha",
+        url: `${process.env.PUBLIC_URL}/project/`,
         description: "'원신' 게임의 각종 시스템을 더욱 효율적으로 하기 위해 계산해주는 서비스",
         image: `${process.env.PUBLIC_URL}/icon/Shalo.webp`
     },
     "/project/survival-from-the-epidemic": {
-        title: "Shalo - Mooner510",
-        url: `${process.env.PUBLIC_URL}/project/genshin-calculator`,
+        title: "Shalo - Junha",
+        url: `${process.env.PUBLIC_URL}/project/Shalo`,
         description: "'원신' 게임의 각종 시스템을 더욱 효율적으로 하기 위해 계산해주는 서비스",
         image: `${process.env.PUBLIC_URL}/icon/Shalo.webp`
     },

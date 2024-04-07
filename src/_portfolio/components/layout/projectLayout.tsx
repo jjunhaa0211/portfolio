@@ -136,6 +136,11 @@ export const P2 = styled.ol`
   margin-left: 22.5px;
 `
 
+export const P3 = styled.ol`
+  color: white;
+  margin-left: 35.5px;
+`
+
 export const Block_2 = styled.div`
   color: #019DE1;
   padding: 5px;
@@ -169,6 +174,12 @@ export const Tags = styled.div`
   display: flex;
   justify-content: flex-start;
   gap: 8px;
+`
+
+export const Details = styled.details`
+  color: white;
+  font-size: larger;
+  width: 100%;
 `
 
 export const Lefter = styled.div`

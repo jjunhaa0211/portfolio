@@ -22,12 +22,12 @@ function App() {
       <Route element={<Header />}>
         <Route path="/:irl" element={<Main />} />
         <Route element={<ProjectPage />}>
-          <Route path={"/project/skyblock"} element={<SecureMarshmallow />} />
-          <Route path={"/project/rice-paper"} element={<Today />} />
-          <Route path={"/project/lite24"} element={<LookMonster />} />
-          <Route path={"/project/beat-table"} element={<Maeumgajim />} />
+          <Route path={"/project/SecureMarshmallow"} element={<SecureMarshmallow />} />
+          <Route path={"/project/Today"} element={<Today />} />
+          <Route path={"/project/LookMonster"} element={<LookMonster />} />
+          <Route path={"/project/Maeumgajim"} element={<Maeumgajim />} />
           <Route
-            path={"/project/genshin-calculator"}
+            path={"/project/Shalo"}
             // element={<GenshinCalculator />}
           />
           <Route
@@ -35,12 +35,12 @@ function App() {
             element={<SurvivalFromTheEpidemic />}
           />
 
-          <Route path={"/project/skyblock/:irl"} element={<SecureMarshmallow />} />
-          <Route path={"/project/rice-paper/:irl"} element={<Today />} />
-          <Route path={"/project/lite24/:irl"} element={<LookMonster />} />
-          <Route path={"/project/beat-table/:irl"} element={<Maeumgajim />} />
+          <Route path={"/project/SecureMarshmallow/:irl"} element={<SecureMarshmallow />} />
+          <Route path={"/project/Today/:irl"} element={<Today />} />
+          <Route path={"/project/LookMonster/:irl"} element={<LookMonster />} />
+          <Route path={"/project/Maeumgajim/:irl"} element={<Maeumgajim />} />
           <Route
-            path={"/project/genshin-calculator/:irl"}
+            path={"/project/Shalo/:irl"}
             // element={<GenshinCalculator />}
           />
           <Route

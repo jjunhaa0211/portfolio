@@ -54,16 +54,16 @@ const About = () => {
       <ProfileDescription style={{"margin": "60px"}}>
         <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center>
-        어려서부터 많은 애플 기기를 사용하면서 사용자 측면에서의 다양한 경험을 쌓았으며
+        어려서부터 다양한 애플 기기를 사용하며 사용자 측면에서의 다양한 경험을 쌓았으며
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        다른 사람이 제가 제공한 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤 했습니다.
+        다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤 했습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은 방향으로 이끈다면 그 행복은 다른 어떤 경험보다도 크게 느껴질 것 같았습니다.
+        그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은 방향으로 이끈다면 그 행복은 다른 어떤 행복보다도 크게 느껴질 것 같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        iOS 개발을 처음 시작했을 때는 어려움이 있었지만, 코드를 공부하면서 조금씩 성장하고 있으며, 특히 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고 있습니다.
+        iOS 개발을 처음 시작했을 때는 어려웠지만, 코드를 공부하며 성장하고 있으며 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고 있습니다.
         </Txt>
       </ProfileDescription>
       <TagDiv style={{"margin": "30px"}}>
@@ -102,9 +102,9 @@ const About = () => {
         />
         <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 마이스터고 입학"} />
         <TimeFrame date={"2022.06.01"} text={"PerfectContributionsView 라이브러리 개발"} out/>
-        <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} />
+        {/* <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} /> */}
         <TimeFrame date={"2022.07.6~2023.12.01"} text={"iOStudy (교내 스터디)"} />
-        <TimeFrame date={"2022.12.08~2022.12.09"} text={"2022AppJam"} out />
+        <TimeFrame date={"2022.12.08~2022.12.09"} text={"2022AppJam 참가"} out />
         <TimeFrame
           date={"2023.02.27~"}
           text={"공부: ADPattern"}
