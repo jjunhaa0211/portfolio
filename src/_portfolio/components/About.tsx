@@ -148,7 +148,7 @@ const About = () => {
           highlight={"Orange"}
         />
         <TimeFrame date={"2023.11.13~"} text={"Tuist-Junha"} out />
-        <TimeFrame date={"2023.12.13~"} text={"Graps"} out />
+        {/* <TimeFrame date={"2023.12.13~"} text={"Graps"} out /> */}
         <TimeFrame date={"2024.04.01~"} text={"AVSlider"} out />
         <TimeFrame
           date={"2024.03.28~"}

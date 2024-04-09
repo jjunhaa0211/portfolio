@@ -34,7 +34,7 @@ const Libraries = () => {
               "🎆 A library created to use the camera easily 🌌"
             }
           />
-          <Project
+          {/* <Project
             link={`/library/Graps/${key}`}
             icon={"Graps"}
             name={"Graps"}
@@ -43,7 +43,7 @@ const Libraries = () => {
             description={
               "모듈의 의존성을 참조하는 그래프를 보여주는 라이브러리"
             }
-          />
+          /> */}
           <Project
             link={`/library/AVSlider/${key}`}
             icon={"AVSlider"}

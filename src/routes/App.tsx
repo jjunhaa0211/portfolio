@@ -50,7 +50,7 @@ function App() {
 
           <Route path={"/library/PerfectContributionsView"} element={<PerfectContributionsView />} />
           <Route path={"/library/XCamerakit"} element={<XCameraKit />} />
-          <Route path={"/library/Graps"} element={<Graps />} />
+          {/* <Route path={"/library/Graps"} element={<Graps />} /> */}
           <Route path={"/library/AVSlider"} element={<AVSlider />} />
 
         </Route>
