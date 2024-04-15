@@ -51,22 +51,28 @@ const About = () => {
           </Txt>
         </ProfileInner>
       </ProfileDiv>
-      <ProfileDescription style={{"margin": "60px"}}>
+      <ProfileDescription style={{ margin: "60px" }}>
         <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center>
-        어려서부터 다양한 애플 기기를 사용하며 사용자 측면에서의 다양한 경험을 쌓았으며
+          어려서부터 다양한 애플 기기를 사용하며 사용자 측면에서의 다양한 경험을
+          쌓았으며
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤 했습니다.
+          다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤
+          했습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은 방향으로 이끈다면 그 행복은 다른 어떤 행복보다도 크게 느껴질 것 같습니다.
+          그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은
+          방향으로 이끈다면 그 행복은 다른 어떤 행복보다도 크게 느껴질 것
+          같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        iOS 개발을 처음 시작했을 때는 어려웠지만, 코드를 공부하며 성장하고 있으며 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고 있습니다.
+          iOS 개발을 처음 시작했을 때는 어려웠지만, 코드를 공부하며 성장하고
+          있으며 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고
+          있습니다.
         </Txt>
       </ProfileDescription>
-      <TagDiv style={{"margin": "30px"}}>
+      <TagDiv style={{ margin: "30px" }}>
         <TagBox $align={"center"}>
           {DefaultTag.Swift}
           {DefaultTag.Snpkit}
@@ -93,30 +99,35 @@ const About = () => {
           {DefaultTag.TCA}
         </TagBox>
       </TagDiv>
-      <TimeIdx style={{"margin": "80px"}}>
+      <TimeIdx style={{ margin: "80px" }}>
         <Txt>교내 활동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;교외 활동</Txt>
         <TimeFrame
           date={"2021.10.01"}
           text={"정보처리기능사 자격증 취득"}
           out
         />
-        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 마이스터고 입학"} />
-        <TimeFrame date={"2022.06.01"} text={"PerfectContributionsView 라이브러리 개발"} out/>
-        {/* <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} /> */}
-        <TimeFrame date={"2022.07.6~2023.12.01"} text={"iOStudy (교내 스터디)"} />
-        <TimeFrame date={"2022.12.08~2022.12.09"} text={"2022AppJam 참가"} out />
         <TimeFrame
-          date={"2023.02.27~"}
-          text={"공부: ADPattern"}
+          date={"2022.03.03~"}
+          text={"대덕소프트웨어 마이스터고 입학"}
+        />
+        <TimeFrame
+          date={"2022.06.01"}
+          text={"PerfectContributionsView 라이브러리 개발"}
           out
         />
-        <TimeFrame date={"2022.03.03~"} text={"대덕소프트웨어 정보보안과 선택"} />
-        <TimeFrame date={"2023.03.13~"} text={"info-iOS (동아리 스터디)"} />
+        {/* <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} /> */}
+        <TimeFrame date={"2022.07.6~"} text={"iOStudy (교내 스터디)"} />
         <TimeFrame
-          date={"2023.04.07~2023.12.01"}
-          text={"프로젝트: SecureMarshmallow"}
-          highlight={"Orange"}
+          date={"2022.12.08~2022.12.09"}
+          text={"2022AppJam 참가"}
+          out
         />
+        <TimeFrame date={"2023.02.27~"} text={"공부: ADPattern"} out />
+        <TimeFrame
+          date={"2023.03.03~"}
+          text={"대덕소프트웨어 정보보안과 선택"}
+        />
+        <TimeFrame date={"2023.03.13~"} text={"info-iOS (동아리 스터디)"} />
         <TimeFrame
           date={"2023.04.25"}
           text={"원티드 iOS 프리온보딩 참여"}
@@ -124,26 +135,32 @@ const About = () => {
         />
         <TimeFrame
           date={"2023.05.18~2023.07.13"}
-          text={"프로젝트: Today"}
+          text={"프로젝트: Today (인기상 수상)"}
           highlight={"Orange"}
         />
 
-        <TimeFrame date={"2022.06.16~2022.11.09"} text={"XCameraKit 라이브러리 개발"} out />
+        <TimeFrame
+          date={"2023.06.07~2023.08.04"}
+          text={"프로젝트: SecureMarshmallow"}
+          highlight={"Orange"}
+        />
 
         <TimeFrame
-          date={"2023.08.08~2023.02.19"}
+          date={"2023.06.16~2023.11.09"}
+          text={"XCameraKit 라이브러리 개발"}
+          out
+        />
+        <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤 - Today"} />
+        <TimeFrame date={"2023.07.12~2023.07.14"} text={"데프콘 부스 운영"} />
+        <TimeFrame
+          date={"2023.08.17~2023.11.07"}
           text={"프로젝트: LookMonster"}
           highlight={"Orange"}
           out
         />
-        <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤"} />
-        <TimeFrame
-          date={"2023.07.12~2023.07.14"}
-          text={"데프콘 부스 운영"}
-        />       
         <TimeFrame date={"2023.07.18"} text={"KWDC 컨퍼런스 참여"} out />
         <TimeFrame
-          date={"2023.10.26~"}
+          date={"2023.09.18~"}
           text={"프로젝트: 마음가짐"}
           highlight={"Orange"}
         />

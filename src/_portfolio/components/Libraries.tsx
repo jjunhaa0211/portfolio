@@ -18,7 +18,7 @@ const Libraries = () => {
             link={`/library/PerfectContributionsView/${key}`}
             icon={"PerfectContributionsView"}
             name={"PerfectContributionsView"}
-            date={"2022.06.11~"}
+            date={"2022.06.01~"}
             tags={["Swift"]}
             description={
               "🌳 Library created to create GitHub contributions 🌲"

@@ -88,7 +88,7 @@ const AVSlider = () => {
       <Top>
         <GIcon icon={"AVSlider"} width={"100px"} />
         <Txt typography={"H0"}>
-          AVSlider <Txt typography={"P1"}>2022.06.11~</Txt>
+          AVSlider <Txt typography={"P1"}>2024.04.01~</Txt>
         </Txt>
       </Top>
       <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>

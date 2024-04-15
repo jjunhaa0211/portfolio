@@ -8,11 +8,11 @@ import SecureMarshmallow from "../_portfolio/pages/portfolio/SecureMarshmallow";
 import Today from "../_portfolio/pages/portfolio/Today";
 import LookMonster from "../_portfolio/pages/portfolio/LookMonster";
 import Maeumgajim from "../_portfolio/pages/portfolio/Maeumgajim";
-import SurvivalFromTheEpidemic from "../_portfolio/pages/portfolio/SurvivalFromTheEpidemic";
 import PerfectContributionsView from "../_portfolio/pages/portfolio/Library/PerfectContributionsView";
 import XCameraKit from "../_portfolio/pages/portfolio/Library/XCameraKit";
 import Graps from "../_portfolio/pages/portfolio/Library/Graps";
 import AVSlider from "../_portfolio/pages/portfolio/Library/AVSlider";
+import Shalo from "../_portfolio/pages/portfolio/Shalo";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -28,11 +28,7 @@ function App() {
           <Route path={"/project/Maeumgajim"} element={<Maeumgajim />} />
           <Route
             path={"/project/Shalo"}
-            // element={<GenshinCalculator />}
-          />
-          <Route
-            path={"/project/survival-from-the-epidemic"}
-            element={<SurvivalFromTheEpidemic />}
+            element={<Shalo />}
           />
 
           <Route path={"/project/SecureMarshmallow/:irl"} element={<SecureMarshmallow />} />
@@ -41,11 +37,7 @@ function App() {
           <Route path={"/project/Maeumgajim/:irl"} element={<Maeumgajim />} />
           <Route
             path={"/project/Shalo/:irl"}
-            // element={<GenshinCalculator />}
-          />
-          <Route
-            path={"/project/survival-from-the-epidemic/:irl"}
-            element={<SurvivalFromTheEpidemic />}
+            element={<Shalo />}
           />
 
           <Route path={"/library/PerfectContributionsView"} element={<PerfectContributionsView />} />

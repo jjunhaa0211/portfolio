@@ -1,15 +1,17 @@
 import {
   H3,
-  H4,
-  H5,
-  Img,
-  Lefter,
   P,
   Tags,
   Top,
+  URLBox,
+  URLItem,
+  Lefter,
+  Img,
+  H5,
   P2,
-  Block_2,
+  P3,
   Details,
+  Block_2,
 } from "../../components/layout/projectLayout";
 import { GIcon } from "../../../components/GIcon";
 import { Txt } from "../../../components/Txt";
@@ -97,8 +99,9 @@ const SecureMarshmallow = () => {
     <>
       <Top>
         <GIcon icon={"SM"} width={"100px"} />
+
         <Txt typography={"H0"}>
-          SecureMarshmallow <Txt typography={"P1"}>2023.04.07~2023.12.01</Txt>
+          SecureMarshmallow <Txt typography={"P1"}>2023.06.07~2023.08.04</Txt>
         </Txt>
       </Top>
       <Tags>
@@ -111,6 +114,14 @@ const SecureMarshmallow = () => {
           DefaultTag.RxCocoa,
         ]}
       </Tags>
+      <URLBox>
+        <URLItem
+          icon={"Github"}
+          url={"https://github.com/SecureMarshmallow/SecureMarshmallow_iOS_V3"}
+        >
+          <Txt>Github</Txt>
+        </URLItem>
+      </URLBox>
       <Lefter>
         <Img
           url={"banner/smBanner.webp"}
@@ -133,6 +144,83 @@ const SecureMarshmallow = () => {
       </Details>
       <br></br>
       {Result2}
+      <Details>
+        <summary>앱 화면</summary>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"secureMarshmallow/s1.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s2.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s3.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s4.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"secureMarshmallow/s5.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s6.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s7.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s8.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"secureMarshmallow/s9.png"}
+              width={"60%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s10.png"}
+              width={"60%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"secureMarshmallow/s11.png"}
+              width={"60%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+        </div>
+      </Details>
     </>
   );
 };
