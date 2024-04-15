@@ -22,7 +22,7 @@ import useMoonerDown from "../../../utils/editor/hook/useMoonerDown";
 
 const Maeumgajim = () => {
   const media = useMediaQuery({ query: "(min-width: 768px)" });
-  const {Result} = useMoonerDown(`### 회고
+  const { Result } = useMoonerDown(`### 회고
   ##### 프로젝트 관리자(PM)로서의 경험
   프로젝트를 진행하면서 PM(프로젝트 관리자)으로서 느낀 점은, 팀원간의 소통과 개발 프로세스에 대한 중요성이었습니다.
   팀원 간의 소통을 강화하기 위해 여러 노력을 했음에도 불구하고, 인원이 많아짐에 따라 소통의 어려움과 불만이 생기기도 했습니다.
@@ -36,14 +36,14 @@ const Maeumgajim = () => {
   슈퍼앱 개발의 일환으로, 하나의 클래스도 코드의 질을 떨어뜨리지 않기 위해 노력했습니다.
   클린 아키텍처 도입으로 서버 간 통신 코드를 깔끔하게 구현했으며, 직접 개발한 Logger를 통해 앱 내 에러 위치와 성능 개선을 했습니다.
   RxFlow를 도입해 코디네이터 기반 로직을 구상하고, 유닛 테스트와 UI 테스트를 위해 VoiceOver 기반의 Mango 라이브러리를 만들었습니다. 그리고 헬스 관련 라이브러리 MindGymKit을 개발하였습니다.
-  그리고 스냅샷 테스트를 통해 이미지 기반의 소통을 가능하게 했으며, XCameraKit을 사용한 카메라 기능 구현, 데모앱 작업을 통해 프로젝트 빌드 시간 단축 등을 경험했습니다. 또한 데브옵스와 협업을 통해 Tuist 배포 방식과 xcode cloud를 통한 배포 방식, Tuist 타겟 관리 이론, Pickle 기능에서의 우선순위 큐 알고리즘을 적용해보는 경험을 갖게되었습니다.`)
+  그리고 스냅샷 테스트를 통해 이미지 기반의 소통을 가능하게 했으며, XCameraKit을 사용한 카메라 기능 구현, 데모앱 작업을 통해 프로젝트 빌드 시간 단축 등을 경험했습니다. 또한 데브옵스와 협업을 통해 Tuist 배포 방식과 xcode cloud를 통한 배포 방식, Tuist 타겟 관리 이론, Pickle 기능에서의 우선순위 큐 알고리즘을 적용해보는 경험을 갖게되었습니다.`);
 
   return (
     <>
       <Top>
         <GIcon icon={"마음가짐"} width={"100px"} />
         <Txt typography={"H0"}>
-          마음가짐 <Txt typography={"P1"}>2022.10.26~2022.12.09</Txt>
+          마음가짐 <Txt typography={"P1"}>2023.09.18~</Txt>
         </Txt>
       </Top>
       <Tags>
@@ -105,9 +105,9 @@ const Maeumgajim = () => {
       </P2>
       <P2>
         매주, 프로젝트 리더(PL)로부터 진행 상황과 이슈에 대한 상세한 보고를 받아
-        검토하고, 개발 프로세스 진행관리와 PL과의 정기적인 소통을 통해 팀을 체계적으로 관리했습니다.
-        이러한 과정을 통해, 모든 팀원이 동일한 목표를 향해 일체감을 가지고
-        개발할 수 있도록 조력했습니다.
+        검토하고, 개발 프로세스 진행관리와 PL과의 정기적인 소통을 통해 팀을
+        체계적으로 관리했습니다. 이러한 과정을 통해, 모든 팀원이 동일한 목표를
+        향해 일체감을 가지고 개발할 수 있도록 조력했습니다.
       </P2>
       <P2>
         팀원들이 불합리하다고 느낄 수 있는 기능 요구나 겪는 어려움에 대해서는,
@@ -146,6 +146,82 @@ const Maeumgajim = () => {
         </div>
       </Details>
       {Result}
+      <Details>
+        <summary>개발 화면</summary>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"mg/mgd1.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgd2.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgd3.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <video width={300} controls>
+              <source
+                src="/Users/junha/Desktop/portfolio/public/img/mg/mgd4.MP4"
+                type="video/mp4"
+              ></source>
+            </video>
+          </div>
+        </div>
+      </Details>
+      <Details>
+        <summary>앱 화면</summary>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"mg/mgp5.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgp3.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgp1.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgp4.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+          <div style={{ display: "flex" }}>
+          <Img
+              url={"mg/mgp2.webp"}
+              width={"50%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/mgp6.webp"}
+              width={"50%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+        </div>
+      </Details>
     </>
   );
 };

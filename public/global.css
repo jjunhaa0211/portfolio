@@ -13,3 +13,7 @@
     font-display: swap;
     src: url("/fonts/prontandard.woff2") format('woff2-variations');
 }
+
+* {
+    font-family: 'Prontandard', 'Pretendard', 'Pretendard Variable';
+}
