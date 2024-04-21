@@ -38,6 +38,17 @@ const Maeumgajim = () => {
   RxFlow를 도입해 코디네이터 기반 로직을 구상하고, 유닛 테스트와 UI 테스트를 위해 VoiceOver 기반의 Mango 라이브러리를 만들었습니다. 그리고 헬스 관련 라이브러리 MindGymKit을 개발하였습니다.
   그리고 스냅샷 테스트를 통해 이미지 기반의 소통을 가능하게 했으며, XCameraKit을 사용한 카메라 기능 구현, 데모앱 작업을 통해 프로젝트 빌드 시간 단축 등을 경험했습니다. 또한 데브옵스와 협업을 통해 Tuist 배포 방식과 xcode cloud를 통한 배포 방식, Tuist 타겟 관리 이론, Pickle 기능에서의 우선순위 큐 알고리즘을 적용해보는 경험을 갖게되었습니다.`);
 
+  const { Result: Result1} = useMoonerDown(`- 각 Feature 간의 **독립적인 개발 환경**을 보장하기 위해 Feature Interface 도입
+  - 모듈을 분리하여 **응집도를 높이고** **결합도가 낮은** 환경을 구축했습니다
+  - Demo를 통해서 앱을 **개별 환경에서 테스트**할 수 있습니다
+  - 모든 Feature 모듈에는 테스트를 작성하여 **신뢰성과 유지보수**를 높입니다.
+  `)
+
+  const { Result: Result2 } = useMoonerDown(`- Presentation, Data, Domain Layer를 분리해서 의존성을 효율적으로 관리했습니다
+  - 전체적인 클린아키텍처를 적용했습니다.
+  - MVVM Pattern으로 UI와 비즈니스 로직 분리
+  - inout을 사용해서 효울적인 MVVM 구축`)
+
   return (
     <>
       <Top>
@@ -134,19 +145,33 @@ const Maeumgajim = () => {
         속도를 빠르게 가져오는 것을 알 수 있습니다.
       </P2>
       <P2>대충 성능 이미지</P2>
+      <H3>세부 사항</H3>
       <Details>
         <summary>Tuist 구조도</summary>
         <div style={{ display: "flex" }}>
           <Img
             url={"mg/mgGraph.webp"}
-            width={"80%"}
+            width={"100%"}
             border={"0"}
             align={"center"}
           />
+          {Result1}
+        </div>
+      </Details>
+      <Details>
+        <summary>아키텍처 로직</summary>
+        <div style={{ display: "flex" }}>
+          <Img
+            url={"mg/마음가짐구조.webp"}
+            width={"100%"}
+            border={"0"}
+            align={"center"}
+          />
+          {Result2}
         </div>
       </Details>
       {Result}
-      <Details>
+      {/* <Details>
         <summary>개발 화면</summary>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
@@ -176,7 +201,7 @@ const Maeumgajim = () => {
             </video>
           </div>
         </div>
-      </Details>
+      </Details> */}
       <Details>
         <summary>앱 화면</summary>
         <div style={{ display: "flex", flexDirection: "column" }}>

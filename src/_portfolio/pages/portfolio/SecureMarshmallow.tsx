@@ -135,11 +135,11 @@ const SecureMarshmallow = () => {
       <Details>
         <summary>동작 화면</summary>
         <div style={{ display: "flex" }}>
-          <video
-            src="https://private-user-images.githubusercontent.com/102890390/272616822-650e1e00-1e1a-4b28-9eed-55575d7c7dcc.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI1NzMwNDYsIm5iZiI6MTcxMjU3Mjc0NiwicGF0aCI6Ii8xMDI4OTAzOTAvMjcyNjE2ODIyLTY1MGUxZTAwLTFlMWEtNGIyOC05ZWVkLTU1NTc1ZDdjN2RjYy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQwOFQxMDM5MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MDk0N2Y0OTQ2YTY3NjdhZmE4YmRlOTFjNWZlYWI1ODdhMTMxYWM0N2IwMTNjNmQ3MjFhOTJhNzE1YTBhNjkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.eKrDGCZHc2LeiA5oKXmUIEAYRGgYGQ8naLtXP1_Abns"
-            width={300}
-            controls
-          ></video>
+        <video
+        src="https://private-user-images.githubusercontent.com/102890390/272616822-650e1e00-1e1a-4b28-9eed-55575d7c7dcc.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM3MTE1NzMsIm5iZiI6MTcxMzcxMTI3MywicGF0aCI6Ii8xMDI4OTAzOTAvMjcyNjE2ODIyLTY1MGUxZTAwLTFlMWEtNGIyOC05ZWVkLTU1NTc1ZDdjN2RjYy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQyMVQxNDU0MzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZjYwNmNlYTdlOGRkOWFhMzYxZGI0MTMyZjhhZjBhM2E1MTRhNzQzNGM2OWEwMmViNjc3NTI4NGQxZjA4MjUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XK28fYfNSMudxZEeM7CntchBW6ZxhydLzLsWckQmD6o"
+        width={300}
+        controls
+      ></video>
         </div>
       </Details>
       <br></br>

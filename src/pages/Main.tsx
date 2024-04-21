@@ -6,18 +6,16 @@ import { Txt } from "../components/Txt";
 import { APP_VERSION } from "../routes/App";
 import { recompile } from "../_portfolio/hooks/useIrl";
 import Libraries from "../_portfolio/components/Libraries";
+import ToyProjects from "../_portfolio/components/ToyProjects";
 
 const Main = () => {
-  // console.log(recompile({
-  //     name: "문성화",
-  //     verify: true
-  // }))
   return (
     <>
       <MainTitle />
       <About />
       <Projects />
       <Libraries />
+      <ToyProjects />
       <Contact />
       <Txt typography={"P1"} center>
         Last Update: {APP_VERSION}

@@ -116,13 +116,12 @@ const About = () => {
           out
         />
         {/* <TimeFrame date={"2022.06.02"} text={"Info 동아리 입부"} /> */}
-        <TimeFrame date={"2022.07.6~"} text={"iOStudy (교내 스터디)"} />
+        <TimeFrame date={"2022.07.06~"} text={"iOStudy (교내 스터디)"} />
         <TimeFrame
           date={"2022.12.08~2022.12.09"}
           text={"2022AppJam 참가"}
           out
         />
-        <TimeFrame date={"2023.02.27~"} text={"공부: ADPattern"} out />
         <TimeFrame
           date={"2023.03.03~"}
           text={"대덕소프트웨어 정보보안과 선택"}
@@ -150,7 +149,7 @@ const About = () => {
           text={"XCameraKit 라이브러리 개발"}
           out
         />
-        <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤 - Today"} />
+        <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤 - Mint"} />
         <TimeFrame date={"2023.07.12~2023.07.14"} text={"데프콘 부스 운영"} />
         <TimeFrame
           date={"2023.08.17~2023.11.07"}
@@ -164,9 +163,9 @@ const About = () => {
           text={"프로젝트: 마음가짐"}
           highlight={"Orange"}
         />
-        <TimeFrame date={"2023.11.13~"} text={"Tuist-Junha"} out />
+        <TimeFrame date={"2023.11.13~"} text={"Tuist-Junha 작성"} out />
         {/* <TimeFrame date={"2023.12.13~"} text={"Graps"} out /> */}
-        <TimeFrame date={"2024.04.01~"} text={"AVSlider"} out />
+        <TimeFrame date={"2024.04.01~"} text={"AVSlider 라이브러리 개발"} out />
         <TimeFrame
           date={"2024.03.28~"}
           text={"프로젝트: Shalo"}

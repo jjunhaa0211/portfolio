@@ -39,6 +39,16 @@ export const FontStyles = {
     fontWeight: 700,
     fontSize: "22px",
   },
+  H6: {
+    fontFamily: "Pretendard, Prontandard",
+    fontWeight: 600,
+    fontSize: "20px",
+  },
+  H7: {
+    fontFamily: "Pretendard, Prontandard",
+    fontWeight: 600,
+    fontSize: "18px",
+  },
   P00: {
     fontFamily: "Pretendard, Prontandard",
     fontWeight: 400,

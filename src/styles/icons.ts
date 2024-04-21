@@ -18,7 +18,13 @@ export const Icons = {
     XCameraKit: "XCameraKit.webp",
     Graps: "Graps.webp",
     AVSlider: "AVSlider.webp",
-    smBanner: "msBanner.webp"
+    smBanner: "msBanner.webp",
+    Tistroy: "TISTORY.webp",
+    Mafia: "mafia.webp",
+    ForcedBlockingSwift: "ForcedBlockingSwift.webp",
+    Mint: "Mint.webp",
+    Link: "link.webp",
+    NFC: "NFC.webp"
 }
 
 export type keyOfIcons = keyof typeof Icons;

@@ -13,6 +13,11 @@ import XCameraKit from "../_portfolio/pages/portfolio/Library/XCameraKit";
 import Graps from "../_portfolio/pages/portfolio/Library/Graps";
 import AVSlider from "../_portfolio/pages/portfolio/Library/AVSlider";
 import Shalo from "../_portfolio/pages/portfolio/Shalo";
+import ForcedBlockingSwift from "../_portfolio/pages/portfolio/ToyProject/ForcedBlockingSwift";
+import Mafia from "../_portfolio/pages/portfolio/ToyProject/Mafia";
+import Mint from "../_portfolio/pages/portfolio/ToyProject/Mint";
+import NFCProject from "../_portfolio/pages/portfolio/ToyProject/NFCProject";
+import AppLinkProject from "../_portfolio/pages/portfolio/ToyProject/AppLinkProject";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -44,6 +49,12 @@ function App() {
           <Route path={"/library/XCamerakit"} element={<XCameraKit />} />
           {/* <Route path={"/library/Graps"} element={<Graps />} /> */}
           <Route path={"/library/AVSlider"} element={<AVSlider />} />
+
+          <Route path={"/toy/ForcedBlockingSwift"} element={<ForcedBlockingSwift />} />
+          <Route path={"/toy/Mafia"} element={<Mafia />} />
+          <Route path={"/toy/Mint"} element={<Mint />} />
+          <Route path={"/toy/NFCProject"} element={<NFCProject />} />
+          <Route path={"/toy/AppLinkProject"} element={<AppLinkProject />} />
 
         </Route>
         <Route path="/*" element={<Main />} />

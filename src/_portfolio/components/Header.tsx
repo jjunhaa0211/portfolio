@@ -130,6 +130,26 @@ const Header = () => {
             <Txt
               typography={media ? "P1" : "P0"}
               onClick={() => {
+                const projectElement = document.getElementById("Toy");
+                if (projectElement) {
+                  const elementRect = projectElement.getBoundingClientRect();
+                  const absoluteElementTop =
+                    elementRect.top + window.pageYOffset;
+                  const middlePoint =
+                    absoluteElementTop - window.innerHeight / 2;
+                  window.scrollTo({
+                    top: middlePoint + 500,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              clickable
+            >
+              Toy
+            </Txt>
+            <Txt
+              typography={media ? "P1" : "P0"}
+              onClick={() => {
                 document
                   .getElementById("contact")
                   ?.scrollIntoView({ block: "center", behavior: "smooth" });
