@@ -46,7 +46,7 @@ const Mint = () => {
       <URLBox>
       <URLItem
           icon={"Mint"}
-          text={"소켓 통신 기술을 적용한 마피아 게임 개발 프로젝트"}
+          text={"코로나 시기로 마음이 힘든 사람들을 위한 자가진단 서비스 (해커톤)"}
         >
           <Txt>한줄 요약</Txt>
       </URLItem>

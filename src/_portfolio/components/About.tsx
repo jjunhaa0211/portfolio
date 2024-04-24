@@ -65,9 +65,7 @@ const About = () => {
           같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          iOS 개발을 처음 시작했을 때는 어려웠지만, 코드를 공부하며 성장하고
-          있으며 현재는 아키텍처와 모듈화에 대한 공부는 흥미롭게 느껴지고
-          있습니다.
+          iOS 개발을 처음 시작했을 때는 어려웠지만, 공부를 하면서 크게 성장하고 있으며 현재는 모듈화와 아키텍처에 대한 공부를 하면 꾸준히 성장 중입니다.
         </Txt>
       </ProfileDescription>
       <TagDiv style={{ margin: "30px" }}>
@@ -166,7 +164,7 @@ const About = () => {
         {/* <TimeFrame date={"2023.12.13~"} text={"Graps"} out /> */}
         <TimeFrame date={"2024.04.01~"} text={"AVSlider 라이브러리 개발"} out />
         <TimeFrame
-          date={"2024.03.28~"}
+          date={"2024.03.28~2024.04.24"}
           text={"프로젝트: Shalo"}
           highlight={"Orange"}
         />

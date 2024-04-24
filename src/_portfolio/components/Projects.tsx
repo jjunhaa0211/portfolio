@@ -52,7 +52,7 @@ const Projects = () => {
             link={`/project/Shalo/${key}`}
             icon={"Shalo"}
             name={"Shalo"}
-            date={"2024.03.28 ~"}
+            date={"2024.03.28 ~ 2024.04.24"}
             tags={["Swift", "Snpkit", "Then", "CoreImage", "MVC"]}
             description={"모바일로 손쉽게 영상을 편집하는 툴"}
           />

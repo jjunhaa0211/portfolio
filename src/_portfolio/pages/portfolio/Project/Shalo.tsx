@@ -45,9 +45,18 @@ const Shalo = () => {
     return <>
         <Top>
             <GIcon icon={"Shalo"} width={"100px"}/>
-            <Txt typography={"H0"}>Shalo <Txt typography={"P1"}>2024.03.28~</Txt></Txt>
+            <Txt typography={"H0"}>Shalo <Txt typography={"P1"}>2024.03.28 ~ 2024.04.24</Txt></Txt>
         </Top>
         <Tags>{["Swift", "Snpkit", "Then", "CoreImage", "MVC"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+
+        <URLBox>
+      <URLItem
+          icon={"Shalo"}
+          text={"누구나 쉽게 만들 수 있는 모바일 영상 편집 애플리케이션"}
+        >
+          <Txt>한줄 요약</Txt>
+        </URLItem>
+      </URLBox>
 
         <URLBox>
             <URLItem icon={"Github"} url={"https://github.com/AVFNS/Shalo"}>

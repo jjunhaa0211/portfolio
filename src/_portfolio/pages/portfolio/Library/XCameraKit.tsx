@@ -97,6 +97,12 @@ const XCameraKit = () => {
       <Tags>{["Swift", "AVFoundation"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
+      <URLItem
+          icon={"XCameraKit"}
+          text={"카메라 코드를 보다 쉽게 사용할 수 있는 라이브러리"}
+        >
+          <Txt>한줄 요약</Txt>
+        </URLItem>
         <URLItem
           icon={"Github"}
           url={"https://github.com/jjunhaa0211/XCameraKit"}

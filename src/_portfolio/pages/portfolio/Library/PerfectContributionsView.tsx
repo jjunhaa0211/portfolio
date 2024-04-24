@@ -56,6 +56,12 @@ const PerfectContributionsView = () => {
 
       <URLBox>
         <URLItem
+          icon={"PerfectContributionsView"}
+          text={"깃허브 기여도를 시각적으로 표현할 수 있도록 만든 라이브러리"}
+        >
+          <Txt>한줄 요약</Txt>
+        </URLItem>
+        <URLItem
           icon={"Github"}
           url={"https://github.com/jjunhaa0211/PerfectContributionsView"}
         >

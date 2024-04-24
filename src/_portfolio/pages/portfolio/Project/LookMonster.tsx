@@ -80,7 +80,7 @@ RIBs 아키텍처를 사용해서 SOLID 원칙을 기반으로 가독성과 확�
       <URLBox>
       <URLItem
           icon={"LookMonster"}
-          text={"ㄴㅁㅇㄹㅁㄴㄹㅁㄴㅇㄹ"}
+          text={"개성을 찾아 스타일을 공유하는 트렌디한 패션 애플리케이션"}
         >
           <Txt>한줄 요약</Txt>
         </URLItem>
