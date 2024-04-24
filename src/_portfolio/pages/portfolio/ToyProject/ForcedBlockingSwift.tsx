@@ -17,7 +17,7 @@ import useMoonerDown from "../../../../utils/editor/hook/useMoonerDown";
 
 const ForcedBlockingSwift = () => {
   const { Result } = useMoonerDown(`### 개요
-    평소에 제가 릴스를 하루 2~3시간 이상 본다는 사실을 스크린 타임에서 보았습니다. 이제를 릴스를 줄여야한다며 인스타를 지웠지만 다시 다운로드해서 보는 저를 보았습니다. 때문에 앱을 사용하지 못하게 막아버린다면? 그때는 진짜 안볼 것 같다고 생각했습니다. 어렸을때 아이패드에서 자녀안심 앱으로 앱이 막혔던 것을 기억하여 기능을 구현해보고자 합니다.
+    평소에 제가 릴스를 하루 2~3시간 이상 본다는 사실을 스크린 타임에서 보았습니다. 이제부터는 릴스를 줄여야한다며 인스타를 지웠지만 다시 다운로드해서 보는 저를 보았습니다. 때문에 앱을 사용하지 못하게 막아버린다면? 그때는 진짜 안볼 것 같다고 생각했습니다. 어렸을때 아이패드에서 자녀안심 앱으로 앱이 막혔던 것을 기억하여 기능을 구현해보고자 합니다.
     
     ### 구현 기능
     - Uikit과 SwiftUI를 동시에 사용
@@ -50,9 +50,15 @@ const ForcedBlockingSwift = () => {
           <Txt typography={"P1"}>2024.01.24~2024.01.25</Txt>
         </Txt>
       </Top>
-      <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+      <Tags>{["Swift", "FamilyControls"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
+      <URLItem
+          icon={"ForcedBlockingSwift"}
+          text={"앱 중독을 방지하기 위한 자녀 보호 기능이 포함된 프로젝트"}
+        >
+          <Txt>한줄 요약</Txt>
+      </URLItem>
         <URLItem
           icon={"Github"}
           url={"https://github.com/jjunhaa0211/XCameraKit"}

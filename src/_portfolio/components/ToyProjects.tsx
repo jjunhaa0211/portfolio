@@ -44,7 +44,7 @@ const ToyProjects = () => {
               icon={"ForcedBlockingSwift"}
               name={"릴스 중독이라고? 차단해!"}
               date={"2024.01.24~2024.01.25"}
-              tags={["Swift"]}
+              tags={["Swift", "FamilyControls"]}
               description={
                 "🌳 Library created to create GitHub contributions 🌲"
               }
@@ -56,7 +56,7 @@ const ToyProjects = () => {
               icon={"NFC"}
               name={"삑-학생입니다~"}
               date={"2024.04.01~2024.04.02"}
-              tags={["Swift"]}
+              tags={["Swift", "CoreNFC"]}
               description={
                 "🌳 Library created to create GitHub contributions 🌲"
               }
@@ -70,7 +70,7 @@ const ToyProjects = () => {
               icon={"Mafia"}
               name={"밤이 되었습니다!?"}
               date={"2024.04.16~2024.04.18"}
-              tags={["Swift"]}
+              tags={["Swift", "Socket"]}
               description={"마피아"}
             />
           </ToyBoxs>

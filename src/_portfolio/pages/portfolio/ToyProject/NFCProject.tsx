@@ -39,9 +39,15 @@ const NFCProject = () => {
           삑-학생입니다~ <Txt typography={"P1"}>2023.06.16~2023.11.09</Txt>
         </Txt>
       </Top>
-      <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+      <Tags>{["Swift", "CoreNFC"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
+      <URLItem
+          icon={"NFC"}
+          text={"NFC 기술을 이용한 NFC 리더기 개발 프로젝트"}
+        >
+          <Txt>한줄 요약</Txt>
+      </URLItem>
         <URLItem
           icon={"Github"}
           url={"https://github.com/jjunhaa0211/XCameraKit"}

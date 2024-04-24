@@ -94,7 +94,7 @@ const XCameraKit = () => {
           XCameraKit <Txt typography={"P1"}>2023.06.16~2023.11.09</Txt>
         </Txt>
       </Top>
-      <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+      <Tags>{["Swift", "AVFoundation"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
         <URLItem
@@ -126,6 +126,7 @@ const XCameraKit = () => {
       <H3>회고</H3>
       {Result2}
 
+      <H3>세부 사항</H3>
       <Details>
         <summary>사용방법</summary>
         <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>

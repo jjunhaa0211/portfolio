@@ -44,6 +44,12 @@ const Mint = () => {
       <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
+      <URLItem
+          icon={"Mint"}
+          text={"소켓 통신 기술을 적용한 마피아 게임 개발 프로젝트"}
+        >
+          <Txt>한줄 요약</Txt>
+      </URLItem>
         <URLItem
           icon={"Github"}
           url={"https://github.com/jjunhaa0211/XCameraKit"}

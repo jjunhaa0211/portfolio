@@ -54,8 +54,6 @@ const About = () => {
       <ProfileDescription style={{ margin: "60px" }}>
         <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center>
-          어려서부터 다양한 애플 기기를 사용하며 사용자 측면에서의 다양한 경험을
-          쌓았으며
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
           다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤
@@ -87,7 +85,8 @@ const About = () => {
           {DefaultTag.RxCocoa}
           {DefaultTag.RxSwift}
           {DefaultTag.RealmSwift}
-          {DefaultTag.RxTest}
+          {/* {DefaultTag.RxTest} */}
+          {DefaultTag.Tuist}
           {DefaultTag.Swinject}
         </TagBox>
         <TagBox $align={"center"}>
@@ -95,7 +94,7 @@ const About = () => {
           {DefaultTag.MVP}
           {DefaultTag.MVVM}
           {DefaultTag.RIBs}
-          {DefaultTag.Flux}
+          {/* {DefaultTag.Flux} */}
           {DefaultTag.TCA}
         </TagBox>
       </TagDiv>

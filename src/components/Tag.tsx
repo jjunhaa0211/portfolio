@@ -158,19 +158,19 @@ export const DefaultTag = {
       textColor={"White0"}
     />
   ),
-  RxTest: (
-    <Tag
-      key={"RxTest"}
-      name={"RxTest"}
-      backgroundColor={"#85cfa6"}
-      textColor={"White0"}
-    />
-  ),
+  // RxTest: (
+  //   <Tag
+  //     key={"RxTest"}
+  //     name={"RxTest"}
+  //     backgroundColor={"#85cfa6"}
+  //     textColor={"White0"}
+  //   />
+  // ),
   MVVM: (
     <Tag
       key={"MVVM"}
       name={"MVVM"}
-      backgroundColor={"#53d119"}
+      backgroundColor={"#6311e8"}
       textColor={"White0"}
     />
   ),
@@ -198,14 +198,62 @@ export const DefaultTag = {
       textColor={"White0"}
     />
   ),
-  Flux: (
+  Tuist: (
     <Tag
-      key={"Flux"}
-      name={"Flux"}
-      backgroundColor={"#e8cb24"}
+      key={"Tuist"}
+      name={"Tuist"}
+      backgroundColor={"#6b72fc"}
       textColor={"White0"}
     />
-  )
+  ),
+  CoreImage: (
+    <Tag
+      key={"CoreImage"}
+      name={"CoreImage"}
+      backgroundColor={"#a91132"}
+      textColor={"White0"}
+    />
+  ),
+  OAuth: (
+    <Tag
+      key={"OAuth"}
+      name={"OAuth"}
+      backgroundColor={"#2b2b2b"}
+      textColor={"White0"}
+    />
+  ),
+  swiftSnapshotTesting: (
+    <Tag
+      key={"swiftSnapshotTesting"}
+      name={"swiftSnapshotTesting"}
+      backgroundColor={"#009102"}
+      textColor={"White0"}
+    />
+  ),
+  FamilyControls: (
+    <Tag
+      key={"FamilyControls"}
+      name={"FamilyControls"}
+      backgroundColor={"#ff7b00"}
+      textColor={"White0"}
+    />
+  ),
+  CoreNFC: (
+    <Tag
+      key={"CoreNFC"}
+      name={"CoreNFC"}
+      backgroundColor={"#543fbc"}
+      textColor={"White0"}
+    />
+  ),
+  Socket: (
+    <Tag
+      key={"Socket.IO"}
+      name={"Socket.IO"}
+      backgroundColor={"rgb(255, 0, 208)"}
+      textColor={"White0"}
+    />
+  ),
 };
 
 export type keyOfDefaultTag = keyof typeof DefaultTag;

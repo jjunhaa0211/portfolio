@@ -44,14 +44,6 @@ const Libraries = () => {
               "모듈의 의존성을 참조하는 그래프를 보여주는 라이브러리"
             }
           /> */}
-          {/* <Project
-            link={`/library/AVSlider/${key}`}
-            icon={"AVSlider"}
-            name={"AVSlider"}
-            date={"2022.10.26~2022.12.09"}
-            tags={["Swift", "Snpkit", "Then"]}
-            description={"쌈@뽕한 헬스 앱을 찾는다면 마음가짐"}
-          /> */}
         </LibraryBox>
       </GBody>
     </>

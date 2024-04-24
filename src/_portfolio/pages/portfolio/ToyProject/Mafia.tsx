@@ -24,7 +24,6 @@ const Mafia = () => {
     - 게임 시작시 플레이어에게 직업을 부여하는 기능을 구현했습니다.
     - 밤이 되었을 때 마피아와 의사, 경찰이 스킬을 쓸 수 있도록 구현했습니다.
     - 투표 시간이 되었을 때 투표를 많이 받은 플레이어가 최후의 변론을 하고 플레이어를 살릴지 투표를 진행합니다.
-    - 시간을 단축 또는 시간을 연장하는 기능을 구현했습니다.
     - 부분적인 단어들의 뜻을 볼 수 있도록 구현했습니다.
 
     ### 문제 상황과 해결점
@@ -32,7 +31,8 @@ const Mafia = () => {
       \`문제 상황\`
       메세지를 입력하고 전송했는데, 이 메세지가 다른 사용자에게만 보여야 하지만 저에게도 보여서 같은 문장이 두 번씩 나타나는 문제가 발생했습니다.
       \`해결 방법\`
-      💡 항상 자기가 사용하는 사용 계정을 -1, 진행자가 0, 다른 사용자들이 index 순으로 명시를 해주었습니다. 이를 사용해서 사용자가 -1일 경우 numberIndex가 -1일 경우에는 onChat을 통해서 사용자의 메세지를 노란색으로 표기하고 다른 사용자에게만 보이도록 구현했습니다.`);
+      💡 항상 자기가 사용하는 사용 계정을 -1, 진행자가 0, 다른 사용자들이 index 순으로 명시를 해주었습니다. 이를 사용해서 사용자가 -1일 경우 numberIndex가 -1일 경우에는 onChat을 통해서 사용자의 메세지를 노란색으로 표기하고 다른 사용자에게만 보이도록 구현했습니다.
+      `);
 
   const { Result: Result2 } = useMoonerDown(`
   ### 회고
@@ -48,10 +48,16 @@ const Mafia = () => {
           밤이 되었습니다!? <Txt typography={"P1"}>2024.04.16~2024.04.18</Txt>
         </Txt>
       </Top>
-      <Tags>{["Swift"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+      <Tags>{["Swift", "Socket"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
 
       <URLBox>
-        <URLItem icon={"Github"} url={"https://github.com/jjunhaa0211/임시"}>
+      <URLItem
+          icon={"Mafia"}
+          text={"소켓 통신 기술을 적용한 마피아 게임 개발 프로젝트"}
+        >
+          <Txt>한줄 요약</Txt>
+      </URLItem>
+        <URLItem icon={"Github"} url={"https://github.com/jjunhaa0211/Mafia"}>
           <Txt>Github (Project)</Txt>
         </URLItem>
       </URLBox>
@@ -66,6 +72,88 @@ const Mafia = () => {
       </Lefter>
 
       {Result}
+      <Details>
+        <summary>UI 화면</summary>
+        <div style={{ display: "flex", width: "100%", marginTop: "10px" }}>
+          <Img
+            url={"mafia/1.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+          <Img
+            url={"mafia/2.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"flex-end"}
+          />
+          <Img
+            url={"mafia/3.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+          <Img
+            url={"mafia/42.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+        </div>
+        <div style={{ display: "flex", width: "100%", marginTop: "10px", paddingBottom: 30}}>
+          <Img
+            url={"mafia/4.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+          <Img
+            url={"mafia/5.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"flex-end"}
+          />
+          <Img
+            url={"mafia/6.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+          <Img
+            url={"mafia/7.webp"}
+            width={"90%"}
+            border={"0"}
+            align={"center"}
+          />
+        </div>
+
+      <div style={{ display: "flex", width: "100%", marginTop: "10px", paddingBottom: 30}}>
+        <Img
+          url={"mafia/8.webp"}
+          width={"90%"}
+          border={"0"}
+          align={"center"}
+        />
+        <Img
+          url={"mafia/9.webp"}
+          width={"90%"}
+          border={"0"}
+          align={"flex-end"}
+        />
+        <Img
+          url={"mafia/10.webp"}
+          width={"90%"}
+          border={"0"}
+          align={"center"}
+        />
+        <Img
+          url={"mafia/11.webp"}
+          width={"90%"}
+          border={"0"}
+          align={"center"}
+        />
+      </div>
+      </Details>
       {Result2}
     </>
   );

@@ -45,7 +45,7 @@ const sitemap: { [p: string]: SiteData } = {
     "/project/Shalo": {
         title: "Shalo - Junha",
         url: `${process.env.PUBLIC_URL}/project/`,
-        description: "'원신' 게임의 각종 시스템을 더욱 효율적으로 하기 위해 계산해주는 서비스",
+        description: "영상편집 서비스",
         image: `${process.env.PUBLIC_URL}/icon/Shalo.webp`
     }
 }
