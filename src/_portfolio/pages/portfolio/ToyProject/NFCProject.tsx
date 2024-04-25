@@ -50,7 +50,7 @@ const NFCProject = () => {
       </URLItem>
         <URLItem
           icon={"Github"}
-          url={"https://github.com/jjunhaa0211/XCameraKit"}
+          url={"https://github.com/jjunhaa0211/NFC-Swift"}
         >
           <Txt>Github (Project)</Txt>
         </URLItem>

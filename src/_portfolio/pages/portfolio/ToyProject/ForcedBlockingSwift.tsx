@@ -61,7 +61,7 @@ const ForcedBlockingSwift = () => {
       </URLItem>
         <URLItem
           icon={"Github"}
-          url={"https://github.com/jjunhaa0211/XCameraKit"}
+          url={"https://github.com/jjunhaa0211/ForcedBlockingSwift"}
         >
           <Txt>Github (Project)</Txt>
         </URLItem>
