@@ -52,7 +52,7 @@ const Mint = () => {
       </URLItem>
         <URLItem
           icon={"Github"}
-          url={"https://github.com/jjunhaa0211/XCameraKit"}
+          url={"https://github.com/DSM-mint/mInt_iOS"}
         >
           <Txt>Github (Project)</Txt>
         </URLItem>
