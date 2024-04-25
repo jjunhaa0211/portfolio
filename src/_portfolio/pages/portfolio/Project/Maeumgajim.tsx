@@ -22,12 +22,11 @@ import useMoonerDown from "../../../../utils/editor/hook/useMoonerDown";
 import Video1 from "./mgd4.mp4";
 import Video2 from "./피클.mp4";
 import Video3 from "./메트로눔.mp4";
+import { color } from "framer-motion";
 
 const Maeumgajim = () => {
   const media = useMediaQuery({ query: "(min-width: 768px)" });
-  const { Result } = useMoonerDown(`
-  ### 회고
-  ##### 프로젝트 관리자(PM)로서의 경험
+  const { Result } = useMoonerDown(`##### 프로젝트 관리자(PM)로서의 경험
   프로젝트를 진행하면서 PM(프로젝트 관리자)으로서 느낀 점은, 팀원간의 소통과 개발 프로세스에 대한 중요성이었습니다.
   팀원 간의 소통을 강화하기 위해 여러 노력을 했음에도 불구하고, 인원이 많아짐에 따라 소통의 어려움과 불만이 생기기도 했습니다.
   특히, 일부 분야가 다른 분야보다 뒤처지는 상황에서는 프로젝트 이탈 위기도 겪었습니다.
@@ -53,9 +52,7 @@ const Maeumgajim = () => {
   - MVVM Pattern으로 UI와 비즈니스 로직 분리
   - inout을 사용해서 효울적인 MVVM 구축`)
 
-  const { Result: Result3 } = useMoonerDown(`
-  ### 문제 상황과 해결점
-  ###### 클린 아키텍처 분활 문제
+  const { Result: Result3 } = useMoonerDown(`###### 클린 아키텍처 분활 문제
   \`문제 상황\`
   클린 아키텍처를 도입하면서 모듈 구조를 Data, Domain, Network를 분리하였으나 서로 모듈간의 **의존성이 꼬여서** Network가 Data를 알고 있고 Domain과 Data가 **서로 순환이 일어나고** 있는 문제가 발생했습니다.
   \`해결 방법\`
@@ -195,11 +192,13 @@ const Maeumgajim = () => {
         Coordinator Pattern + RxFlow를 도입하여 화면 이동 관리를 했습니다.
       </P2>
       <P2>
-        메인 화면 구성과 숏폼, 샵, 오운완 개발을 맡았습니다.
+        메인 화면 구성과 숏폼을 맡았습니다.
       </P2>
 
+      <H3>문제 상황과 해결점</H3>
       {Result3}
 
+      <H3>회고</H3>
       {Result}
 
       {Result4}

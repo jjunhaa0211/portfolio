@@ -65,10 +65,14 @@ const About = () => {
           같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          iOS 개발을 처음 시작했을 때는 어려웠지만, 공부를 하면서 크게 성장하고 있으며 현재는 모듈화와 아키텍처에 대한 공부를 하면 꾸준히 성장 중입니다.
+        iOS 개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게 성장하고 있습니다.
+        </Txt>
+        <Txt typography={media ? "P1" : "P0"} center>
+        현재는 모듈화와 아키텍처에 대해 집중적으로 공부하며 더욱 발전하고 있습니다!
         </Txt>
       </ProfileDescription>
       <TagDiv style={{ margin: "30px" }}>
+      <FocusTxt style={{ marginBottom: "20px" }}>Skill</FocusTxt>
         <TagBox $align={"center"}>
           {DefaultTag.Swift}
           {DefaultTag.Snpkit}
@@ -83,7 +87,6 @@ const About = () => {
           {DefaultTag.RxCocoa}
           {DefaultTag.RxSwift}
           {DefaultTag.RealmSwift}
-          {/* {DefaultTag.RxTest} */}
           {DefaultTag.Tuist}
           {DefaultTag.Swinject}
         </TagBox>
@@ -92,7 +95,6 @@ const About = () => {
           {DefaultTag.MVP}
           {DefaultTag.MVVM}
           {DefaultTag.RIBs}
-          {/* {DefaultTag.Flux} */}
           {DefaultTag.TCA}
         </TagBox>
       </TagDiv>

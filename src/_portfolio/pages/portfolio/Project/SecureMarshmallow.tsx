@@ -152,7 +152,7 @@ const SecureMarshmallow = () => {
       <Details>
         <summary>앱 화면</summary>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", paddingBottom: 30 }}>
             <Img
               url={"secureMarshmallow/s1.png"}
               width={"80%"}
@@ -178,7 +178,7 @@ const SecureMarshmallow = () => {
               align={"center"}
             />
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", paddingBottom: 30 }}>
             <Img
               url={"secureMarshmallow/s5.png"}
               width={"80%"}
@@ -204,7 +204,7 @@ const SecureMarshmallow = () => {
               align={"center"}
             />
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", paddingBottom: 30 }}>
             <Img
               url={"secureMarshmallow/s9.png"}
               width={"60%"}

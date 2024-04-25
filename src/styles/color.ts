@@ -20,6 +20,7 @@ export const Colors = {
     Green0: "#22FF38",
     Green1: "#19AB1F",
     Orange: "#FF902B",
+    MGColor: "#3193F5"
 };
 
 export type keyOfColors = keyof typeof Colors

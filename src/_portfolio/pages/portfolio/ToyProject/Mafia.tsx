@@ -53,7 +53,7 @@ const Mafia = () => {
       <URLBox>
       <URLItem
           icon={"Mafia"}
-          text={"소켓 통신 기술을 적용한 마피아 게임 개발 프로젝트"}
+          text={"소켓 통신 기술을 적용한 마피아 게임"}
         >
           <Txt>한줄 요약</Txt>
       </URLItem>
