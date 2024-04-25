@@ -19,7 +19,7 @@ const Projects = () => {
             icon={"마음가짐"}
             name={"마음가짐"}
             date={"2023.09.18 ~"}
-            tags={["Swift", "Snpkit", "Then", "RxSwift", "RxFlow", "Moya", "OAuth", "swiftSnapshotTesting", "Tuist", "MVVM"]}
+            tags={["Swift", "Snpkit", "Then", "RxSwift", "RxFlow", "Moya", "OAuth", "swiftSnapshotTesting", "Tuist", "xcodeCloud", "MVVM"]}
             description={"쌈@뽕한 헬스 앱을 찾는다면 마음가짐"}
           />
           <Project
@@ -45,7 +45,7 @@ const Projects = () => {
             icon={"LookMonster"}
             name={"LookMonster"}
             date={"2023.08.17 ~ 2023.11.07"}
-            tags={["Swift", "Snpkit", "RxSwift", "Tuist", "RIBs"]}
+            tags={["Swift", "Snpkit", "RxSwift", "Tuist", "githubAction", "RIBs"]}
             description={"🎱 개성을 찾아 스타일을 공유하는 트렌디한 패션 앱 🥋"}
           />
           <Project

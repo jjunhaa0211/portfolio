@@ -115,7 +115,7 @@ const SecureMarshmallow = () => {
       <URLBox>
       <URLItem
           icon={"SM"}
-          text={"앱 보안 강화에 중점을 두고 진행한 프로젝트"}
+          text={"공격자가 애플리케이션을 어떻게 공격하는지 이해하고, 개발자가 이를 어떻게 방어할 수 있는지에 대한 연구하는 프로젝트"}
         >
           <Txt>한줄 요약</Txt>
         </URLItem>

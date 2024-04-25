@@ -72,7 +72,7 @@ RIBs 아키텍처를 사용해서 SOLID 원칙을 기반으로 가독성과 확�
         </Txt>
       </Top>
       <Tags>
-        {["Swift", "Snpkit", "RxSwift", "Tuist", "RIBs"].map(
+        {["Swift", "Snpkit", "RxSwift", "Tuist", "githubAction", "RIBs"].map(
           (v) => DefaultTag[v as keyOfDefaultTag]
         )}
       </Tags>

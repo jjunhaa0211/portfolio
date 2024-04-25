@@ -254,6 +254,22 @@ export const DefaultTag = {
       textColor={"White0"}
     />
   ),
+  xcodeCloud: (
+    <Tag
+    key={"xcodeCloud"}
+    name={"xcodeCloud"}
+    backgroundColor={"rgb(44, 139, 255)"}
+    textColor={"White0"}
+  />
+  ),
+  githubAction: (
+    <Tag
+    key={"Github Action"}
+    name={"Github Action"}
+    backgroundColor={"rgb(255, 111, 0)"}
+    textColor={"White0"}
+  />
+  )
 };
 
 export type keyOfDefaultTag = keyof typeof DefaultTag;

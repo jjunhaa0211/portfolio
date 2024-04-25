@@ -89,13 +89,15 @@ const About = () => {
           {DefaultTag.RealmSwift}
           {DefaultTag.Tuist}
           {DefaultTag.Swinject}
+          {DefaultTag.Socket}
         </TagBox>
         <TagBox $align={"center"}>
           {DefaultTag.MVC}
           {DefaultTag.MVP}
           {DefaultTag.MVVM}
           {DefaultTag.RIBs}
-          {DefaultTag.TCA}
+          {DefaultTag.xcodeCloud}
+          {DefaultTag.githubAction}
         </TagBox>
       </TagDiv>
       <TimeIdx style={{ margin: "80px" }}>
@@ -164,7 +166,7 @@ const About = () => {
         />
         <TimeFrame date={"2023.11.13~"} text={"Tuist-Junha 작성"} out />
         {/* <TimeFrame date={"2023.12.13~"} text={"Graps"} out /> */}
-        <TimeFrame date={"2024.04.01~"} text={"AVSlider 라이브러리 개발"} out />
+        {/* <TimeFrame date={"2024.04.01~"} text={"AVSlider 라이브러리 개발"} out /> */}
         <TimeFrame
           date={"2024.03.28~2024.04.24"}
           text={"프로젝트: Shalo"}
