@@ -353,7 +353,7 @@ const Maeumgajim = () => {
             border={"0"}
             align={"center"}
           />
-          <div
+                  <div
             style={{
               width: "100%",
               display: "flex",
@@ -366,6 +366,20 @@ const Maeumgajim = () => {
             ></video>
           </div>
         </div>
+          <div style={{ display: "flex" }}>
+            <Img
+              url={"mg/마음가짐사진.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"mg/마음가짐사진2.webp"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
       </Details>
     </>
   );
