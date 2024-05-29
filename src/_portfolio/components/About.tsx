@@ -45,7 +45,7 @@ const About = () => {
           }}
         >
           <Txt typography={media ? "H2" : "H3"}>{irl.name}</Txt>
-          <Txt typography={media ? "H4" : "P2"}>iOS Developer</Txt>
+          <Txt typography={media ? "H4" : "P2"}>Developer</Txt>
           <Txt typography={media ? "P1" : "P0"}>
             "유연한 아키텍처 설계와 사용자 경험에 관심이 많은 엔지니어입니다."
           </Txt>
@@ -65,10 +65,10 @@ const About = () => {
           같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        iOS 개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게 성장하고 있습니다.
+        개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게 성장하고 있습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        현재는 모듈화와 아키텍처에 대해 집중적으로 공부하며 더욱 발전하고 있습니다!
+        현재 여러 언어를 학습하며 배움을 이어가고 있습니다.
         </Txt>
       </ProfileDescription>
       <TagDiv style={{ margin: "30px" }}>
@@ -98,6 +98,13 @@ const About = () => {
           {DefaultTag.RIBs}
           {DefaultTag.xcodeCloud}
           {DefaultTag.githubAction}
+        </TagBox>
+        <TagBox $align={"center"}>
+          {DefaultTag.JS}
+          {DefaultTag.TS}
+          {DefaultTag.ReactNative}
+          {DefaultTag.React}
+          {DefaultTag.SCSS}
         </TagBox>
       </TagDiv>
       <TimeIdx style={{ margin: "80px" }}>

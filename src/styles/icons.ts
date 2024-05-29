@@ -24,7 +24,8 @@ export const Icons = {
     ForcedBlockingSwift: "ForcedBlockingSwift.webp",
     Mint: "Mint.webp",
     Link: "link.webp",
-    NFC: "NFC.webp"
+    NFC: "NFC.webp",
+    WeatherCard: "WeatherCard.webp"
 }
 
 export type keyOfIcons = keyof typeof Icons;

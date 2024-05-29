@@ -269,6 +269,54 @@ export const DefaultTag = {
     backgroundColor={"rgb(255, 111, 0)"}
     textColor={"White0"}
   />
+  ),
+  JS: (
+    <Tag
+    key={"JS"}
+    name={"JS"}
+    backgroundColor={"rgb(255, 234, 0)"}
+    textColor={"Black0"}
+  />
+  ),
+  TS: (
+    <Tag
+    key={"TS"}
+    name={"TS"}
+    backgroundColor={"rgb(51, 142, 246)"}
+    textColor={"White0"}
+  />
+  ),
+  ReactNative: (
+    <Tag
+    key={"ReactNative"}
+    name={"ReactNative"}
+    backgroundColor={"rgb(0, 85, 183)"}
+    textColor={"White0"}
+  />
+  ),
+  React: (
+    <Tag
+    key={"React"}
+    name={"React"}
+    backgroundColor={"rgb(34, 13, 187)"}
+    textColor={"White0"}
+  />
+  ),
+  SCSS: (
+    <Tag
+    key={"SCSS"}
+    name={"SCSS"}
+    backgroundColor={"rgb(227, 46, 255)"}
+    textColor={"White0"}
+  />
+  ),
+  axios: (
+    <Tag
+    key={"axios"}
+    name={"axios"}
+    backgroundColor={"rgb(108, 186, 255)"}
+    textColor={"Black0"}
+  />
   )
 };
 

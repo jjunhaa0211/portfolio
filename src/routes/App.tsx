@@ -18,6 +18,7 @@ import Mafia from "../_portfolio/pages/portfolio/ToyProject/Mafia";
 import Mint from "../_portfolio/pages/portfolio/ToyProject/Mint";
 import NFCProject from "../_portfolio/pages/portfolio/ToyProject/NFCProject";
 import AppLinkProject from "../_portfolio/pages/portfolio/ToyProject/AppLinkProject";
+import WeatherCard from "../_portfolio/pages/portfolio/Project/WeatherCard";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -35,6 +36,10 @@ function App() {
             path={"/project/Shalo"}
             element={<Shalo />}
           />
+                    <Route
+            path={"/project/WeatherCard"}
+            element={<WeatherCard />}
+          />
 
           <Route path={"/project/SecureMarshmallow/:irl"} element={<SecureMarshmallow />} />
           <Route path={"/project/Today/:irl"} element={<Today />} />
@@ -43,6 +48,10 @@ function App() {
           <Route
             path={"/project/Shalo/:irl"}
             element={<Shalo />}
+          />
+          <Route
+            path={"/project/WeatherCard/:irl"}
+            element={<WeatherCard />}
           />
 
           <Route path={"/library/PerfectContributionsView"} element={<PerfectContributionsView />} />
