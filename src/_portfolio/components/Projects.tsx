@@ -27,7 +27,7 @@ const Projects = () => {
             icon={"SM"}
             name={"SecureMarshmallow"}
             date={"2023.06.07 ~ 2023.08.04"}
-            tags={["Swift", "Snpkit", "Then", "IOSSecuritySuite", "RxSwift", "MVP"]}
+            tags={["Swift", "Snpkit", "Then", "IOSSecuritySuite", "RxSwift", "MVP", "frida"]}
             description={"사용자의 개인정보를 안전하게 : SecureMarshmallow🔓"}
           />
           <Project

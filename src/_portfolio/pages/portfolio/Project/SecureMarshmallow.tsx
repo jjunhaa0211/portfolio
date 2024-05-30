@@ -107,7 +107,7 @@ const SecureMarshmallow = () => {
         </Txt>
       </Top>
       <Tags>
-        {["Swift", "Snpkit", "Then", "IOSSecuritySuite", "RxSwift", "MVP"].map((v) => {
+        {["Swift", "Snpkit", "Then", "IOSSecuritySuite", "RxSwift", "MVP", "frida"].map((v) => {
           return DefaultTag[v as keyOfDefaultTag];
         })}
       </Tags>

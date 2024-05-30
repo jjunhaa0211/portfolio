@@ -317,6 +317,14 @@ export const DefaultTag = {
     backgroundColor={"rgb(108, 186, 255)"}
     textColor={"Black0"}
   />
+  ),
+  frida: (
+    <Tag
+    key={"frida"}
+    name={"frida"}
+    backgroundColor={"rgb(226, 242, 255)"}
+    textColor={"Black0"}
+  />
   )
 };
 
