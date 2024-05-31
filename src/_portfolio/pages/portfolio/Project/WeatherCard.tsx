@@ -39,7 +39,7 @@ const WeatherCard = () => {
         <URLBox>
       <URLItem
           icon={"WeatherCard"}
-          text={"오늘하루의 날씨를 알려주는 앱"}
+          text={"오늘하루의 날씨를 알려주는 어플리케이션"}
         >
           <Txt>한줄 요약</Txt>
         </URLItem>
