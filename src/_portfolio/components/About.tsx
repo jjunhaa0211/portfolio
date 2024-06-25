@@ -45,7 +45,7 @@ const About = () => {
           }}
         >
           <Txt typography={media ? "H2" : "H3"}>{irl.name}</Txt>
-          <Txt typography={media ? "H4" : "P2"}>Developer</Txt>
+          <Txt typography={media ? "H4" : "P2"}>iOS Developer</Txt>
           <Txt typography={media ? "P1" : "P0"}>
             "유연한 아키텍처 설계와 사용자 경험에 관심이 많은 엔지니어입니다."
           </Txt>
@@ -53,8 +53,7 @@ const About = () => {
       </ProfileDiv>
       <ProfileDescription style={{ margin: "60px" }}>
         <FocusTxt>Why iOS?</FocusTxt>
-        <Txt typography={media ? "P1" : "P0"} center>
-        </Txt>
+        <Txt typography={media ? "P1" : "P0"} center></Txt>
         <Txt typography={media ? "P1" : "P0"} center>
           다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤
           했습니다.
@@ -65,14 +64,15 @@ const About = () => {
           같습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게 성장하고 있습니다.
+          개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게
+          성장하고 있습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-        현재 여러 언어를 학습하며 배움을 이어가고 있습니다.
+          현재 여러 언어를 학습하며 배움을 이어가고 있습니다.
         </Txt>
       </ProfileDescription>
       <TagDiv style={{ margin: "30px" }}>
-      <FocusTxt style={{ marginBottom: "20px" }}>Skill</FocusTxt>
+        <FocusTxt style={{ marginBottom: "20px" }}>Skill</FocusTxt>
         <TagBox $align={"center"}>
           {DefaultTag.Swift}
           {DefaultTag.Snpkit}
