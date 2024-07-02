@@ -154,7 +154,7 @@ const TitleBox = styled.div`
 
 const DetailBox = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;

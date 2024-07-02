@@ -34,6 +34,16 @@ const Libraries = () => {
               "🎆 A library created to use the camera easily 🌌"
             }
           />
+          <Project
+            link={`/library/VisitHistoryWebView/${key}`}
+            icon={"VisitHistoryWebView"}
+            name={"VisitHistoryWebView"}
+            date={"2024.06.30~"}
+            tags={["Swift", "WebKit"]}
+            description={
+              "🛜 인터넷 방문기록을 받아오는 iOS 웹 뷰 라이브러리 🧿"
+            }
+          />
           {/* <Project
             link={`/library/Graps/${key}`}
             icon={"Graps"}

@@ -74,6 +74,16 @@ const ToyProjects = () => {
               description={"마피아"}
             />
           </ToyBoxs>
+          <ToyBoxs>
+            <ToyProject
+              link={`/toy/WeatherCard/${key}`}
+              icon={"WeatherCard"}
+              name={"WeatherCard"}
+              date={"2024.05.27 ~ 2024.05.29"}
+              tags={["TS", "ReactNative", "axios"]}
+              description={"오늘하루의 날씨를 알려주는 앱"}
+            />
+          </ToyBoxs>
         </div>
       </GBody>
     </>

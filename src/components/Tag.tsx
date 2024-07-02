@@ -325,6 +325,14 @@ export const DefaultTag = {
     backgroundColor={"rgb(226, 242, 255)"}
     textColor={"Black0"}
   />
+  ),
+  WebKit: (
+    <Tag
+    key={"WebKit"}
+    name={"WebKit"}
+    backgroundColor={"rgb(249, 208, 3)"}
+    textColor={"Black0"}
+  />
   )
 };
 

@@ -19,6 +19,7 @@ import Mint from "../_portfolio/pages/portfolio/ToyProject/Mint";
 import NFCProject from "../_portfolio/pages/portfolio/ToyProject/NFCProject";
 import AppLinkProject from "../_portfolio/pages/portfolio/ToyProject/AppLinkProject";
 import WeatherCard from "../_portfolio/pages/portfolio/Project/WeatherCard";
+import VisitHistoryWebView from "../_portfolio/pages/portfolio/Library/VisitHistoryWebView";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -36,10 +37,6 @@ function App() {
             path={"/project/Shalo"}
             element={<Shalo />}
           />
-                    <Route
-            path={"/project/WeatherCard"}
-            element={<WeatherCard />}
-          />
 
           <Route path={"/project/SecureMarshmallow/:irl"} element={<SecureMarshmallow />} />
           <Route path={"/project/Today/:irl"} element={<Today />} />
@@ -49,21 +46,20 @@ function App() {
             path={"/project/Shalo/:irl"}
             element={<Shalo />}
           />
-          <Route
-            path={"/project/WeatherCard/:irl"}
-            element={<WeatherCard />}
-          />
 
           <Route path={"/library/PerfectContributionsView"} element={<PerfectContributionsView />} />
           <Route path={"/library/XCamerakit"} element={<XCameraKit />} />
           {/* <Route path={"/library/Graps"} element={<Graps />} /> */}
           <Route path={"/library/AVSlider"} element={<AVSlider />} />
+          <Route path={"/library/VisitHistoryWebView"} element={<VisitHistoryWebView />} />
 
           <Route path={"/toy/ForcedBlockingSwift"} element={<ForcedBlockingSwift />} />
           <Route path={"/toy/Mafia"} element={<Mafia />} />
           <Route path={"/toy/Mint"} element={<Mint />} />
           <Route path={"/toy/NFCProject"} element={<NFCProject />} />
           <Route path={"/toy/AppLinkProject"} element={<AppLinkProject />} />
+          <Route
+            path={"/toy/WeatherCard"} element={<WeatherCard />} />
 
         </Route>
         <Route path="/*" element={<Main />} />

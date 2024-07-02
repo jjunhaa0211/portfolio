@@ -56,14 +56,6 @@ const Projects = () => {
             tags={["Swift", "Snpkit", "Then", "CoreImage", "MVC"]}
             description={"모바일로 손쉽게 영상을 편집하는 툴"}
           />
-          <Project
-            link={`/project/WeatherCard/${key}`}
-            icon={"WeatherCard"}
-            name={"WeatherCard"}
-            date={"2024.05.27 ~ 2024.05.29"}
-            tags={["TS", "ReactNative", "axios"]}
-            description={"오늘하루의 날씨를 알려주는 앱"}
-          />
         </ProjectBox>
       </GBody>
     </>

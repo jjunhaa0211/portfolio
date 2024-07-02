@@ -25,7 +25,8 @@ export const Icons = {
     Mint: "Mint.webp",
     Link: "link.webp",
     NFC: "NFC.webp",
-    WeatherCard: "WeatherCard.webp"
+    WeatherCard: "WeatherCard.webp",
+    VisitHistoryWebView: "VisitHistoryWebView.png"
 }
 
 export type keyOfIcons = keyof typeof Icons;

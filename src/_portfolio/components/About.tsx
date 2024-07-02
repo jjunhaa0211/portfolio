@@ -159,13 +159,13 @@ const About = () => {
         />
         <TimeFrame date={"2023.07.05~2023.07.07"} text={"교내 해커톤 - Mint"} />
         <TimeFrame date={"2023.07.12~2023.07.14"} text={"데프콘 부스 운영"} />
+        <TimeFrame date={"2023.07.18"} text={"KWDC 컨퍼런스 참여"} out />
         <TimeFrame
           date={"2023.08.17~2023.11.07"}
           text={"프로젝트: LookMonster"}
           highlight={"Orange"}
           out
         />
-        <TimeFrame date={"2023.07.18"} text={"KWDC 컨퍼런스 참여"} out />
         <TimeFrame
           date={"2023.09.18~"}
           text={"프로젝트: 마음가짐"}
@@ -178,6 +178,22 @@ const About = () => {
           date={"2024.03.28~2024.04.24"}
           text={"프로젝트: Shalo"}
           highlight={"Orange"}
+        />
+        <TimeFrame
+          date={"2024.05.27~2024.05.29"}
+          text={"프로젝트: WeatherCard"}
+          highlight={"Orange"}
+          out
+        />
+        <TimeFrame
+          date={"2024.03.21~2024/06/14"}
+          text={"프로젝트: Decofolio"}
+          highlight={"Orange"}
+        />
+        <TimeFrame
+          date={"2024.06.30~2024.07.02"}
+          text={"VisitHistoryWebView 라이브러리 개발"}
+          out
         />
       </TimeIdx>
     </GBody>
