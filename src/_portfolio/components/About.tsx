@@ -55,20 +55,17 @@ const About = () => {
         <FocusTxt>Why iOS?</FocusTxt>
         <Txt typography={media ? "P1" : "P0"} center></Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          다른 사람이 저의 도움에 감사를 표현할 때마다 큰 만족감을 느끼곤
-          했습니다.
+          저는 다른 사람이 저의 수고로 더 나은 삶을 보장 받을 수 있게 되는 모습을 보며 성장해왔습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
           그렇기에 제가 만든 앱이 누군가에게 도움이 되고 그들의 삶을 더 나은
-          방향으로 이끈다면 그 행복은 다른 어떤 행복보다도 크게 느껴질 것
-          같습니다.
+          방향으로 선도할 수 있다면, 그것은 저에게 더할 나위 없는 행복입니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          개발을 처음 시작할 때는 어려움이 많았지만, 지속적인 학습을 통해 크게
-          성장하고 있습니다.
+          개발을 처음 접했을 때, 미래에 대한 여러 고찰이 있었지만, 그럴 때마다 의지를 다져가며 개발자로서의 마음가짐을 바로잡았습니다.
         </Txt>
         <Txt typography={media ? "P1" : "P0"} center>
-          현재 여러 언어를 학습하며 배움을 이어가고 있습니다.
+          이러한 경험들이 모여 현재의 저를 만들었고 현재는 여러 언어를 학습하며 견문을 넓혀가고 있습니다.
         </Txt>
       </ProfileDescription>
       <TagDiv style={{ margin: "30px" }}>

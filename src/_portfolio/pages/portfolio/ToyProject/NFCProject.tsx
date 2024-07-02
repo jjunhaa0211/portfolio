@@ -29,7 +29,7 @@ const NFCProject = () => {
 
   const { Result: Result3 } = useMoonerDown(`
   ### 회고
-  \`CoreNFC\`를 사용해서 NFC를 구현해보았습니다. \`NearField Communication TagReading\`를 capability에 추가하고 NFCManager를 추가하여서 NFC 관련 메소드들을 공부해보는 계기가 되었습니다. \`startLookingForTag\`를 사용해서 NFC를 읽고 받은 \`NFCNDEFMessage\` 메소드를 처리해주는 작업을 통해서 사용자에게 보다 자세한 NFC 메세지를 전달하는 작업을 했습니다. 그리고 \`NFCNDEFPayload\`를 extension 하여서 사용자에게 보다 자세한 NFC 형식을 텍스트화 했습니다. NFC를 사용해서 이벤트를 처리해보는 작업을 하면서 \`CoreNFC\`를 공부해보고 이해대한 이해도가 높아질 수 있었습니다. 추후에 NFC를 통한 결제 시스템을 구축해보겠다는 목표가 생겼습니다!`);
+  \`CoreNFC\`를 사용해서 NFC를 구현해보았습니다. \`NearField Communication TagReading\`를 capability에 추가하고 NFCManager를 추가하여 NFC 관련 메소드들을 공부해보는 계기가 되었습니다. \`startLookingForTag\`를 사용해서 NFC를 읽고 받은 \`NFCNDEFMessage\` 메소드를 처리해주는 작업을 통해서 사용자에게 보다 자세한 NFC 메세지를 전달하는 작업을 했습니다. 그리고 \`NFCNDEFPayload\`를 extension 하여 사용자에게 보다 자세한 NFC 형식을 텍스트화 했습니다. NFC를 사용해서 이벤트를 처리해보는 작업을 하면서 \`CoreNFC\`를 공부해보고 이해대한 이해도가 높아질 수 있었습니다. 추후에 NFC를 통한 결제 시스템을 구축해보겠다는 목표가 생겼습니다!`);
 
   return (
     <>
