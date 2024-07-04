@@ -18,8 +18,10 @@ import Mafia from "../_portfolio/pages/portfolio/ToyProject/Mafia";
 import Mint from "../_portfolio/pages/portfolio/ToyProject/Mint";
 import NFCProject from "../_portfolio/pages/portfolio/ToyProject/NFCProject";
 import AppLinkProject from "../_portfolio/pages/portfolio/ToyProject/AppLinkProject";
-import WeatherCard from "../_portfolio/pages/portfolio/Project/WeatherCard";
+import WeatherCard from "../_portfolio/pages/portfolio/ToyProject/WeatherCard";
 import VisitHistoryWebView from "../_portfolio/pages/portfolio/Library/VisitHistoryWebView";
+import Decofolio from "../_portfolio/pages/portfolio/ToyProject/Decofolio";
+import JunNote from "../_portfolio/pages/portfolio/ToyProject/JunNote";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -29,38 +31,47 @@ function App() {
       <Route element={<Header />}>
         <Route path="/:irl" element={<Main />} />
         <Route element={<ProjectPage />}>
-          <Route path={"/project/SecureMarshmallow"} element={<SecureMarshmallow />} />
+          <Route
+            path={"/project/SecureMarshmallow"}
+            element={<SecureMarshmallow />}
+          />
           <Route path={"/project/Today"} element={<Today />} />
           <Route path={"/project/LookMonster"} element={<LookMonster />} />
           <Route path={"/project/Maeumgajim"} element={<Maeumgajim />} />
-          <Route
-            path={"/project/Shalo"}
-            element={<Shalo />}
-          />
+          <Route path={"/project/Shalo"} element={<Shalo />} />
 
-          <Route path={"/project/SecureMarshmallow/:irl"} element={<SecureMarshmallow />} />
+          <Route
+            path={"/project/SecureMarshmallow/:irl"}
+            element={<SecureMarshmallow />}
+          />
           <Route path={"/project/Today/:irl"} element={<Today />} />
           <Route path={"/project/LookMonster/:irl"} element={<LookMonster />} />
           <Route path={"/project/Maeumgajim/:irl"} element={<Maeumgajim />} />
-          <Route
-            path={"/project/Shalo/:irl"}
-            element={<Shalo />}
-          />
+          <Route path={"/project/Shalo/:irl"} element={<Shalo />} />
 
-          <Route path={"/library/PerfectContributionsView"} element={<PerfectContributionsView />} />
+          <Route
+            path={"/library/PerfectContributionsView"}
+            element={<PerfectContributionsView />}
+          />
           <Route path={"/library/XCamerakit"} element={<XCameraKit />} />
           {/* <Route path={"/library/Graps"} element={<Graps />} /> */}
           <Route path={"/library/AVSlider"} element={<AVSlider />} />
-          <Route path={"/library/VisitHistoryWebView"} element={<VisitHistoryWebView />} />
+          <Route
+            path={"/library/VisitHistoryWebView"}
+            element={<VisitHistoryWebView />}
+          />
 
-          <Route path={"/toy/ForcedBlockingSwift"} element={<ForcedBlockingSwift />} />
+          <Route
+            path={"/toy/ForcedBlockingSwift"}
+            element={<ForcedBlockingSwift />}
+          />
           <Route path={"/toy/Mafia"} element={<Mafia />} />
           <Route path={"/toy/Mint"} element={<Mint />} />
           <Route path={"/toy/NFCProject"} element={<NFCProject />} />
           <Route path={"/toy/AppLinkProject"} element={<AppLinkProject />} />
-          <Route
-            path={"/toy/WeatherCard"} element={<WeatherCard />} />
-
+          <Route path={"/toy/WeatherCard"} element={<WeatherCard />} />
+          <Route path={"/toy/Decofolio"} element={<Decofolio />} />
+          <Route path={"/toy/JunNote"} element={<JunNote/>} />
         </Route>
         <Route path="/*" element={<Main />} />
       </Route>

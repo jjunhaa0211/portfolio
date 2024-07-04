@@ -84,6 +84,28 @@ const ToyProjects = () => {
               description={"오늘하루의 날씨를 알려주는 앱"}
             />
           </ToyBoxs>
+          <ToyBoxs>
+            <ToyProject
+              link={`/toy/Decofolio/${key}`}
+              icon={"Decofolio"}
+              name={"Decofolio"}
+              date={"2024.05.27 ~ 2024.05.29"}
+              tags={["TS", "React", "axios", "StyledComponent"]}
+              description={"오늘하루의 날씨를 알려주는 앱"}
+            />
+          </ToyBoxs>
+        </div>
+        <div style={{ display: "flex", gap: 35 }}>
+          <ToyBoxs>
+            <ToyProject
+              link={`/toy/JunNote/${key}`}
+              icon={"JunNote"}
+              name={"JunNote"}
+              date={"2024.06.25~2024.07.04"}
+              tags={["Swift", "TS", "WebKit"]}
+              description={"마피아"}
+            />
+          </ToyBoxs>
         </div>
       </GBody>
     </>

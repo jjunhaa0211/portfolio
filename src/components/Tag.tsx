@@ -333,6 +333,14 @@ export const DefaultTag = {
     backgroundColor={"rgb(249, 208, 3)"}
     textColor={"Black0"}
   />
+  ),
+  StyledComponent: (
+    <Tag
+    key={"StyledComponent"}
+    name={"StyledComponent"}
+    backgroundColor={"rgb(12, 226, 123)"}
+    textColor={"Black0"}
+  />
   )
 };
 
