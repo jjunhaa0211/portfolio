@@ -6,7 +6,7 @@ import Header from "../_portfolio/components/Header";
 import ProjectPage from "../_portfolio/pages/ProjectPage";
 import SecureMarshmallow from "../_portfolio/pages/portfolio/Project/SecureMarshmallow";
 import Today from "../_portfolio/pages/portfolio/Project/Today";
-import LookMonster from "../_portfolio/pages/portfolio/Project/LookMonster";
+import LookMonster from "../_portfolio/pages/portfolio/ToyProject/LookMonster";
 import Maeumgajim from "../_portfolio/pages/portfolio/Project/Maeumgajim";
 import PerfectContributionsView from "../_portfolio/pages/portfolio/Library/PerfectContributionsView";
 import XCameraKit from "../_portfolio/pages/portfolio/Library/XCameraKit";
