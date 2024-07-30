@@ -62,7 +62,7 @@ import {
         <URLBox>
           <URLItem
             icon={"Conty"}
-            text={"이쁘고 귀여운 이모티콘들을 콘티에서 만나봐요~ 0.oasdfsafds"}
+            text={"이쁘고 귀여운 이모티콘들을 콘티에서 만나봐요~ 0.o"}
           >
             <Txt>한줄 요약</Txt>
           </URLItem>
@@ -76,7 +76,7 @@ import {
   
         <Lefter>
           <Img
-            url={"banner/JagijudoBanner.webp"}
+            url={"banner/Contybanner.webp"}
             width={"100%"}
             border={"0"}
             align={"center"}

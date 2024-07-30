@@ -14,79 +14,187 @@ import {
   import { Txt } from "../../../../components/Txt";
   import { DefaultTag, keyOfDefaultTag } from "../../../../components/Tag";
   import useMoonerDown from "../../../../utils/editor/hook/useMoonerDown";
+  import Video1 from "../../../../assets/자기주도영상.mp4";
+  import Video2 from "../../../../assets/자기주도영상2.mp4";
   
   const JAGIJUDO = () => {
-    // const { Result } = useMoonerDown(`### 개요
-    // 대덕소프트웨어마이스터고에서 진행하는 소프트웨어 공학 수업의 일환으로, 개발자들이 자신만의 포트폴리오를 쉽게 생성하고 관리할 수 있는 웹사이트를 개발하는 프로젝트입니다. 대부분 개발자가 자신의 능력과 경험을 효과적으로 보여줄 수 있는 포트폴리오의 필요성을 느끼지만, 실제로 이를 구현하기까지는 많은 어려움이 따릅니다. 이러한 문제를 해결하고자, 템플릿을 제공하는 포트폴리오 생성 웹사이트를 개발하였습니다.
-  
-    //   ### 구현 기능
-    //   - 포트폴리오를 제공
-    //   - 반응형 웹사이트 제공
-    //   - 깃허브 링크 클론 기능
-    //   - PDF 변환 기능
-  
-    //   ### 주요 업무 및 상세 역할
-    //   - 일정 관리, 기획, 팀원 관리를 담당하는 프로젝트 매니저(PM) 역활 수행
-    //   - Auth 부분 서버 연동 및 뷰 개발
-    //   - 전체적인 코드 리뷰 및 리펙토링
-  
-    //   ### 문제 해결
-    //   \`문제 상황\`
-    //   CSS 파일과 HTML 파일에 대한 길이 및 파일 증가
-    //   \`해결 방안\`
-    //   tsx 파일을 사용해서 함수형으로 HTML 파일을 내보낼 수 있도록 하고 TS 파일을 동시에 작성할 수 있으며 styled-components를 사용해서 TS 파일에 CSS 파일을 추가할 수 있게 되어서 문제를 해결했습니다.
-    //   `);
+ 
+    const { Result } = useMoonerDown(`### 개요
+        본래는 영어 공부를 하기 위한 단어장을 만들려고 하였습니다. 영어 단어장, 퀴즈, 번역기 등등의 기능을 만들고나니 사회적 약자인 노인, 시각 장애인, 청각 장애인은 어떻게 영어 공부를 할까? 라는 생각이 들어서 프로젝트를 시작하게 되었습니다.
+        시각이 불편한 사람에게는 VoiceOver를 사용해서 귀로 들려주고 귀가 불편한 청각 장애인분들을 위해서는 애플의 텍스트 크기를 증가했을 때 앱이 유동적으로 커지게 하는 것이 목표로 개발을 시작했습니다.
+        
+        ### 구현 기능
+        - 번역기를 기능 구현
+        - 번역기 즐겨찾기 구현
+        - 개발 단어장 추가 및 삭제, 수정
+        - 나만의 단어 퀴즈 구현
+        - 정밀 체점 기능 구현
+        - 강의로 공부하는 기능 구현
+        - 강의 대본 번역 기능 구현
+        - AI를 사용한 스피킹 연습 기능 구현
+        `);
+    
+      const { Result: Result2 } = useMoonerDown(`
+      ### 회고
+      영어 단어장을 개발하면서 CoreData에 대한 이해도를 높였으며 복잡한 데이터를 구조화해서 저장할 때 편리하다는 것을 꺠닳았고 요번 프로젝트에서 일반적인 네비게이션 이동이 아닌 코디네이터 패턴을 사용해서 네비게이션을 조정하는 방법을 알았습니다.
+      프로젝트에서 장애인을 위한 기능을 개발한 만큼 VoiceOver에 대해서 깊게 공부할 수 있었고 VoiceOver 사용에 능숙해졌습니다. 그리고 폰트를 고정으로 주는 것이 아닌 유동적을 주면서 사용자의 폰트크기에 따라 변경할 수 있도록 만들 수 있었습니다.
+      ChatGPT API를 사용하여 AI를 사용한 스피킹 연습이 가능하도록 만들었는데 AVFoundation의 사진 기능과 영상 기능이 아닌 보이스 기능도 담당하는 것을 알았으며 이를 활용해서 AI에게 서버가 들어오면 이를 읽어주는 기능을 만들 수 있었습니다.
+      번역기 역시 기존 파파고 번역기를 사용하지 못해서 깃허브에 번역기 API를 수동으로 서버로 켜서 작업을 진행했습니다. 현재 프로젝트는 번역기 API를 배포하지 못해 앱스토어에 배포는 하지 못하였지만 제가 영어 공부를 하면서 실제 단어 암기장으로 사용하고 있습니다!`);
+      return (
+        <>
+          <Top>
+            <GIcon icon={"JAGIJUDO"} width={"100px"} />
+            <Txt typography={"H0"}>
+              자기주도 <Txt typography={"P1"}>2024.07.09~2024.07.17</Txt>
+            </Txt>
+          </Top>
+          <Tags>{["Swift", "CoreData", "ChatGPT"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+    
+          <URLBox>
+          <URLItem
+              icon={"JAGIJUDO"}
+              text={"시각 및 청각 장애인용 통합 학습 플랫폼"}
+            >
+              <Txt>한줄 요약</Txt>
+          </URLItem>
+            <URLItem
+              icon={"Github"}
+              url={"https://github.com/jjunhaa0211/JAGIJUDO"}
+            >
+              <Txt>Github (Project)</Txt>
+            </URLItem>
+          </URLBox>
+    
+          <Lefter>
+            <Img
+              url={"banner/JagijudoBanner.webp"}
+              width={"100%"}
+              border={"0"}
+              align={"center"}
+            />
+          </Lefter>
+    
+          {Result}
+    
+          <Details>
+            <summary>UI 화면</summary>
+            <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+              <Img
+                url={"JAGIJUDO/J1.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J2.png"}
+                width={"80%"}
+                border={"0"}
+                align={"flex-end"}
+              />
+              <Img
+                url={"JAGIJUDO/J3.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J4.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J5.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+            </div>
+            <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+              <Img
+                url={"JAGIJUDO/J6.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J7.png"}
+                width={"80%"}
+                border={"0"}
+                align={"flex-end"}
+              />
+              <Img
+                url={"JAGIJUDO/J8.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J9.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"JAGIJUDO/J10.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+            </div>
+    
+          <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+            <Img
+              url={"JAGIJUDO/J11.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"JAGIJUDO/J12.png"}
+              width={"80%"}
+              border={"0"}
+              align={"flex-end"}
+            />
+            <Img
+              url={"JAGIJUDO/J13.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"JAGIJUDO/J14.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"JAGIJUDO/J15.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+          </Details>
 
-    const { Result } = useMoonerDown(`준비중입니다.`);
-  
-    // const { Result: Result2 } = useMoonerDown(`
-    //   ### 📚 회고
-    //   리액트를 사용하여 웹 뷰를 구성하는 경험을 통해, 전반적인 웹 레이아웃 작업에 대한 이해를 넓혔습니다. 특히, flex 개념을 통해 웹 디자인의 유연성에 대해 배울 수 있었고, 프론트엔드 팀원들과 함께 웹 사이트를 만드는 과정에서 스타일 컴포넌트와 tsx 파일 사용법에 대해 학습하는 등, 프론트엔드 개발에 대한 실질적인 경험을 쌓을 수 있었습니다.
-    //   프로젝트 초기 설정부터 디자인을 기반으로 한 뷰 구성까지의 과정을 경험하며, 웹 사이트 개발에 관한 관심이 깊어지게 되었습니다. 현재는 SCSS를 도입하여 스타일링의 효율성을 높이고 있으며, axios 대신 React-Query를 활용해 서버의 부하를 줄이는 캐싱 작업에 집중하고 있습니다. 이를 통해, 웹의 라우터 개념 및 브라우저의 동작 방식에 대한 이해도를 높이는 등 웹 개발에 대한 지식을 꾸준히 확장해 나가고 있습니다.
-    //   마지막으로 현재까지 웹 개발을 지속적으로 공부하며, 프로젝트를 성공적으로 발표했습니다.
-    //   `);
-    return (
-      <>
-        <Top>
-          <GIcon icon={"JAGIJUDO"} width={"100px"} />
-          <Txt typography={"H0"}>
-          JAGIJUDO <Txt typography={"P1"}>2024.07.09 ~ 2024.07.17</Txt>
-          </Txt>
-        </Top>
-        <Tags>
-          {["Swift", "CoreData", "ChatGPT"].map(
-            (v) => DefaultTag[v as keyOfDefaultTag]
-          )}
-        </Tags>
-  
-        <URLBox>
-          <URLItem
-            icon={"JAGIJUDO"}
-            text={"시각 및 청각 장애인용 통합 학습 플랫폼"}
-          >
-            <Txt>한줄 요약</Txt>
-          </URLItem>
-          <URLItem
-            icon={"Github"}
-            url={"https://github.com/jjunhaa0211/JAGIJUDO"}
-          >
-            <Txt>Github</Txt>
-          </URLItem>
-        </URLBox>
-  
-        <Lefter>
-          <Img
-            url={"banner/JagijudoBanner.webp"}
-            width={"100%"}
-            border={"0"}
-            align={"center"}
-          />
-        </Lefter>
-        {Result}
-        {/* {Result2} */}
-      </>
-    );
-  };
+          <Details>
+          <summary>보이스오버 화면</summary>
+          <video
+                src={Video1}
+                controls
+                style={{ width: "20%", objectFit: "cover" }}
+            ></video>
+                      <video
+                src={Video2}
+                controls
+                style={{ width: "20%", objectFit: "cover" }}
+            ></video>
+          </Details>
+    
+          {Result2}
+        </>
+      );
+    };    
   
   export default JAGIJUDO;
   
