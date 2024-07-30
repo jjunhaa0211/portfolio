@@ -103,7 +103,27 @@ const ToyProjects = () => {
               name={"JunNote"}
               date={"2024.06.25~2024.07.04"}
               tags={["Swift", "TS", "WebKit"]}
-              description={"마피아"}
+              description={"준노트"}
+            />
+          </ToyBoxs>
+          <ToyBoxs>
+            <ToyProject
+              link={`/toy/JAGIJUDO/${key}`}
+              icon={"JAGIJUDO"}
+              name={"JAGIJUDO"}
+              date={"2024.07.09~2024/07/17"}
+              tags={["Swift", "CoreData", "ChatGPT"]}
+              description={"영어 단어장"}
+            />
+          </ToyBoxs>
+          <ToyBoxs>
+            <ToyProject
+              link={`/toy/Conty/${key}`}
+              icon={"Conty"}
+              name={"Conty"}
+              date={"2024.07.29~2024.07.30"}
+              tags={["Swift", "Snpkit", "GoogleMobileAds"]}
+              description={"특수문자"}
             />
           </ToyBoxs>
         </div>

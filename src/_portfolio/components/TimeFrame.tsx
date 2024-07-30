@@ -59,10 +59,6 @@ const Box = styled(motions.fadeDiv)`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-
-  //@media (max-width: 768px) {
-  //  transform: scale(0.75);
-  //}
 `
 
 export default TimeFrame;

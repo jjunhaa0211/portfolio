@@ -102,6 +102,8 @@ const About = () => {
           {DefaultTag.ReactNative}
           {DefaultTag.React}
           {DefaultTag.SCSS}
+          {DefaultTag.GoogleMobileAds}
+          {DefaultTag.CoreData}
         </TagBox>
       </TagDiv>
       <TimeIdx style={{ margin: "80px" }}>
@@ -190,6 +192,16 @@ const About = () => {
         <TimeFrame
           date={"2024.06.30~2024.07.02"}
           text={"VisitHistoryWebView 라이브러리 개발"}
+          out
+        />
+        <TimeFrame
+          date={"2024.07.09~2024/017/17"}
+          text={"프로젝트: 자기주도"}
+          highlight={"Orange"}
+        />
+        <TimeFrame
+          date={"2024.07.29~2024.07.30"}
+          text={"프로젝트: 콘티(Conty)"}
           out
         />
       </TimeIdx>

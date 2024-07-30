@@ -22,6 +22,8 @@ import WeatherCard from "../_portfolio/pages/portfolio/ToyProject/WeatherCard";
 import VisitHistoryWebView from "../_portfolio/pages/portfolio/Library/VisitHistoryWebView";
 import Decofolio from "../_portfolio/pages/portfolio/ToyProject/Decofolio";
 import JunNote from "../_portfolio/pages/portfolio/ToyProject/JunNote";
+import JAGIJUDO from "../_portfolio/pages/portfolio/ToyProject/JAGIJUDO";
+import Conty from "../_portfolio/pages/portfolio/ToyProject/Conty";
 
 export const APP_VERSION = "2024-03-07 16:26 (KST)";
 
@@ -72,6 +74,9 @@ function App() {
           <Route path={"/toy/WeatherCard"} element={<WeatherCard />} />
           <Route path={"/toy/Decofolio"} element={<Decofolio />} />
           <Route path={"/toy/JunNote"} element={<JunNote/>} />
+          <Route path={"/toy/JAGIJUDO"} element={<JAGIJUDO/>} />
+          <Route path={"/toy/Conty"} element={<Conty/>} />
+
         </Route>
         <Route path="/*" element={<Main />} />
       </Route>

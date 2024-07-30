@@ -28,7 +28,9 @@ export const Icons = {
     WeatherCard: "WeatherCard.webp",
     VisitHistoryWebView: "VisitHistoryWebView.png",
     Decofolio: "Decofolio.webp",
-    JunNote: "JunNote.webp"
+    JunNote: "JunNote.webp",
+    JAGIJUDO: "JAGIJUDO.webp",
+    Conty: "Conty.webp"
 }
 
 export type keyOfIcons = keyof typeof Icons;

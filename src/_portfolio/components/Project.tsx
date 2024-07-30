@@ -35,6 +35,7 @@ const Project = (props: {
           nav(props.link);
         }}
         className="kfc"
+        $show={true}
       >
         <GIcon
           icon={props.icon}

@@ -341,7 +341,31 @@ export const DefaultTag = {
     backgroundColor={"rgb(12, 226, 123)"}
     textColor={"Black0"}
   />
-  )
+  ),
+  CoreData: (
+    <Tag
+    key={"CoreData"}
+    name={"CoreData"}
+    backgroundColor={"rgb(98, 126, 255)"}
+    textColor={"White0"}
+  />
+  ),
+  GoogleMobileAds: (
+    <Tag
+    key={"GoogleMobileAds"}
+    name={"GoogleMobileAds"}
+    backgroundColor={"rgb(236, 12, 34)"}
+    textColor={"White0"}
+  />
+  ),
+  ChatGPT: (
+    <Tag
+    key={"ChatGPT"}
+    name={"ChatGPT"}
+    backgroundColor={"rgb(25, 219, 148)"}
+    textColor={"Black0"}
+  />
+  ),
 };
 
 export type keyOfDefaultTag = keyof typeof DefaultTag;
