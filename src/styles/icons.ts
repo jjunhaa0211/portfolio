@@ -1,5 +1,6 @@
 export const Icons = {
     Profile: "profile.webp",
+    AppStore: "AppStore.webp",
     Indexer: "Indexer.svg",
     SM: "sm.webp",
     마음가짐: "Maeumgajim.webp",

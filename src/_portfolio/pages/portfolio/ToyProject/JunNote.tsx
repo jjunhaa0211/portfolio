@@ -72,6 +72,14 @@ import {
           >
             <Txt>Github</Txt>
           </URLItem>
+          <URLItem
+          icon={"AppStore"}
+          url={
+            "https://apps.apple.com/kr/app/%EC%A4%80%EB%85%B8%ED%8A%B8/id6505130882"
+          }
+        >
+          <Txt>AppStore</Txt>
+        </URLItem>
         </URLBox>
   
         <Lefter>

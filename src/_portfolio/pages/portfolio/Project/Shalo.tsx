@@ -1,11 +1,22 @@
-import { A, H3, Img, P, Tags, Top, URLBox, URLItem, Lefter, Details } from "../../../components/layout/projectLayout";
+import {
+  A,
+  H3,
+  Img,
+  P,
+  Tags,
+  Top,
+  URLBox,
+  URLItem,
+  Lefter,
+  Details,
+} from "../../../components/layout/projectLayout";
 import { GIcon } from "../../../../components/GIcon";
 import { Txt } from "../../../../components/Txt";
 import { DefaultTag, keyOfDefaultTag } from "../../../../components/Tag";
 import useMoonerDown from "../../../../utils/editor/hook/useMoonerDown";
 
 const Shalo = () => {
-    const { Result } = useMoonerDown(`### 개요
+  const { Result } = useMoonerDown(`### 개요
     영상 편집에 대한 관심을 바탕으로, 이 분야의 작업 방식에 대해 호기심을 느끼게 되었습니다. 이러한 관심을 실현하기 위해, 필터 적용, 영상 속도 조절 등의 기능을 포함하는 영상 편집 툴을 직접 개발해보는 프로젝트를 시작하게 되었습니다. 이번 프로젝트의 목표는 모바일을 통해 누구나 쉽게 영상을 편집할 수 있는 도구를 개발하는 것입니다.
     ### 역할
     - iOS 앱개발을 담당했습니다.
@@ -23,8 +34,7 @@ const Shalo = () => {
     \`해결 방법\`
     💡 기존의 뷰의 요소를 분할하는 방법을 채택했습니다. 예를 들어, collectionView와 같은 경우 dataSource와 layout을 별도의 클래스로 분리하고 상속을 통해 코드 길이를 줄이기 위해 노력했습니다. 또한, 함수의 길이를 10줄로, 클래스의 길이를 200줄로 제한하는 200/10원칙을 준수하고, 상속을 통해 코드를 간소화하는 작업을 진행했습니다.`);
 
-  const { Result: Result2 } =
-    useMoonerDown(`
+  const { Result: Result2 } = useMoonerDown(`
     ###### 노티피케이션 관련 코드 리팩토링
     \`문제 상황\`
     프로젝트 초기에는 노티피케이션을 예약할 때 매번 새로운 AppDelegate 인스턴스를 생성하는 문제가 있었습니다. 이로 인해 노티피케이션을 제대로 예약하지 못하는 문제가 발생했습니다. 또한, 알림 권한을 요청하는 부분이 호출되지 않아 사용자에게 알림 권한을 요청하지 않고 노티피케이션을 보내려고 했을 때도 문제가 있었습니다.  마지막으로, 앱이 백그라운드에서 동작처리가 원할하지 않는 문제 또한 발생했습니다.
@@ -42,29 +52,41 @@ const Shalo = () => {
 특히, 필터를 직접 만들어보며 관련 기술에 대한 이해를 더욱 넓힐 수 있었습니다. 또한, UIKit을 활용해 StackView를 이용한 레이아웃을 구성함으로써 효율적인 레이아웃 설계 방법에 대해 깊이 이해할 수 있었습니다.
 마지막으로, **다국어 지원**을 추가하면서 Localizable을 경험해보고, 앱 내 속도 조정, 노출 기울기 조절 등 다양한 기능을 구현하면서 비디오 편집에 필요한 전반적인 지식을 쌓을 수 있었습니다. 추후에는 필터와 기능만 있는 것이 아닌 컷편집 기능을 구현해보고자 하는 욕심이 생겼습니다.
     `);
-    return <>
-        <Top>
-            <GIcon icon={"Shalo"} width={"100px"}/>
-            <Txt typography={"H0"}>Shalo <Txt typography={"P1"}>2024.03.28 ~ 2024.04.24</Txt></Txt>
-        </Top>
-        <Tags>{["Swift", "Snpkit", "Then", "CoreImage", "MVC"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
+  return (
+    <>
+      <Top>
+        <GIcon icon={"Shalo"} width={"100px"} />
+        <Txt typography={"H0"}>
+          Shalo <Txt typography={"P1"}>2024.03.28 ~ 2024.04.24</Txt>
+        </Txt>
+      </Top>
+      <Tags>
+        {["Swift", "Snpkit", "Then", "CoreImage", "MVC"].map(
+          (v) => DefaultTag[v as keyOfDefaultTag]
+        )}
+      </Tags>
 
-        <URLBox>
-      <URLItem
+      <URLBox>
+        <URLItem
           icon={"Shalo"}
           text={"누구나 쉽게 만들 수 있는 모바일 영상 편집 애플리케이션"}
         >
           <Txt>한줄 요약</Txt>
         </URLItem>
+        <URLItem icon={"Github"} url={"https://github.com/AVFNS/Shalo"}>
+          <Txt>Github</Txt>
+        </URLItem>
+        <URLItem
+          icon={"AppStore"}
+          url={
+            "https://apps.apple.com/kr/app/shalo/id6511210958"
+          }
+        >
+          <Txt>AppStore</Txt>
+        </URLItem>
       </URLBox>
 
-        <URLBox>
-            <URLItem icon={"Github"} url={"https://github.com/AVFNS/Shalo"}>
-                <Txt>Github</Txt>
-            </URLItem>
-        </URLBox>
-
-        <Lefter>
+      <Lefter>
         <Img
           url={"banner/sharkBanner.webp"}
           width={"100%"}
@@ -72,7 +94,7 @@ const Shalo = () => {
           align={"center"}
         />
       </Lefter>
-        {Result}
+      {Result}
       {Result2}
       <H3>세부 사항</H3>
       <Details>
@@ -159,6 +181,7 @@ const Shalo = () => {
         </div>
       </Details>
     </>
-}
+  );
+};
 
 export default Shalo;
