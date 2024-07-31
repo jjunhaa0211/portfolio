@@ -110,7 +110,7 @@ const ToyProjects = () => {
             <ToyProject
               link={`/toy/JAGIJUDO/${key}`}
               icon={"JAGIJUDO"}
-              name={"JAGIJUDO"}
+              name={"자기주도"}
               date={"2024.07.09~2024/07/17"}
               tags={["Swift", "CoreData", "ChatGPT"]}
               description={"영어 단어장"}

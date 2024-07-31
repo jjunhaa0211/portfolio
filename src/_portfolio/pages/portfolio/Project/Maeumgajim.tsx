@@ -204,6 +204,7 @@ const Maeumgajim = () => {
       </P2>
       <P2>Coordinator Pattern + RxFlow를 도입하여 화면 이동 관리</P2>
       <P2>우선 순위 큐를 활용한 숏폼 기능 구현</P2>
+      <P2>헬스 케어 부분, 메트로늄 부분 담당</P2>
       <H3>문제 상황과 해결점</H3>
       {Result3}
 
