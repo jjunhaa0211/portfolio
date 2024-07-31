@@ -9,6 +9,7 @@ import {
     URLItem,
     Lefter,
     Details,
+    H2,
   } from "../../../components/layout/projectLayout";
   import { GIcon } from "../../../../components/GIcon";
   import { Txt } from "../../../../components/Txt";
@@ -16,70 +17,56 @@ import {
   import useMoonerDown from "../../../../utils/editor/hook/useMoonerDown";
   
   const JunNote = () => {
-    // const { Result } = useMoonerDown(`### 개요
-    // 대덕소프트웨어마이스터고에서 진행하는 소프트웨어 공학 수업의 일환으로, 개발자들이 자신만의 포트폴리오를 쉽게 생성하고 관리할 수 있는 웹사이트를 개발하는 프로젝트입니다. 대부분 개발자가 자신의 능력과 경험을 효과적으로 보여줄 수 있는 포트폴리오의 필요성을 느끼지만, 실제로 이를 구현하기까지는 많은 어려움이 따릅니다. 이러한 문제를 해결하고자, 템플릿을 제공하는 포트폴리오 생성 웹사이트를 개발하였습니다.
+ 
+    const { Result } = useMoonerDown(`### 개요
+      리액트를 사용하여 반응형 웹뷰를 iOS에 연결하는 것을 목표로 프로젝트를 시작했습니다. 간단한 메모장 서비스를 만들면서 리액트에 대해 이해하고 iOS와 웹뷰를 상호작용하게 하는 것이 목표입니다. 웹뷰를 사용해 반응형으로 만들게 되면 어떤 UI 화면이든 크기에 따라 유동적으로 바뀌기 때문에 모든 디바이스를 지원할 수 있을 것이라 생각하여 웹뷰에 대해 이해해보고자 프로젝트를 시작했습니다.      
+      ### 구현 기능
+        - 노트 CRDU 기능
+        - 마크다운 및 사진 파일 노트 추가하기 기능
+        - 태그별 노트 저장 기능
+        - 노트 보관 기능
+        - 태그 추가하기 기능
+        - 핀을 통한 고정하기 기능
+        - 방문 기록 확인하기 기능
+        - 쓰래기통 기능 구현
+        - 반응형 뷰 구현
+      `);
   
-    //   ### 구현 기능
-    //   - 포트폴리오를 제공
-    //   - 반응형 웹사이트 제공
-    //   - 깃허브 링크 클론 기능
-    //   - PDF 변환 기능
-  
-    //   ### 주요 업무 및 상세 역할
-    //   - 일정 관리, 기획, 팀원 관리를 담당하는 프로젝트 매니저(PM) 역활 수행
-    //   - Auth 부분 서버 연동 및 뷰 개발
-    //   - 전체적인 코드 리뷰 및 리펙토링
-  
-    //   ### 문제 해결
-    //   \`문제 상황\`
-    //   CSS 파일과 HTML 파일에 대한 길이 및 파일 증가
-    //   \`해결 방안\`
-    //   tsx 파일을 사용해서 함수형으로 HTML 파일을 내보낼 수 있도록 하고 TS 파일을 동시에 작성할 수 있으며 styled-components를 사용해서 TS 파일에 CSS 파일을 추가할 수 있게 되어서 문제를 해결했습니다.
-    //   `);
-
-    const { Result } = useMoonerDown(`준비중입니다.`);
-  
-    // const { Result: Result2 } = useMoonerDown(`
-    //   ### 📚 회고
-    //   리액트를 사용하여 웹 뷰를 구성하는 경험을 통해, 전반적인 웹 레이아웃 작업에 대한 이해를 넓혔습니다. 특히, flex 개념을 통해 웹 디자인의 유연성에 대해 배울 수 있었고, 프론트엔드 팀원들과 함께 웹 사이트를 만드는 과정에서 스타일 컴포넌트와 tsx 파일 사용법에 대해 학습하는 등, 프론트엔드 개발에 대한 실질적인 경험을 쌓을 수 있었습니다.
-    //   프로젝트 초기 설정부터 디자인을 기반으로 한 뷰 구성까지의 과정을 경험하며, 웹 사이트 개발에 관한 관심이 깊어지게 되었습니다. 현재는 SCSS를 도입하여 스타일링의 효율성을 높이고 있으며, axios 대신 React-Query를 활용해 서버의 부하를 줄이는 캐싱 작업에 집중하고 있습니다. 이를 통해, 웹의 라우터 개념 및 브라우저의 동작 방식에 대한 이해도를 높이는 등 웹 개발에 대한 지식을 꾸준히 확장해 나가고 있습니다.
-    //   마지막으로 현재까지 웹 개발을 지속적으로 공부하며, 프로젝트를 성공적으로 발표했습니다.
-    //   `);
+    const { Result: Result2 } = useMoonerDown(`
+    ### 회고
+    하루라는 시간 안에 만든 프로젝트로써 기능 구현 및 UI 제작까지는 8시간이 걸렸습니다. 하지만 애플 심사 때문에 이틀을 소모하게 되었습니다.
+    이번 프로젝트를 하면서 UIPasteboard를 사용하여 데이터를 복사할 수 있는 방법을 공부할 수 있었습니다. GoogleMobileAds를 사용하여 앱 하단의 배너를 추가하는 방법에 대해서 배우고 이를 통한 수익 창출까지 도전해보았습니다.
+    추후 개발적인 측면에서 추가할 기능은 복사되었을 때 바로 공유하기 버튼을 하단에 놓아서 복사한 이모티콘을 바로 내보낼 수 있는 기능과 즐겨찾기 기능을 추가할 예정이고 유지보수적인 측명에서는 애플 워치, 맥북 등등을 지원할 계획이며 현재 MVC인 프로젝트를 TCA로 바꾸며 RxSwift를 전면 도입할 생각입니다. 현재 앱스토어에서 *콘티(Conty)*를 만나볼 수 있습니다.
+    `);
     return (
       <>
         <Top>
           <GIcon icon={"JunNote"} width={"100px"} />
           <Txt typography={"H0"}>
-          JunNote <Txt typography={"P1"}>2024.06.25 ~ 2024.07.04</Txt>
+            준노트 <Txt typography={"P1"}>2024.06.25~2024.07.04</Txt>
           </Txt>
         </Top>
-        <Tags>
-          {["TS", "ReactNative", "axios", "StyleComponent"].map(
-            (v) => DefaultTag[v as keyOfDefaultTag]
-          )}
-        </Tags>
+        <Tags>{["TS", "ReactNative", "axios"].map((v) => DefaultTag[v as keyOfDefaultTag])}</Tags>
   
         <URLBox>
-          <URLItem
+        <URLItem
             icon={"JunNote"}
-            text={"웹 뷰로 만든 나만의 메모장"}
+            text={"macOS, iOS, iPad를 지원하는 나만의 메모장"}
           >
             <Txt>한줄 요약</Txt>
-          </URLItem>
+        </URLItem>
           <URLItem
             icon={"Github"}
             url={"https://github.com/jjunhaa0211/JMemo"}
           >
-            <Txt>Github</Txt>
+            <Txt>Github (Project)</Txt>
           </URLItem>
           <URLItem
-          icon={"AppStore"}
-          url={
-            "https://apps.apple.com/kr/app/%EC%A4%80%EB%85%B8%ED%8A%B8/id6505130882"
-          }
-        >
-          <Txt>AppStore</Txt>
-        </URLItem>
+            icon={"AppStore"}
+            url={"https://apps.apple.com/kr/app/%EC%A4%80%EB%85%B8%ED%8A%B8/id6505130882"}
+          >
+            <Txt>AppStore</Txt>
+          </URLItem>
         </URLBox>
   
         <Lefter>
@@ -90,8 +77,110 @@ import {
             align={"center"}
           />
         </Lefter>
+  
         {Result}
-        {/* {Result2} */}
+
+        <Details>
+            <summary>UI 화면</summary>
+            <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+              <Img
+                url={"junNote/JN1.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN2.png"}
+                width={"80%"}
+                border={"0"}
+                align={"flex-end"}
+              />
+              <Img
+                url={"junNote/JN3.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN4.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN5.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+            </div>
+            <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+              <Img
+                url={"junNote/JN6.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN7.png"}
+                width={"80%"}
+                border={"0"}
+                align={"flex-end"}
+              />
+              <Img
+                url={"junNote/JN8.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN9.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+              <Img
+                url={"junNote/JN10.png"}
+                width={"80%"}
+                border={"0"}
+                align={"center"}
+              />
+            </div>
+    
+          <div style={{ display: "flex", width: "120%", marginTop: "10px" }}>
+            <Img
+              url={"junNote/JN11.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"junNote/JN12.png"}
+              width={"80%"}
+              border={"0"}
+              align={"flex-end"}
+            />
+            <Img
+              url={"junNote/JN13.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"junNote/JN14.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+            <Img
+              url={"junNote/JN15.png"}
+              width={"80%"}
+              border={"0"}
+              align={"center"}
+            />
+          </div>
+          </Details>
+        {Result2}
       </>
     );
   };
