@@ -13,9 +13,9 @@ const Contact = () => {
             <URLItem icon={"Github"} url={"https://github.com/jjunhaa0211"}>
                 <Txt>Github</Txt>
             </URLItem>
-            {/* <URLItem icon={"Tistroy"} url={"https://goodjunha060211.tistory.com"}>
-                <Txt>Tel</Txt>
-            </URLItem> */}
+            <URLItem icon={"JunLogo"} url={"https://jjunhaa0211.github.io/Developer_Jun/"}>
+                <Txt>Study</Txt>
+            </URLItem>
             <URLItem icon={"Discord"} text={"junha06"}>
                 <Txt>Discord</Txt>
             </URLItem>

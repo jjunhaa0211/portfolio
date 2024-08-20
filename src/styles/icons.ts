@@ -31,7 +31,8 @@ export const Icons = {
     Decofolio: "Decofolio.webp",
     JunNote: "JunNote.webp",
     JAGIJUDO: "JAGIJUDO.webp",
-    Conty: "Conty.webp"
+    Conty: "Conty.webp",
+    JunLogo: "junLogo.webp"
 }
 
 export type keyOfIcons = keyof typeof Icons;
